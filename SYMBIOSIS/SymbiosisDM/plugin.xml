@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated symbiosisDM -->
+      <package
+            uri="http://www.example.org/symbiosisDM"
+            class="symbiosisDM.SymbiosisDMPackage"
+            genModel="model/symbiosisDM.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated symbiosisDM -->
+      <package
+            uri="http://www.example.org/dependencyModel"
+            class="dependencyModel.DependencyModelPackage"
+            genModel="model/symbiosisDM.genmodel"/>
+   </extension>
+
+</plugin>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="symbiosisDM" nsURI="http://www.example.org/symbiosisDM" nsPrefix="symbiosisDM">
+  <eClassifiers xsi:type="ecore:EClass" name="BusinessObjective">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="object" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        derived="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="scope" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="purpose" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="viewpoint" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="context" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="relatedBusinessobjective"
+        upperBound="-1" eType="#//BusinessObjective"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="paragon" eType="ecore:EClass http://www.example.org/dependencyModel#//Paragon"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SecurityMeasurementGoal">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="object" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        derived="true" iD="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="viewpoint" unique="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="context" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="scope" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="purpose" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="focus" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="criteria" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="businessobjective" upperBound="-1"
+        eType="#//BusinessObjective"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="paragon" eType="ecore:EClass http://www.example.org/dependencyModel#//Paragon"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SecurityMetric">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="goal" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="basemeasurement" upperBound="-1"
+        eType="#//BaseMeasurement"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="method" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="function" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="interpretation" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="reporting" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="securitymeasurementgoal"
+        upperBound="-1" eType="#//SecurityMeasurementGoal"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BaseMeasurement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SYMBIOSIS">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="businessobjective" upperBound="-1"
+        eType="#//BusinessObjective" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="securitymeasurementgoal"
+        upperBound="-1" eType="#//SecurityMeasurementGoal" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="securitymetric" upperBound="-1"
+        eType="#//SecurityMetric" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="basemeasurement" upperBound="-1"
+        eType="#//BaseMeasurement" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dependencyModel" upperBound="-1"
+        eType="ecore:EClass http://www.example.org/dependencyModel#//Paragon"/>
+  </eClassifiers>
+</ecore:EPackage>

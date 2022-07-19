@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/SymbiosisDM/src-gen" creationIcons="false" editDirectory="/SymbiosisDM.edit/src-gen"
+    editorDirectory="/SymbiosisDM.editor/src-gen" modelPluginID="SymbiosisDM" modelName="SymbiosisDM"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>symbiosisDM.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="SymbiosisDM" disposableProviderFactory="true" ecorePackage="symbiosisDM.ecore#/">
+    <genClasses ecoreClass="symbiosisDM.ecore#//BusinessObjective">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute symbiosisDM.ecore#//BusinessObjective/object"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute symbiosisDM.ecore#//BusinessObjective/scope"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute symbiosisDM.ecore#//BusinessObjective/purpose"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute symbiosisDM.ecore#//BusinessObjective/viewpoint"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute symbiosisDM.ecore#//BusinessObjective/context"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference symbiosisDM.ecore#//BusinessObjective/relatedBusinessobjective"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference symbiosisDM.ecore#//BusinessObjective/paragon"/>
+    </genClasses>
+    <genClasses ecoreClass="symbiosisDM.ecore#//SecurityMeasurementGoal">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute symbiosisDM.ecore#//SecurityMeasurementGoal/object"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute symbiosisDM.ecore#//SecurityMeasurementGoal/viewpoint"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute symbiosisDM.ecore#//SecurityMeasurementGoal/context"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute symbiosisDM.ecore#//SecurityMeasurementGoal/scope"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute symbiosisDM.ecore#//SecurityMeasurementGoal/purpose"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute symbiosisDM.ecore#//SecurityMeasurementGoal/focus"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute symbiosisDM.ecore#//SecurityMeasurementGoal/criteria"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference symbiosisDM.ecore#//SecurityMeasurementGoal/businessobjective"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference symbiosisDM.ecore#//SecurityMeasurementGoal/paragon"/>
+    </genClasses>
+    <genClasses ecoreClass="symbiosisDM.ecore#//SecurityMetric">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute symbiosisDM.ecore#//SecurityMetric/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute symbiosisDM.ecore#//SecurityMetric/goal"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference symbiosisDM.ecore#//SecurityMetric/basemeasurement"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute symbiosisDM.ecore#//SecurityMetric/method"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute symbiosisDM.ecore#//SecurityMetric/function"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute symbiosisDM.ecore#//SecurityMetric/interpretation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute symbiosisDM.ecore#//SecurityMetric/reporting"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference symbiosisDM.ecore#//SecurityMetric/securitymeasurementgoal"/>
+    </genClasses>
+    <genClasses ecoreClass="symbiosisDM.ecore#//BaseMeasurement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute symbiosisDM.ecore#//BaseMeasurement/description"/>
+    </genClasses>
+    <genClasses ecoreClass="symbiosisDM.ecore#//SYMBIOSIS">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference symbiosisDM.ecore#//SYMBIOSIS/businessobjective"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference symbiosisDM.ecore#//SYMBIOSIS/securitymeasurementgoal"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference symbiosisDM.ecore#//SYMBIOSIS/securitymetric"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference symbiosisDM.ecore#//SYMBIOSIS/basemeasurement"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference symbiosisDM.ecore#//SYMBIOSIS/dependencyModel"/>
+    </genClasses>
+  </genPackages>
+  <genPackages prefix="DependencyModel" ecorePackage="http://www.example.org/dependencyModel#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="http://www.example.org/dependencyModel#//PARAGON_COMPOSITION_ENUM">
+      <genEnumLiterals ecoreEnumLiteral="http://www.example.org/dependencyModel#//PARAGON_COMPOSITION_ENUM/AND"/>
+      <genEnumLiterals ecoreEnumLiteral="http://www.example.org/dependencyModel#//PARAGON_COMPOSITION_ENUM/OR"/>
+      <genEnumLiterals ecoreEnumLiteral="http://www.example.org/dependencyModel#//PARAGON_COMPOSITION_ENUM/UNCONTROLLABLE"/>
+    </genEnums>
+    <genClasses ecoreClass="http://www.example.org/dependencyModel#//Paragon">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute http://www.example.org/dependencyModel#//Paragon/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute http://www.example.org/dependencyModel#//Paragon/probability"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference http://www.example.org/dependencyModel#//Paragon/paragon"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute http://www.example.org/dependencyModel#//Paragon/Type"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

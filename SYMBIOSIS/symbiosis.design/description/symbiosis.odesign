@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:properties="http://www.eclipse.org/sirius/properties/1.0.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="symbiosis" version="12.0.0.2017041100">
+  <ownedViewpoints name="SYMBIOSIS_Viewpoint">
+    <ownedRepresentationExtensions xsi:type="description_1:DiagramExtensionDescription" name="DependencyModelingSymbiosisDiagram" viewpointURI="viewpoint:/DependencyModel.design/DependencyModelViewpoint" representationName="DependencyModelingDiagram">
+      <metamodel href="http://www.example.org/dependencyModel#/"/>
+      <metamodel href="http://www.example.org/symbiosisDM#/"/>
+      <layers name="SYMBIOSIS">
+        <nodeMappings name="BusinessObjectiveNodeDM" semanticCandidatesExpression="aql: self->concat(self.eAllContents()).eInverse()" domainClass="symbiosisDM::BusinessObjective">
+          <style xsi:type="style:LozengeNodeDescription" labelSize="12" labelExpression="aql: self.object" sizeComputationExpression="10" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="SecurityMeasurementGoalNode" semanticCandidatesExpression="aql: self->concat(self.eAllContents()).eInverse()" domainClass="SecurityMeasurementGoal">
+          <style xsi:type="style:EllipseNodeDescription" labelSize="12" labelExpression="aql: self.object" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="SymbiosisModel" label="Linked SYMBIOSIS Model" semanticCandidatesExpression="aql: self.eInverse()" domainClass="SYMBIOSIS">
+          <style xsi:type="style:NoteDescription" labelSize="12" showIcon="false" labelExpression="aql: self.eResource().getURI()" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="BusinessObjectiveNodeAdditional" preconditionExpression="aql:  diagram.target->concat(diagram.target.eAllContents()).eInverse(symbiosisDM::BusinessObjective)->excludes(self)" semanticCandidatesExpression="aql: self.eInverse(symbiosisDM::SYMBIOSIS).eContents(symbiosisDM::BusinessObjective)" domainClass="symbiosisDM::BusinessObjective">
+          <style xsi:type="style:LozengeNodeDescription" labelSize="12" labelExpression="aql: self.object" tooltipExpression="aql: self.object" sizeComputationExpression="10" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="SecurityMeasurementGoalNodeAdditional" preconditionExpression="aql:  diagram.target->concat(diagram.target.eAllContents()).eInverse(symbiosisDM::SecurityMeasurementGoal)->excludes(self)" semanticCandidatesExpression="aql: self.eInverse(symbiosisDM::SYMBIOSIS).eContents(symbiosisDM::SecurityMeasurementGoal)" domainClass="SecurityMeasurementGoal">
+          <borderedNodeMappings name="SecurityMeasurementGoalNodeAdditional" preconditionExpression="aql: diagram.eContents().target->excludes(self)" semanticCandidatesExpression="aql: self.eInverse(symbiosisDM::SYMBIOSIS).eContents(symbiosisDM::SecurityMeasurementGoal)" domainClass="SecurityMeasurementGoal">
+            <style xsi:type="style:EllipseNodeDescription" labelSize="12" labelExpression="aql: self.object" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+          </borderedNodeMappings>
+          <style xsi:type="style:EllipseNodeDescription" labelSize="12" labelExpression="aql: self.object" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="Symbiosis2DMrelation" sourceMapping="//@ownedViewpoints[name='SYMBIOSIS_Viewpoint']/@ownedRepresentationExtensions[name='DependencyModelingSymbiosisDiagram']/@layers[name='SYMBIOSIS']/@nodeMappings[name='BusinessObjectiveNodeDM'] //@ownedViewpoints[name='SYMBIOSIS_Viewpoint']/@ownedRepresentationExtensions[name='DependencyModelingSymbiosisDiagram']/@layers[name='SYMBIOSIS']/@nodeMappings[name='SecurityMeasurementGoalNode']" targetFinderExpression="aql: self.paragon">
+          <targetMapping xsi:type="description_1:NodeMapping" href="viewpoint:/DependencyModel.design/DependencyModelViewpoint#//@ownedViewpoints[name='DependencyModelViewpoint']/@ownedRepresentations[name='DependencyModelingDiagram']/@defaultLayer/@nodeMappings[name='ParagonNode']"/>
+          <style sourceArrow="OutputClosedArrow" targetArrow="InputFillClosedArrow" sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+            <centerLabelStyleDescription labelSize="12" showIcon="false">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="SecurityMetric2GoalRelation" sourceMapping="//@ownedViewpoints[name='SYMBIOSIS_Viewpoint']/@ownedRepresentationExtensions[name='DependencyModelingSymbiosisDiagram']/@layers[name='SYMBIOSIS']/@containerMappings[name='SecurityMetric4MGContainer']" targetMapping="//@ownedViewpoints[name='SYMBIOSIS_Viewpoint']/@ownedRepresentationExtensions[name='DependencyModelingSymbiosisDiagram']/@layers[name='SYMBIOSIS']/@nodeMappings[name='SecurityMeasurementGoalNode'] //@ownedViewpoints[name='SYMBIOSIS_Viewpoint']/@ownedRepresentationExtensions[name='DependencyModelingSymbiosisDiagram']/@layers[name='SYMBIOSIS']/@nodeMappings[name='SecurityMeasurementGoalNodeAdditional']" targetFinderExpression="aql: self">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="SecurityGoal2BusinessObjectiveRelation" sourceMapping="//@ownedViewpoints[name='SYMBIOSIS_Viewpoint']/@ownedRepresentationExtensions[name='DependencyModelingSymbiosisDiagram']/@layers[name='SYMBIOSIS']/@nodeMappings[name='SecurityMeasurementGoalNode'] //@ownedViewpoints[name='SYMBIOSIS_Viewpoint']/@ownedRepresentationExtensions[name='DependencyModelingSymbiosisDiagram']/@layers[name='SYMBIOSIS']/@nodeMappings[name='SecurityMeasurementGoalNodeAdditional']" targetMapping="//@ownedViewpoints[name='SYMBIOSIS_Viewpoint']/@ownedRepresentationExtensions[name='DependencyModelingSymbiosisDiagram']/@layers[name='SYMBIOSIS']/@nodeMappings[name='BusinessObjectiveNodeDM'] //@ownedViewpoints[name='SYMBIOSIS_Viewpoint']/@ownedRepresentationExtensions[name='DependencyModelingSymbiosisDiagram']/@layers[name='SYMBIOSIS']/@nodeMappings[name='BusinessObjectiveNodeAdditional']" targetFinderExpression="aql: self.businessobjective">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="BusinessObjective2BORelation" sourceMapping="//@ownedViewpoints[name='SYMBIOSIS_Viewpoint']/@ownedRepresentationExtensions[name='DependencyModelingSymbiosisDiagram']/@layers[name='SYMBIOSIS']/@nodeMappings[name='BusinessObjectiveNodeAdditional'] //@ownedViewpoints[name='SYMBIOSIS_Viewpoint']/@ownedRepresentationExtensions[name='DependencyModelingSymbiosisDiagram']/@layers[name='SYMBIOSIS']/@nodeMappings[name='BusinessObjectiveNodeDM']" targetMapping="//@ownedViewpoints[name='SYMBIOSIS_Viewpoint']/@ownedRepresentationExtensions[name='DependencyModelingSymbiosisDiagram']/@layers[name='SYMBIOSIS']/@nodeMappings[name='BusinessObjectiveNodeDM'] //@ownedViewpoints[name='SYMBIOSIS_Viewpoint']/@ownedRepresentationExtensions[name='DependencyModelingSymbiosisDiagram']/@layers[name='SYMBIOSIS']/@nodeMappings[name='BusinessObjectiveNodeAdditional']" targetFinderExpression="aql: self.relatedBusinessobjective">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <containerMappings name="SecurityMetric4MGContainer" preconditionExpression="aql: self.eInverse(symbiosisDM::SecurityMetric)->notEmpty()" semanticCandidatesExpression="aql: diagram.eContents(diagram::DNode).target->filter(symbiosisDM::SecurityMeasurementGoal)" domainClass="symbiosisDM::SecurityMeasurementGoal">
+          <subNodeMappings name="SecurityMetricNode" semanticCandidatesExpression="aql: self.eInverse(symbiosisDM::SecurityMetric)" domainClass="SecurityMetric">
+            <style xsi:type="style:BundledImageDescription" labelSize="12" labelExpression="aql: self.description" tooltipExpression="aql: 'Base measurements: ' + self.basemeasurement.description" labelPosition="node" resizeKind="NSEW" shape="triangle">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:WorkspaceImageDescription" borderSizeComputationExpression="1" labelSize="12" showIcon="false" labelExpression="aql: 'Security Metrics'" sizeComputationExpression="0" roundedCorner="true">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelFormat>bold</labelFormat>
+            <labelFormat>italic</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </containerMappings>
+        <toolSections name="SYMBIOSIS">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="CreateBO" label="Derive Business Objective">
+            <nodeMappings href="#//@ownedViewpoints[name='SYMBIOSIS_Viewpoint']/@ownedRepresentationExtensions[name='DependencyModelingSymbiosisDiagram']/@layers[name='SYMBIOSIS']/@nodeMappings[name='BusinessObjectiveNodeDM']"/>
+            <nodeMappings href="viewpoint:/DependencyModel.design/DependencyModelViewpoint#//@ownedViewpoints[name='DependencyModelViewpoint']/@ownedRepresentations[name='DependencyModelingDiagram']/@defaultLayer/@nodeMappings[name='ParagonNode']"/>
+            <nodeMappings href="viewpoint:/DependencyModel.design/DependencyModelViewpoint#//@ownedViewpoints[name='DependencyModelViewpoint']/@ownedRepresentations[name='DependencyModelingDiagram']/@defaultLayer/@nodeMappings[name='ParagonNode']/@borderedNodeMappings[name='ParagonTypeBorderNode']"/>
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:Let" variableName="originalElement" valueExpression="aql: self">
+                <subModelOperations xsi:type="tool_1:If" conditionExpression="aql: self.oclIsKindOf(symbiosisDM::BusinessObjective)">
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql: self.ancestors()->first()">
+                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="symbiosisDM::BusinessObjective" referenceName="businessobjective">
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="relatedBusinessobjective" valueExpression="aql: originalElement"/>
+                    </subModelOperations>
+                  </subModelOperations>
+                </subModelOperations>
+                <subModelOperations xsi:type="tool_1:If" conditionExpression="aql: self.oclIsKindOf(dependencyModel::Paragon)">
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql: self.ancestors()->first().eInverse(symbiosisDM::SYMBIOSIS)->first()">
+                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="symbiosisDM::BusinessObjective" referenceName="businessobjective">
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="paragon" valueExpression="aql: originalElement"/>
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="object" valueExpression="aql: container.description"/>
+                    </subModelOperations>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+            <extraMappings xsi:type="description_1:NodeMapping" href="viewpoint:/DependencyModel.design/DependencyModelViewpoint#//@ownedViewpoints[name='DependencyModelViewpoint']/@ownedRepresentations[name='DependencyModelingDiagram']/@defaultLayer/@nodeMappings[name='ParagonNode']"/>
+            <extraMappings xsi:type="description_1:NodeMapping" href="#//@ownedViewpoints[name='SYMBIOSIS_Viewpoint']/@ownedRepresentationExtensions[name='DependencyModelingSymbiosisDiagram']/@layers[name='SYMBIOSIS']/@nodeMappings[name='BusinessObjectiveNodeDM']"/>
+            <extraMappings xsi:type="description_1:NodeMapping" href="#//@ownedViewpoints[name='SYMBIOSIS_Viewpoint']/@ownedRepresentationExtensions[name='DependencyModelingSymbiosisDiagram']/@layers[name='SYMBIOSIS']/@nodeMappings[name='BusinessObjectiveNodeAdditional']"/>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="CreateSMG" label="Derive Security Measurement Goal" extraMappings="//@ownedViewpoints[name='SYMBIOSIS_Viewpoint']/@ownedRepresentationExtensions[name='DependencyModelingSymbiosisDiagram']/@layers[name='SYMBIOSIS']/@nodeMappings[name='BusinessObjectiveNodeDM'] //@ownedViewpoints[name='SYMBIOSIS_Viewpoint']/@ownedRepresentationExtensions[name='DependencyModelingSymbiosisDiagram']/@layers[name='SYMBIOSIS']/@nodeMappings[name='BusinessObjectiveNodeAdditional']">
+            <nodeMappings href="#//@ownedViewpoints[name='SYMBIOSIS_Viewpoint']/@ownedRepresentationExtensions[name='DependencyModelingSymbiosisDiagram']/@layers[name='SYMBIOSIS']/@nodeMappings[name='BusinessObjectiveNodeDM']"/>
+            <nodeMappings href="viewpoint:/DependencyModel.design/DependencyModelViewpoint#//@ownedViewpoints[name='DependencyModelViewpoint']/@ownedRepresentations[name='DependencyModelingDiagram']/@defaultLayer/@nodeMappings[name='ParagonNode']"/>
+            <nodeMappings href="viewpoint:/DependencyModel.design/DependencyModelViewpoint#//@ownedViewpoints[name='DependencyModelViewpoint']/@ownedRepresentations[name='DependencyModelingDiagram']/@defaultLayer/@nodeMappings[name='ParagonNode']/@borderedNodeMappings[name='ParagonTypeBorderNode']"/>
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:Let" variableName="originalElement" valueExpression="aql: self">
+                <subModelOperations xsi:type="tool_1:If" conditionExpression="aql: self.oclIsKindOf(symbiosisDM::BusinessObjective)">
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql: self.ancestors()->first()">
+                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="symbiosisDM::SecurityMeasurementGoal" referenceName="securitymeasurementgoal">
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="businessobjective" valueExpression="aql: originalElement"/>
+                    </subModelOperations>
+                  </subModelOperations>
+                </subModelOperations>
+                <subModelOperations xsi:type="tool_1:If" conditionExpression="aql: self.oclIsKindOf(dependencyModel::Paragon)">
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql: self.ancestors()->first().eInverse(symbiosisDM::SYMBIOSIS)->first()">
+                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="symbiosisDM::SecurityMeasurementGoal" referenceName="securitymeasurementgoal">
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="paragon" valueExpression="aql: originalElement"/>
+                    </subModelOperations>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="CreateSM" label="Define Security Metric for Goal" nodeMappings="//@ownedViewpoints[name='SYMBIOSIS_Viewpoint']/@ownedRepresentationExtensions[name='DependencyModelingSymbiosisDiagram']/@layers[name='SYMBIOSIS']/@nodeMappings[name='SecurityMeasurementGoalNode'] //@ownedViewpoints[name='SYMBIOSIS_Viewpoint']/@ownedRepresentationExtensions[name='DependencyModelingSymbiosisDiagram']/@layers[name='SYMBIOSIS']/@nodeMappings[name='SecurityMeasurementGoalNodeAdditional']" extraMappings="//@ownedViewpoints[name='SYMBIOSIS_Viewpoint']/@ownedRepresentationExtensions[name='DependencyModelingSymbiosisDiagram']/@layers[name='SYMBIOSIS']/@nodeMappings[name='SecurityMeasurementGoalNode'] //@ownedViewpoints[name='SYMBIOSIS_Viewpoint']/@ownedRepresentationExtensions[name='DependencyModelingSymbiosisDiagram']/@layers[name='SYMBIOSIS']/@nodeMappings[name='SecurityMeasurementGoalNodeAdditional']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:Let" variableName="originalElement" valueExpression="aql: self">
+                <subModelOperations xsi:type="tool_1:If" conditionExpression="aql: self.oclIsKindOf(symbiosisDM::SecurityMeasurementGoal)">
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql: self.ancestors()->first()">
+                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="symbiosisDM::SecurityMetric" referenceName="securitymetric">
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="securitymeasurementgoal" valueExpression="aql: originalElement"/>
+                    </subModelOperations>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="DefineBaseMeasurement" label="Define Base Measurement for Metric" nodeMappings="//@ownedViewpoints[name='SYMBIOSIS_Viewpoint']/@ownedRepresentationExtensions[name='DependencyModelingSymbiosisDiagram']/@layers[name='SYMBIOSIS']/@containerMappings[name='SecurityMetric4MGContainer']/@subNodeMappings[name='SecurityMetricNode']" extraMappings="//@ownedViewpoints[name='SYMBIOSIS_Viewpoint']/@ownedRepresentationExtensions[name='DependencyModelingSymbiosisDiagram']/@layers[name='SYMBIOSIS']/@containerMappings[name='SecurityMetric4MGContainer']/@subNodeMappings[name='SecurityMetricNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:Let" variableName="originalElement" valueExpression="aql: self">
+                <subModelOperations xsi:type="tool_1:If" conditionExpression="aql: self.oclIsKindOf(symbiosisDM::SecurityMetric)">
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql: self.ancestors()->first()">
+                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="symbiosisDM::BaseMeasurement" referenceName="basemeasurement" variableName="newBM">
+                      <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Add a new base measurement">
+                        <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                          <initialOperation/>
+                        </buttons>
+                        <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                          <initialOperation/>
+                        </buttons>
+                        <page name="BaseMeasurementPage" labelExpression="Base Measurement" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='SYMBIOSIS_Viewpoint']/@ownedRepresentationExtensions[name='DependencyModelingSymbiosisDiagram']/@layers[name='SYMBIOSIS']/@toolSections.0/@ownedTools[name='DefineBaseMeasurement']/@initialOperation/@firstModelOperations/@subModelOperations.0/@subModelOperations.0/@subModelOperations.0/@subModelOperations.0/@groups.0"/>
+                        <groups name="Base measurement new properties" labelExpression="Base Measurement" semanticCandidateExpression="var:self">
+                          <controls xsi:type="properties:TextDescription" name="BMdescription" labelExpression="Description: " valueExpression="aql: newBM.description">
+                            <initialOperation>
+                              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                                <subModelOperations xsi:type="tool_1:SetValue" featureName="description" valueExpression="aql: newValue"/>
+                              </firstModelOperations>
+                            </initialOperation>
+                          </controls>
+                        </groups>
+                      </subModelOperations>
+                      <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql: originalElement">
+                        <subModelOperations xsi:type="tool_1:SetValue" featureName="basemeasurement" valueExpression="aql: newBM"/>
+                      </subModelOperations>
+                    </subModelOperations>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </layers>
+    </ownedRepresentationExtensions>
+    <ownedJavaExtensions qualifiedClassName="symbiosis.design.Services"/>
+  </ownedViewpoints>
+  <extensions xsi:type="properties:ViewExtensionDescription" name="Properties"/>
+</description:Group>
