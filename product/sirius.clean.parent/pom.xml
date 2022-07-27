@@ -1,0 +1,131 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>sirius.clean.parent</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>Sirius clean parent</name>
+  
+  
+	<properties>
+		<tycho.version>2.3.0</tycho.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		 <maven.compiler.source>1.8</maven.compiler.source> <!-- Avi -->
+		 <maven.compiler.target>1.8</maven.compiler.target> <!-- Avi -->
+	</properties>
+
+	<build>
+		<plugins>
+			<!-- All inheriting projects are eclipse projects. -->
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-maven-plugin</artifactId>
+				<extensions>true</extensions>
+			</plugin>
+			<!-- Only for this pom : Publish target and tpd -->
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>build-helper-maven-plugin</artifactId>
+				<inherited>false</inherited>
+				<version>3.0.0</version>
+				<executions>
+					<execution>
+						<id>attach-artifacts</id>
+						<phase>package</phase>
+						<goals>
+							<goal>attach-artifact</goal>
+						</goals>
+						<configuration>
+							<artifacts>
+								<artifact>
+									<file>tp/target.target</file>
+									<type>target</type>
+									<classifier>target</classifier>
+								</artifact>
+							</artifacts>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+
+		<pluginManagement>
+			<plugins>
+				<!-- Eclipse tycho -->
+				<plugin> <!-- Lifecycle -->
+					<groupId>org.eclipse.tycho</groupId>
+					<artifactId>tycho-maven-plugin</artifactId>
+					<version>${tycho.version}</version>
+				</plugin>
+				<plugin>
+					<groupId>org.eclipse.tycho</groupId>
+					<artifactId>tycho-source-plugin</artifactId>
+					<version>${tycho.version}</version>
+				</plugin>
+				<plugin>
+					<groupId>org.eclipse.tycho</groupId>
+					<artifactId>tycho-p2-repository-plugin</artifactId>
+					<version>${tycho.version}</version>
+				</plugin>
+				<plugin>
+					<groupId>org.eclipse.tycho</groupId>
+					<artifactId>tycho-p2-director-plugin</artifactId>
+					<version>${tycho.version}</version>
+				</plugin>
+
+				<plugin> <!-- Target platform -->
+					<groupId>org.eclipse.tycho</groupId>
+					<artifactId>target-platform-configuration</artifactId>
+					<version>${tycho.version}</version>
+					<configuration>
+						<resolver>p2</resolver>
+						<environments>
+							<environment>
+								<os>win32</os>
+								<ws>win32</ws>
+								<arch>x86_64</arch>
+							</environment>		
+						</environments>
+						<target>
+							<artifact>
+								<groupId>sirius.clean</groupId><!-- self -->
+								<artifactId>sirius.clean.parent</artifactId><!-- self -->
+								<version>1.0.0-SNAPSHOT</version>
+								<classifier>tp/target</classifier>
+							</artifact>
+						</target>
+						<executionEnvironment>org.eclipse.justj.openjdk.hotspot.jre.full-11</executionEnvironment>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>build-helper-maven-plugin</artifactId>
+					<version>3.0.0</version>
+				</plugin>
+			</plugins>
+
+		</pluginManagement>
+	</build>
+
+
+	<groupId>sirius.clean</groupId>
+	<modules>
+		<module>../../../DEPMODEL-SecMOF/DependencyModel</module>
+		<module>../../../DEPMODEL-SecMOF/DependencyModel.design</module>
+		<module>../../../DEPMODEL-SecMOF/DependencyModel.edit</module>
+		<module>../../../DEPMODEL-SecMOF/DependencyModel.editor</module>
+		<module>../../FRIPP/FRIPP.design</module>
+		<module>../SecMoF</module>
+		<module>../../SYMBIOSIS/SymbiosisDM</module>
+		<module>../../SYMBIOSIS/SymbiosisDM.edit</module>
+		<module>../../SYMBIOSIS/SymbiosisDM.editor</module>
+		<module>../../FRIPP/dsm.FRIPP</module>
+		<module>../../FRIPP/dsm.FRIPP.edit</module>
+		<module>../../FRIPP/dsm.FRIPP.editor</module>
+		<module>../../../PROVE/dsm.PROVE</module>
+		<module>../../../PROVE/dsm.PROVE.edit</module>
+		<module>../../../PROVE/dsm.PROVE.editor</module>
+		<module>../sirius.clean.branding</module>
+		<module>../sirius.clean.product</module>
+		<module>../../SYMBIOSIS/symbiosis.design</module>
+	</modules>
+</project>

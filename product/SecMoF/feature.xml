@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="SecMoF.feature"
+      label="SecMoF"
+      version="1.0.0.qualifier">
+
+   <description url="https://github.com/TAU-SERI/PROVE">
+      Security Modelling framework by Avi Shaked
+[Based on PROVE Tool]
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <requires>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.emf.ecore"/>
+      <import plugin="org.eclipse.emf.edit"/>
+      <import plugin="org.eclipse.core.resources"/>
+      <import plugin="org.eclipse.emf.ecore.xmi"/>
+      <import plugin="org.eclipse.emf.edit.ui"/>
+      <import plugin="org.eclipse.ui.ide"/>
+      <import plugin="org.eclipse.sirius" version="6.3.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.sirius.ui" version="6.3.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.sirius.common.acceleo.aql"/>
+      <import plugin="DependencyModel" version="0.1.0" match="greaterOrEqual"/>
+      <import plugin="DependencyModel.edit" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="DependencyModel.editor" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="dsm.PROVE" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="dsm.PROVE.edit" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="dsm.PROVE.editor" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="DependencyModel.design" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="SymbiosisDM" version="0.1.0" match="greaterOrEqual"/>
+      <import plugin="SymbiosisDM.edit" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="SymbiosisDM.editor" version="1.0.0" match="greaterOrEqual"/>
+   </requires>
+
+   <plugin
+         id="dsm.PROVE"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="dsm.PROVE.edit"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="dsm.PROVE.editor"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="DependencyModel"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="DependencyModel.design"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="DependencyModel.edit"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="DependencyModel.editor"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="FRIPP.design"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+   <plugin
+         id="dsm.FRIPP"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+   <plugin
+         id="dsm.FRIPP.edit"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+   <plugin
+         id="dsm.FRIPP.editor"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+   <plugin
+         id="SymbiosisDM"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="SymbiosisDM.edit"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="SymbiosisDM.editor"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="symbiosis.design"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

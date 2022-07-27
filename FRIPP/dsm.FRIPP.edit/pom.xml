@@ -7,6 +7,6 @@
   	<groupId>sirius.clean</groupId>
   	<artifactId>sirius.clean.parent</artifactId>
   	<version>1.0.0-SNAPSHOT</version>
-  	<relativePath>../../PROVE/sirius.clean.parent</relativePath>
+  	<relativePath>../../product/sirius.clean.parent</relativePath>
   </parent>
 </project>

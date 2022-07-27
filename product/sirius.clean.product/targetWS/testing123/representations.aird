@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:FRIPP="http://www.example.org/FRIPP" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_Dw2soAweEe2ISs0dmq6Y-w" selectedViews="_GnGhAAweEe2ISs0dmq6Y-w" version="14.3.1.202003261200">
+    <semanticResources>My.fripp</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_GnGhAAweEe2ISs0dmq6Y-w">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_Gowt4AweEe2ISs0dmq6Y-w" name=" PROVE Diagram MK2" repPath="#_GoavoAweEe2ISs0dmq6Y-w" changeId="2911530e-08c3-4647-8d7e-f9b3e0329a41">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']"/>
+        <target xmi:type="FRIPP:PlaybookProcess" href="My.fripp#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_GoavoAweEe2ISs0dmq6Y-w">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_GpCasAweEe2ISs0dmq6Y-w" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_GpCasQweEe2ISs0dmq6Y-w" type="Sirius" element="_GoavoAweEe2ISs0dmq6Y-w" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_GpmbYAweEe2ISs0dmq6Y-w" type="2002" element="_GpJvcAweEe2ISs0dmq6Y-w">
+          <children xmi:type="notation:Node" xmi:id="_GprT4AweEe2ISs0dmq6Y-w" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_Gpr68AweEe2ISs0dmq6Y-w" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_Gp0d0AweEe2ISs0dmq6Y-w" type="3008" element="_GpZnEAweEe2ISs0dmq6Y-w">
+              <children xmi:type="notation:Node" xmi:id="_Gp0d0wweEe2ISs0dmq6Y-w" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_Gp1E4AweEe2ISs0dmq6Y-w" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_Gp1E4QweEe2ISs0dmq6Y-w"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_Gp1E4gweEe2ISs0dmq6Y-w"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_Gp0d0QweEe2ISs0dmq6Y-w" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Gp0d0gweEe2ISs0dmq6Y-w" x="98" y="102"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_Gpr68QweEe2ISs0dmq6Y-w"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_Gpr68gweEe2ISs0dmq6Y-w"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_GpmbYQweEe2ISs0dmq6Y-w" fontColor="4539717" fontName="Segoe UI" fontHeight="12" italic="true" underline="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GpmbYgweEe2ISs0dmq6Y-w"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_GpCasgweEe2ISs0dmq6Y-w"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_GpdRcAweEe2ISs0dmq6Y-w" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_GpdRcQweEe2ISs0dmq6Y-w"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_GpJvcAweEe2ISs0dmq6Y-w" name=" scope">
+      <target xmi:type="FRIPP:PlaybookProcess" href="My.fripp#/"/>
+      <semanticElements xmi:type="FRIPP:PlaybookProcess" href="My.fripp#/"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_GpOn8AweEe2ISs0dmq6Y-w" labelSize="12" showIcon="false" labelColor="69,69,69" borderSize="3" borderSizeComputationExpression="3" borderColor="209,209,209">
+        <labelFormat>italic</labelFormat>
+        <labelFormat>underline</labelFormat>
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_GpZnEAweEe2ISs0dmq6Y-w" tooltipText="Start: &#xA;End: &#xA;Resources: ">
+        <target xmi:type="FRIPP:PlaybookProcess" href="My.fripp#/"/>
+        <semanticElements xmi:type="FRIPP:PlaybookProcess" href="My.fripp#/"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_Gpa1MAweEe2ISs0dmq6Y-w" labelSize="12" showIcon="false" borderSize="2" borderSizeComputationExpression="2">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_Gog2QAweEe2ISs0dmq6Y-w"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer"/>
+    <target xmi:type="FRIPP:PlaybookProcess" href="My.fripp#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

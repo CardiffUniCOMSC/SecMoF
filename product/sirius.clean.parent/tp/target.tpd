@@ -1,0 +1,41 @@
+target "Clean"
+environment JavaSE-11
+with requirements,source
+
+location "https://download.eclipse.org/releases/2022-06/" {
+	org.eclipse.platform.sdk lazy
+	org.eclipse.emf lazy
+	org.eclipse.pde.feature.group lazy
+	org.eclipse.rcp.feature.group lazy
+	org.eclipse.osgi.services lazy
+	org.eclipse.equinox.executable.feature.group lazy
+	org.eclipse.equinox.core.feature.feature.group lazy	
+	org.eclipse.egit.feature.group lazy	
+	org.eclipse.jgit.feature.group lazy
+}
+
+
+location "http://download.eclipse.org/sirius/updates/releases/7.0.1/2021-06" {
+	//Sirius
+	org.eclipse.sirius.specifier.feature.group lazy
+	org.eclipse.sirius.properties.feature.feature.group lazy
+	org.eclipse.sirius.runtime.ide.ui.feature.group lazy
+	org.eclipse.sirius.runtime.feature.group lazy
+	org.eclipse.eef.ide lazy
+	org.eclipse.sirius.runtime.ide.ui.acceleo.feature.group lazy
+	org.eclipse.acceleo.query.feature.group lazy
+	org.eclipse.sirius.diagram.elk.feature.feature.group lazy
+    org.eclipse.elk.feature.feature.group lazy
+    org.eclipse.elk.ui.feature.feature.group lazy
+
+}
+
+// Orbit dependencies (All dependencies that are not Eclipse projects)
+location "https://download.eclipse.org/tools/orbit/downloads/drops/R20220531185310/repository" {
+	org.antlr.runtime lazy
+	org.apache.batik.bridge	
+}
+
+location "https://download.eclipse.org/justj/jres/11/updates/release/11.0.2" {
+	org.eclipse.justj.openjdk.hotspot.jre.full.feature.group lazy
+}

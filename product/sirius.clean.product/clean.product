@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="SecMoF v0.1" uid="SecMoF" id="sirius.clean.branding.product" application="org.eclipse.ui.ide.workbench" version="1.0.0.qualifier" useFeatures="true" includeLaunchers="true" autoIncludeRequirements="true">
+
+   <aboutInfo>
+      <text>
+         SecMoF
+      </text>
+   </aboutInfo>
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
+      </vmArgsMac>
+   </launcherArgs>
+
+   <windowImages i16="/sirius.clean.branding/icons/PROVElogo16.png" i32="/sirius.clean.branding/icons/PROVElogo32.png" i48="/sirius.clean.branding/icons/PROVElogo48.png" i64="/sirius.clean.branding/icons/PROVElogo64.png"/>
+
+   <splash
+      location="sirius.clean.branding"
+      startupProgressRect="5,275,445,15" />
+   <launcher name="SecMoF">
+      <win useIco="false">
+         <bmp
+            winMediumLow="/sirius.clean.branding/splash256b.bmp"/>
+      </win>
+   </launcher>
+
+   <vm>
+      <windows include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8</windows>
+   </vm>
+
+   <license>
+        <text>
+   Use at your own risk.
+Developer/issuer is not responsible/liable for anything
+         </text>
+   </license>
+
+   <plugins>
+   </plugins>
+
+   <features>
+      <feature id="org.eclipse.justj.openjdk.hotspot.jre.full" installMode="root"/>
+      <feature id="org.eclipse.platform" installMode="root"/>
+      <feature id="org.eclipse.egit" installMode="root"/>
+      <feature id="org.eclipse.gmf.runtime.thirdparty" installMode="root"/>
+      <feature id="org.eclipse.help" installMode="root"/>
+      <feature id="org.eclipse.ecf.filetransfer.httpclient5.feature" installMode="root"/>
+      <feature id="org.eclipse.sirius.runtime.ide.ui" installMode="root"/>
+      <feature id="org.eclipse.jgit.ssh.apache" installMode="root"/>
+      <feature id="org.eclipse.emf.common" installMode="root"/>
+      <feature id="org.eclipse.equinox.p2.core.feature" installMode="root"/>
+      <feature id="org.eclipse.gmf" installMode="root"/>
+      <feature id="org.eclipse.ecf.core.ssl.feature" installMode="root"/>
+      <feature id="org.eclipse.ecf.filetransfer.ssl.feature" installMode="root"/>
+      <feature id="org.eclipse.sirius.runtime" installMode="root"/>
+      <feature id="org.eclipse.gef" installMode="root"/>
+      <feature id="org.eclipse.draw2d" installMode="root"/>
+      <feature id="org.eclipse.emf.edit" installMode="root"/>
+      <feature id="org.eclipse.emf.transaction" installMode="root"/>
+      <feature id="org.eclipse.emf.ecore" installMode="root"/>
+      <feature id="org.eclipse.equinox.p2.user.ui" installMode="root"/>
+      <feature id="org.eclipse.jgit.http.apache" installMode="root"/>
+      <feature id="org.eclipse.equinox.p2.extras.feature" installMode="root"/>
+      <feature id="org.eclipse.rcp" installMode="root"/>
+      <feature id="org.eclipse.ecf.core.feature" installMode="root"/>
+      <feature id="org.eclipse.gmf.runtime.notation" installMode="root"/>
+      <feature id="org.eclipse.jgit" installMode="root"/>
+      <feature id="org.eclipse.equinox.p2.rcp.feature" installMode="root"/>
+      <feature id="org.eclipse.ecf.filetransfer.feature" installMode="root"/>
+      <feature id="org.eclipse.emf.workspace" installMode="root"/>
+      <feature id="org.eclipse.sirius.runtime.ide.ui.acceleo" installMode="root"/>
+      <feature id="org.eclipse.jgit.gpg.bc" installMode="root"/>
+      <feature id="org.eclipse.emf.ecore.edit" installMode="root"/>
+      <feature id="org.eclipse.emf.validation" installMode="root"/>
+      <feature id="org.eclipse.e4.rcp" installMode="root"/>
+      <feature id="org.eclipse.elk.feature" installMode="root"/>
+      <feature id="org.eclipse.elk.ui.feature" installMode="root"/>
+      <feature id="org.eclipse.sirius.diagram.elk.feature" installMode="root"/>
+      <feature id="org.eclipse.elk.graphviz.feature" installMode="root"/>
+      <feature id="org.eclipse.elk.algorithms.feature" installMode="root"/>
+      <feature id="org.eclipse.sirius.properties.feature" installMode="root"/>
+      <feature id="org.eclipse.sirius.specifier" installMode="root"/>
+      <feature id="SecMoF.feature" installMode="root"/>
+   </features>
+
+   <configurations>
+      <plugin id="org.apache.felix.scr" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.event" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
+   </configurations>
+
+   <preferencesInfo>
+      <targetfile overwrite="false"/>
+   </preferencesInfo>
+
+   <cssInfo>
+   </cssInfo>
+
+</product>

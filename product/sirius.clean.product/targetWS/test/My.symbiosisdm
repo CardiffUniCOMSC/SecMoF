@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbiosisDM:SYMBIOSIS xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:symbiosisDM="http://www.example.org/symbiosisDM">
+  <businessobjective>
+    <paragon href="My.dependencymodel#//@paragon.0"/>
+  </businessobjective>
+  <dependencyModel href="My.dependencymodel#/"/>
+</symbiosisDM:SYMBIOSIS>

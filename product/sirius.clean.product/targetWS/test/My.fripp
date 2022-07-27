@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FRIPP:PlaybookProcess xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:FRIPP="http://www.example.org/FRIPP">
+  <process xsi:type="FRIPP:PlaybookProcess">
+    <activityimpact newValue="0.65" originalProbability="0.78">
+      <paragon href="My.dependencymodel#//@paragon.1/@paragon.1"/>
+    </activityimpact>
+  </process>
+  <process xsi:type="FRIPP:PlaybookProcess" name="Testing" resourceUsed="//@resource.0">
+    <activityimpact newValue="0.9" originalType="UNCONTROLLABLE" originalProbability="0.9">
+      <paragon href="My.dependencymodel#//@paragon.0/@paragon.0"/>
+    </activityimpact>
+    <activityimpact newValue="0.2" originalType="OR" originalProbability="0.78">
+      <paragon href="My.dependencymodel#//@paragon.1/@paragon.1/@paragon.0"/>
+    </activityimpact>
+    <activityimpact newValue="0.21" originalType="UNCONTROLLABLE" originalProbability="0.78">
+      <paragon href="My.dependencymodel#//@paragon.1/@paragon.1/@paragon.0/@paragon.0"/>
+    </activityimpact>
+    <activityimpact newValue="1.0" originalProbability="0.09000000000000001">
+      <paragon href="My.dependencymodel#//@paragon.1"/>
+    </activityimpact>
+    <activityimpact newValue="0.12" originalType="UNCONTROLLABLE" originalProbability="0.45">
+      <paragon href="My.dependencymodel#//@paragon.1/@paragon.0"/>
+    </activityimpact>
+    <activityimpact newValue="0.01" originalProbability="0.9">
+      <paragon href="My.dependencymodel#/"/>
+    </activityimpact>
+  </process>
+  <resource xsi:type="FRIPP:Actuator" name="Avi"/>
+  <paragon href="My.dependencymodel#/"/>
+</FRIPP:PlaybookProcess>
