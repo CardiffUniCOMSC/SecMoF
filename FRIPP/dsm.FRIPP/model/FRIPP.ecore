@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="FRIPP" nsURI="http://www.example.org/FRIPP" nsPrefix="FRIPP">
+  <eClassifiers xsi:type="ecore:EClass" name="PlaybookProcess" eSuperTypes="../../dsm.PROVE/model/PROVE.ecore#//Process">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="objectives" upperBound="-1"
+        eType="#//OBJECTIVES_ENUM"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="actionType" eType="#//ACTION_TYPE_ENUM"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="relatedreferences" upperBound="-1"
+        eType="#//ExternalReference"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="externalreferences" upperBound="-1"
+        eType="#//ExternalReference" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="paragon" eType="ecore:EClass ../../DependencyModel/model/dependencyModel.ecore#//Paragon"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="activityimpact" upperBound="-1"
+        eType="#//ActivityImpact" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="OBJECTIVES_ENUM">
+    <eLiterals name="INVESTIGATION"/>
+    <eLiterals name="MITIGATION" value="1"/>
+    <eLiterals name="REMEDIATION" value="2"/>
+    <eLiterals name="PREVENTION" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ACTION_TYPE_ENUM">
+    <eLiterals name="MANUAL"/>
+    <eLiterals name="AUTOMATIC" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Actuator" eSuperTypes="../../dsm.PROVE/model/PROVE.ecore#//Resource">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//ACTUATOR_TYPE_ENUM"
+        defaultValueLiteral=""/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ACTUATOR_TYPE_ENUM">
+    <eLiterals name="HUMAN"/>
+    <eLiterals name="MACHINE" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ORCHESTRATION_SERVICE_CATEGORY"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ExternalReference">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="referenceType" eType="#//REFERENCE_TYPE_ENUM"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="REFERENCE_TYPE_ENUM">
+    <eLiterals name="BEST_PRACTICE"/>
+    <eLiterals name="POLICY" value="1"/>
+    <eLiterals name="REGULATION" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="GOALS_ENUM">
+    <eLiterals name="MAKE_SYSTEM_SAFE"/>
+    <eLiterals name="PRESERVE_EVIDENCE" value="1"/>
+    <eLiterals name="ESTABLISH_COMMUNICATION" value="2"/>
+    <eLiterals name="MAKE_DECISION" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ActivityImpact">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="paragon" eType="ecore:EClass ../../DependencyModel/model/dependencyModel.ecore#//Paragon"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="newValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="originalType" eType="ecore:EEnum ../../DependencyModel/model/dependencyModel.ecore#//PARAGON_COMPOSITION_ENUM"
+        defaultValueLiteral="" derived="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="originalProbability" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"
+        derived="true"/>
+  </eClassifiers>
+</ecore:EPackage>

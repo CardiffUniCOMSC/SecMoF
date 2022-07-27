@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+  <extension point="org.eclipse.sirius.componentization">
+    <component class="FRIPP.design.Activator"
+               id="FRIPP.design"
+	       name="FRIPP">
+    </component>
+  </extension>
+</plugin>

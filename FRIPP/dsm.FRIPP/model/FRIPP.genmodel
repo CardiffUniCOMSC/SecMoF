@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/dsm.FRIPP/src-gen" creationIcons="false" editDirectory="/dsm.FRIPP.edit/src-gen"
+    editorDirectory="/dsm.FRIPP.editor/src-gen" modelPluginID="dsm.FRIPP" modelName="FRIPP"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="15.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>FRIPP.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="FRIPP" basePackage="dsm" resource="XMI" disposableProviderFactory="true"
+      ecorePackage="FRIPP.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="FRIPP.ecore#//OBJECTIVES_ENUM">
+      <genEnumLiterals ecoreEnumLiteral="FRIPP.ecore#//OBJECTIVES_ENUM/INVESTIGATION"/>
+      <genEnumLiterals ecoreEnumLiteral="FRIPP.ecore#//OBJECTIVES_ENUM/MITIGATION"/>
+      <genEnumLiterals ecoreEnumLiteral="FRIPP.ecore#//OBJECTIVES_ENUM/REMEDIATION"/>
+      <genEnumLiterals ecoreEnumLiteral="FRIPP.ecore#//OBJECTIVES_ENUM/PREVENTION"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="FRIPP.ecore#//ACTION_TYPE_ENUM">
+      <genEnumLiterals ecoreEnumLiteral="FRIPP.ecore#//ACTION_TYPE_ENUM/MANUAL"/>
+      <genEnumLiterals ecoreEnumLiteral="FRIPP.ecore#//ACTION_TYPE_ENUM/AUTOMATIC"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="FRIPP.ecore#//ACTUATOR_TYPE_ENUM">
+      <genEnumLiterals ecoreEnumLiteral="FRIPP.ecore#//ACTUATOR_TYPE_ENUM/HUMAN"/>
+      <genEnumLiterals ecoreEnumLiteral="FRIPP.ecore#//ACTUATOR_TYPE_ENUM/MACHINE"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="FRIPP.ecore#//ORCHESTRATION_SERVICE_CATEGORY"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="FRIPP.ecore#//REFERENCE_TYPE_ENUM">
+      <genEnumLiterals ecoreEnumLiteral="FRIPP.ecore#//REFERENCE_TYPE_ENUM/BEST_PRACTICE"/>
+      <genEnumLiterals ecoreEnumLiteral="FRIPP.ecore#//REFERENCE_TYPE_ENUM/POLICY"/>
+      <genEnumLiterals ecoreEnumLiteral="FRIPP.ecore#//REFERENCE_TYPE_ENUM/REGULATION"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="FRIPP.ecore#//GOALS_ENUM">
+      <genEnumLiterals ecoreEnumLiteral="FRIPP.ecore#//GOALS_ENUM/MAKE_SYSTEM_SAFE"/>
+      <genEnumLiterals ecoreEnumLiteral="FRIPP.ecore#//GOALS_ENUM/PRESERVE_EVIDENCE"/>
+      <genEnumLiterals ecoreEnumLiteral="FRIPP.ecore#//GOALS_ENUM/ESTABLISH_COMMUNICATION"/>
+      <genEnumLiterals ecoreEnumLiteral="FRIPP.ecore#//GOALS_ENUM/MAKE_DECISION"/>
+    </genEnums>
+    <genClasses ecoreClass="FRIPP.ecore#//PlaybookProcess">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FRIPP.ecore#//PlaybookProcess/objectives"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FRIPP.ecore#//PlaybookProcess/actionType"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FRIPP.ecore#//PlaybookProcess/relatedreferences"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FRIPP.ecore#//PlaybookProcess/externalreferences"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FRIPP.ecore#//PlaybookProcess/paragon"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FRIPP.ecore#//PlaybookProcess/activityimpact"/>
+    </genClasses>
+    <genClasses ecoreClass="FRIPP.ecore#//Actuator">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FRIPP.ecore#//Actuator/type"/>
+    </genClasses>
+    <genClasses ecoreClass="FRIPP.ecore#//ExternalReference">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FRIPP.ecore#//ExternalReference/referenceType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FRIPP.ecore#//ExternalReference/name"/>
+    </genClasses>
+    <genClasses ecoreClass="FRIPP.ecore#//ActivityImpact">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FRIPP.ecore#//ActivityImpact/paragon"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FRIPP.ecore#//ActivityImpact/newValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FRIPP.ecore#//ActivityImpact/originalType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FRIPP.ecore#//ActivityImpact/originalProbability"/>
+    </genClasses>
+  </genPackages>
+  <genPackages prefix="PROVE" ecorePackage="../../dsm.PROVE/model/PROVE.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="../../dsm.PROVE/model/PROVE.ecore#//ShadowNodeTypeENUM">
+      <genEnumLiterals ecoreEnumLiteral="../../dsm.PROVE/model/PROVE.ecore#//ShadowNodeTypeENUM/Reserved_NotInUse"/>
+      <genEnumLiterals ecoreEnumLiteral="../../dsm.PROVE/model/PROVE.ecore#//ShadowNodeTypeENUM/Input"/>
+      <genEnumLiterals ecoreEnumLiteral="../../dsm.PROVE/model/PROVE.ecore#//ShadowNodeTypeENUM/Output"/>
+      <genEnumLiterals ecoreEnumLiteral="../../dsm.PROVE/model/PROVE.ecore#//ShadowNodeTypeENUM/Internal"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="../../dsm.PROVE/model/PROVE.ecore#//STATUS_ENUM">
+      <genEnumLiterals ecoreEnumLiteral="../../dsm.PROVE/model/PROVE.ecore#//STATUS_ENUM/UNSPECIFIED"/>
+      <genEnumLiterals ecoreEnumLiteral="../../dsm.PROVE/model/PROVE.ecore#//STATUS_ENUM/COMPLETED"/>
+    </genEnums>
+    <genClasses ecoreClass="../../dsm.PROVE/model/PROVE.ecore#//Artifact">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ../../dsm.PROVE/model/PROVE.ecore#//Artifact/state"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../dsm.PROVE/model/PROVE.ecore#//Artifact/name"/>
+    </genClasses>
+    <genClasses ecoreClass="../../dsm.PROVE/model/PROVE.ecore#//ArtifactState">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../dsm.PROVE/model/PROVE.ecore#//ArtifactState/achievedStatus"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../dsm.PROVE/model/PROVE.ecore#//ArtifactState/artifactName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ../../dsm.PROVE/model/PROVE.ecore#//ArtifactState/artifactstateinstance"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../dsm.PROVE/model/PROVE.ecore#//ArtifactState/name"/>
+    </genClasses>
+    <genClasses ecoreClass="../../dsm.PROVE/model/PROVE.ecore#//Process">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ../../dsm.PROVE/model/PROVE.ecore#//Process/artifact"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ../../dsm.PROVE/model/PROVE.ecore#//Process/process"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../dsm.PROVE/model/PROVE.ecore#//Process/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../dsm.PROVE/model/PROVE.ecore#//Process/notes"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ../../dsm.PROVE/model/PROVE.ecore#//Process/artifactInStateUsed"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ../../dsm.PROVE/model/PROVE.ecore#//Process/resultArtifactInState"/>
+      <genFeatures property="None" children="true" createChild="false" ecoreFeature="ecore:EReference ../../dsm.PROVE/model/PROVE.ecore#//Process/shadownodeincoming"/>
+      <genFeatures property="None" children="true" createChild="false" ecoreFeature="ecore:EReference ../../dsm.PROVE/model/PROVE.ecore#//Process/shadownodeoutgoing"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../dsm.PROVE/model/PROVE.ecore#//Process/startDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../dsm.PROVE/model/PROVE.ecore#//Process/endDate"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ../../dsm.PROVE/model/PROVE.ecore#//Process/resource"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ../../dsm.PROVE/model/PROVE.ecore#//Process/resourceUsed"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute ../../dsm.PROVE/model/PROVE.ecore#//Process/status"/>
+    </genClasses>
+    <genClasses ecoreClass="../../dsm.PROVE/model/PROVE.ecore#//ShadowNodeIncoming"/>
+    <genClasses ecoreClass="../../dsm.PROVE/model/PROVE.ecore#//ShadowNodeOutgoing"/>
+    <genClasses ecoreClass="../../dsm.PROVE/model/PROVE.ecore#//ArtifactStateInstance">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ../../dsm.PROVE/model/PROVE.ecore#//ArtifactStateInstance/usedByActivity"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ../../dsm.PROVE/model/PROVE.ecore#//ArtifactStateInstance/originatingActivity"/>
+    </genClasses>
+    <genClasses ecoreClass="../../dsm.PROVE/model/PROVE.ecore#//Resource">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../dsm.PROVE/model/PROVE.ecore#//Resource/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ../../dsm.PROVE/model/PROVE.ecore#//Resource/resource"/>
+    </genClasses>
+  </genPackages>
+  <genPackages prefix="DependencyModel" ecorePackage="../../DependencyModel/model/dependencyModel.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="../../DependencyModel/model/dependencyModel.ecore#//PARAGON_COMPOSITION_ENUM">
+      <genEnumLiterals ecoreEnumLiteral="../../DependencyModel/model/dependencyModel.ecore#//PARAGON_COMPOSITION_ENUM/AND"/>
+      <genEnumLiterals ecoreEnumLiteral="../../DependencyModel/model/dependencyModel.ecore#//PARAGON_COMPOSITION_ENUM/OR"/>
+      <genEnumLiterals ecoreEnumLiteral="../../DependencyModel/model/dependencyModel.ecore#//PARAGON_COMPOSITION_ENUM/UNCONTROLLABLE"/>
+    </genEnums>
+    <genClasses ecoreClass="../../DependencyModel/model/dependencyModel.ecore#//Paragon">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../DependencyModel/model/dependencyModel.ecore#//Paragon/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../DependencyModel/model/dependencyModel.ecore#//Paragon/probability"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ../../DependencyModel/model/dependencyModel.ecore#//Paragon/paragon"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../DependencyModel/model/dependencyModel.ecore#//Paragon/Type"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
