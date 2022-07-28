@@ -112,7 +112,7 @@
                   </subModelOperations>
                 </subModelOperations>
                 <subModelOperations xsi:type="tool_1:If" conditionExpression="aql: self.oclIsKindOf(dependencyModel::Paragon)">
-                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql: self.ancestors()->first().eInverse(symbiosisDM::SYMBIOSIS)->first()">
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql: self->concat(self.ancestors())->last().eInverse(symbiosisDM::SYMBIOSIS)->first()">
                     <subModelOperations xsi:type="tool_1:CreateInstance" typeName="symbiosisDM::BusinessObjective" referenceName="businessobjective">
                       <subModelOperations xsi:type="tool_1:SetValue" featureName="paragon" valueExpression="aql: originalElement"/>
                       <subModelOperations xsi:type="tool_1:SetValue" featureName="object" valueExpression="aql: container.description"/>
@@ -141,7 +141,7 @@
                   </subModelOperations>
                 </subModelOperations>
                 <subModelOperations xsi:type="tool_1:If" conditionExpression="aql: self.oclIsKindOf(dependencyModel::Paragon)">
-                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql: self.ancestors()->first().eInverse(symbiosisDM::SYMBIOSIS)->first()">
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql: self->concat(self.ancestors())->last().eInverse(symbiosisDM::SYMBIOSIS)->first()">
                     <subModelOperations xsi:type="tool_1:CreateInstance" typeName="symbiosisDM::SecurityMeasurementGoal" referenceName="securitymeasurementgoal">
                       <subModelOperations xsi:type="tool_1:SetValue" featureName="paragon" valueExpression="aql: originalElement"/>
                     </subModelOperations>
