@@ -21,6 +21,7 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link dsm.FRIPP.PlaybookProcess#getExternalreferences <em>Externalreferences</em>}</li>
  *   <li>{@link dsm.FRIPP.PlaybookProcess#getParagon <em>Paragon</em>}</li>
  *   <li>{@link dsm.FRIPP.PlaybookProcess#getActivityimpact <em>Activityimpact</em>}</li>
+ *   <li>{@link dsm.FRIPP.PlaybookProcess#getAssociatedRole <em>Associated Role</em>}</li>
  * </ul>
  *
  * @see dsm.FRIPP.FRIPPPackage#getPlaybookProcess()
@@ -125,5 +126,17 @@ public interface PlaybookProcess extends PROVE.Process {
 	 * @generated
 	 */
 	EList<ActivityImpact> getActivityimpact();
+
+	/**
+	 * Returns the value of the '<em><b>Associated Role</b></em>' reference list.
+	 * The list contents are of type {@link dsm.FRIPP.Role}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Associated Role</em>' reference list.
+	 * @see dsm.FRIPP.FRIPPPackage#getPlaybookProcess_AssociatedRole()
+	 * @model
+	 * @generated
+	 */
+	EList<Role> getAssociatedRole();
 
 } // PlaybookProcess

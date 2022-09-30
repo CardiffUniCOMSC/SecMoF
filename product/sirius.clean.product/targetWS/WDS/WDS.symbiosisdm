@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbiosisDM:SYMBIOSIS xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:symbiosisDM="http://www.example.org/symbiosisDM">
+  <businessobjective object="Operator" scope="" purpose="The operator has required qualification(s)" viewpoint="CEO, CISO" context="Permanently">
+    <paragon href="WDS.dependencymodel#//@paragon.1/@paragon.0"/>
+  </businessobjective>
+  <businessobjective object="Pressure sensor 2 is operational">
+    <paragon href="WDS.dependencymodel#//@paragon.0/@paragon.0/@paragon.0/@paragon.1/@paragon.1"/>
+  </businessobjective>
+  <businessobjective object="Software image" purpose="Software is properly maintained with respect to vulnerabilities">
+    <paragon href="WDS.dependencymodel#//@paragon.0/@paragon.1"/>
+  </businessobjective>
+  <securitymeasurementgoal object="Qualifications" viewpoint="HR qualification manager" context="dffdf" purpose="" criteria="" businessobjective="//@businessobjective.0"/>
+  <securitymeasurementgoal object="Device Availability" businessobjective="//@businessobjective.1"/>
+  <securitymeasurementgoal object="Software image" viewpoint="CISO, Device/Software owner" context="" scope="Device operating systems, Operational software applications" purpose="Software is up to date with relevant patches" focus="" criteria="Latest software image version date, mitigated vulnerabilities, up to date SBOM" businessobjective="//@businessobjective.2"/>
+  <securitymetric description="Percent of qualifications achieved" goal="" securitymeasurementgoal="Qualifications"/>
+  <securitymetric description="Percent of up to date qualifications" basemeasurement="//@basemeasurement.0 //@basemeasurement.3" securitymeasurementgoal="Qualifications"/>
+  <securitymetric description="Mean Time Beetween Failures" securitymeasurementgoal="Device Availability"/>
+  <securitymetric description="Critical vulnerabilities in software image" basemeasurement="//@basemeasurement.1 //@basemeasurement.2" interpretation="If any found (>0) then intervention is needed" securitymeasurementgoal="Software image"/>
+  <basemeasurement description="number of up to date qualifications"/>
+  <basemeasurement description="Critical vulnerabilities"/>
+  <basemeasurement description="SBOM"/>
+  <basemeasurement description="Total number of qualifications"/>
+  <dependencyModel href="WDS.dependencymodel#/"/>
+</symbiosisDM:SYMBIOSIS>

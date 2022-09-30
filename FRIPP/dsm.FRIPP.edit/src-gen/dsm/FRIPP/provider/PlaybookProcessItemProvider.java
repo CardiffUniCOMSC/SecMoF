@@ -55,6 +55,7 @@ public class PlaybookProcessItemProvider extends ProcessItemProvider {
 			addActionTypePropertyDescriptor(object);
 			addRelatedreferencesPropertyDescriptor(object);
 			addParagonPropertyDescriptor(object);
+			addAssociatedRolePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -120,6 +121,21 @@ public class PlaybookProcessItemProvider extends ProcessItemProvider {
 						getString("_UI_PropertyDescriptor_description", "_UI_PlaybookProcess_paragon_feature",
 								"_UI_PlaybookProcess_type"),
 						FRIPPPackage.Literals.PLAYBOOK_PROCESS__PARAGON, true, false, true, null, null, null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Associated Role feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addAssociatedRolePropertyDescriptor(Object object) {
+		itemPropertyDescriptors
+				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
+						getResourceLocator(), getString("_UI_PlaybookProcess_associatedRole_feature"),
+						getString("_UI_PropertyDescriptor_description", "_UI_PlaybookProcess_associatedRole_feature",
+								"_UI_PlaybookProcess_type"),
+						FRIPPPackage.Literals.PLAYBOOK_PROCESS__ASSOCIATED_ROLE, true, false, true, null, null, null));
 	}
 
 	/**

@@ -43,6 +43,7 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FRIPP.ecore#//PlaybookProcess/externalreferences"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FRIPP.ecore#//PlaybookProcess/paragon"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FRIPP.ecore#//PlaybookProcess/activityimpact"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference FRIPP.ecore#//PlaybookProcess/associatedRole"/>
     </genClasses>
     <genClasses ecoreClass="FRIPP.ecore#//Actuator">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FRIPP.ecore#//Actuator/type"/>
@@ -56,6 +57,11 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FRIPP.ecore#//ActivityImpact/newValue"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FRIPP.ecore#//ActivityImpact/originalType"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute FRIPP.ecore#//ActivityImpact/originalProbability"/>
+    </genClasses>
+    <genClasses ecoreClass="FRIPP.ecore#//Role"/>
+    <genClasses ecoreClass="FRIPP.ecore#//Organisation">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FRIPP.ecore#//Organisation/playbookprocess"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference FRIPP.ecore#//Organisation/role"/>
     </genClasses>
   </genPackages>
   <genPackages prefix="PROVE" ecorePackage="../../dsm.PROVE/model/PROVE.ecore#/">

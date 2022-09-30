@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependencyModel:Paragon xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dependencyModel="http://www.example.org/dependencyModel" description="Secure and safe operation of the pipeline segment" probability="0.559095615" Type="AND">
+  <paragon description="The system architecture is reliable and secure" probability="0.62121735" Type="AND">
+    <paragon description="All Hardware components are functional and fault-free" probability="0.7695" Type="AND">
+      <paragon description="All field devices are functional and fault-free" probability="0.855" Type="AND">
+        <paragon description="All RTUs are functional" probability="0.95"/>
+        <paragon description="All passive components are operational" probability="1.0" Type="AND">
+          <paragon description="Pressure sensor 1 is operational" probability="1.0"/>
+          <paragon description="Pressure sensor 2 is operational" probability="1.0"/>
+        </paragon>
+        <paragon description="All active components are operational" probability="0.9"/>
+      </paragon>
+      <paragon description="Power supply is uninterruptable" probability="0.9"/>
+    </paragon>
+    <paragon description="All software functions as designated and is free from vulnerabilities" probability="0.9"/>
+    <paragon description="Network communication is reliable and free from vulnerabilities" probability="0.897"/>
+  </paragon>
+  <paragon description="The operator looking after the pipeline is OK" probability="0.9" Type="AND">
+    <paragon description="The operator has required qualification(s)" probability="0.9"/>
+  </paragon>
+</dependencyModel:Paragon>

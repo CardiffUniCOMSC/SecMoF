@@ -15,8 +15,10 @@ import dsm.FRIPP.Actuator;
 import dsm.FRIPP.ExternalReference;
 import dsm.FRIPP.FRIPPFactory;
 import dsm.FRIPP.FRIPPPackage;
+import dsm.FRIPP.Organisation;
 import dsm.FRIPP.PlaybookProcess;
 
+import dsm.FRIPP.Role;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EEnum;
@@ -59,6 +61,20 @@ public class FRIPPPackageImpl extends EPackageImpl implements FRIPPPackage {
 	 * @generated
 	 */
 	private EClass activityImpactEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass roleEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass organisationEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -256,6 +272,16 @@ public class FRIPPPackageImpl extends EPackageImpl implements FRIPPPackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getPlaybookProcess_AssociatedRole() {
+		return (EReference) playbookProcessEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getActuator() {
 		return actuatorEClass;
 	}
@@ -356,6 +382,46 @@ public class FRIPPPackageImpl extends EPackageImpl implements FRIPPPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getRole() {
+		return roleEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getOrganisation() {
+		return organisationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getOrganisation_Playbookprocess() {
+		return (EReference) organisationEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getOrganisation_Role() {
+		return (EReference) organisationEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EEnum getOBJECTIVES_ENUM() {
 		return objectiveS_ENUMEEnum;
 	}
@@ -447,6 +513,7 @@ public class FRIPPPackageImpl extends EPackageImpl implements FRIPPPackage {
 		createEReference(playbookProcessEClass, PLAYBOOK_PROCESS__EXTERNALREFERENCES);
 		createEReference(playbookProcessEClass, PLAYBOOK_PROCESS__PARAGON);
 		createEReference(playbookProcessEClass, PLAYBOOK_PROCESS__ACTIVITYIMPACT);
+		createEReference(playbookProcessEClass, PLAYBOOK_PROCESS__ASSOCIATED_ROLE);
 
 		actuatorEClass = createEClass(ACTUATOR);
 		createEAttribute(actuatorEClass, ACTUATOR__TYPE);
@@ -460,6 +527,12 @@ public class FRIPPPackageImpl extends EPackageImpl implements FRIPPPackage {
 		createEAttribute(activityImpactEClass, ACTIVITY_IMPACT__NEW_VALUE);
 		createEAttribute(activityImpactEClass, ACTIVITY_IMPACT__ORIGINAL_TYPE);
 		createEAttribute(activityImpactEClass, ACTIVITY_IMPACT__ORIGINAL_PROBABILITY);
+
+		roleEClass = createEClass(ROLE);
+
+		organisationEClass = createEClass(ORGANISATION);
+		createEReference(organisationEClass, ORGANISATION__PLAYBOOKPROCESS);
+		createEReference(organisationEClass, ORGANISATION__ROLE);
 
 		// Create enums
 		objectiveS_ENUMEEnum = createEEnum(OBJECTIVES_ENUM);
@@ -528,6 +601,9 @@ public class FRIPPPackageImpl extends EPackageImpl implements FRIPPPackage {
 		initEReference(getPlaybookProcess_Activityimpact(), this.getActivityImpact(), null, "activityimpact", null, 0,
 				-1, PlaybookProcess.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
 				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPlaybookProcess_AssociatedRole(), this.getRole(), null, "associatedRole", null, 0, -1,
+				PlaybookProcess.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
+				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(actuatorEClass, Actuator.class, "Actuator", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
@@ -557,6 +633,17 @@ public class FRIPPPackageImpl extends EPackageImpl implements FRIPPPackage {
 		initEAttribute(getActivityImpact_OriginalProbability(), ecorePackage.getEDouble(), "originalProbability", null,
 				0, 1, ActivityImpact.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
 				IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+
+		initEClass(roleEClass, Role.class, "Role", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(organisationEClass, Organisation.class, "Organisation", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getOrganisation_Playbookprocess(), this.getPlaybookProcess(), null, "playbookprocess", null, 0,
+				-1, Organisation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
+				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getOrganisation_Role(), this.getRole(), null, "role", null, 0, -1, Organisation.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Initialize enums and add enum literals
 		initEEnum(objectiveS_ENUMEEnum, dsm.FRIPP.OBJECTIVES_ENUM.class, "OBJECTIVES_ENUM");

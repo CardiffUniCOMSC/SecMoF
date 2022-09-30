@@ -165,6 +165,52 @@ public class FRIPPItemProviderAdapterFactory extends FRIPPAdapterFactory
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link dsm.FRIPP.Role} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected RoleItemProvider roleItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link dsm.FRIPP.Role}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createRoleAdapter() {
+		if (roleItemProvider == null) {
+			roleItemProvider = new RoleItemProvider(this);
+		}
+
+		return roleItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link dsm.FRIPP.Organisation} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected OrganisationItemProvider organisationItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link dsm.FRIPP.Organisation}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createOrganisationAdapter() {
+		if (organisationItemProvider == null) {
+			organisationItemProvider = new OrganisationItemProvider(this);
+		}
+
+		return organisationItemProvider;
+	}
+
+	/**
 	 * This returns the root adapter factory that contains this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -277,6 +323,10 @@ public class FRIPPItemProviderAdapterFactory extends FRIPPAdapterFactory
 			externalReferenceItemProvider.dispose();
 		if (activityImpactItemProvider != null)
 			activityImpactItemProvider.dispose();
+		if (roleItemProvider != null)
+			roleItemProvider.dispose();
+		if (organisationItemProvider != null)
+			organisationItemProvider.dispose();
 	}
 
 }

@@ -241,13 +241,22 @@ public interface FRIPPPackage extends EPackage {
 	int PLAYBOOK_PROCESS__ACTIVITYIMPACT = PROVEPackage.PROCESS_FEATURE_COUNT + 5;
 
 	/**
+	 * The feature id for the '<em><b>Associated Role</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLAYBOOK_PROCESS__ASSOCIATED_ROLE = PROVEPackage.PROCESS_FEATURE_COUNT + 6;
+
+	/**
 	 * The number of structural features of the '<em>Playbook Process</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PLAYBOOK_PROCESS_FEATURE_COUNT = PROVEPackage.PROCESS_FEATURE_COUNT + 6;
+	int PLAYBOOK_PROCESS_FEATURE_COUNT = PROVEPackage.PROCESS_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of operations of the '<em>Playbook Process</em>' class.
@@ -424,6 +433,80 @@ public interface FRIPPPackage extends EPackage {
 	int ACTIVITY_IMPACT_OPERATION_COUNT = 0;
 
 	/**
+	 * The meta object id for the '{@link dsm.FRIPP.impl.RoleImpl <em>Role</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see dsm.FRIPP.impl.RoleImpl
+	 * @see dsm.FRIPP.impl.FRIPPPackageImpl#getRole()
+	 * @generated
+	 */
+	int ROLE = 4;
+
+	/**
+	 * The number of structural features of the '<em>Role</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROLE_FEATURE_COUNT = 0;
+
+	/**
+	 * The number of operations of the '<em>Role</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROLE_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link dsm.FRIPP.impl.OrganisationImpl <em>Organisation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see dsm.FRIPP.impl.OrganisationImpl
+	 * @see dsm.FRIPP.impl.FRIPPPackageImpl#getOrganisation()
+	 * @generated
+	 */
+	int ORGANISATION = 5;
+
+	/**
+	 * The feature id for the '<em><b>Playbookprocess</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORGANISATION__PLAYBOOKPROCESS = 0;
+
+	/**
+	 * The feature id for the '<em><b>Role</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORGANISATION__ROLE = 1;
+
+	/**
+	 * The number of structural features of the '<em>Organisation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORGANISATION_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>Organisation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORGANISATION_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link dsm.FRIPP.OBJECTIVES_ENUM <em>OBJECTIVES ENUM</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -431,7 +514,7 @@ public interface FRIPPPackage extends EPackage {
 	 * @see dsm.FRIPP.impl.FRIPPPackageImpl#getOBJECTIVES_ENUM()
 	 * @generated
 	 */
-	int OBJECTIVES_ENUM = 4;
+	int OBJECTIVES_ENUM = 6;
 
 	/**
 	 * The meta object id for the '{@link dsm.FRIPP.ACTION_TYPE_ENUM <em>ACTION TYPE ENUM</em>}' enum.
@@ -441,7 +524,7 @@ public interface FRIPPPackage extends EPackage {
 	 * @see dsm.FRIPP.impl.FRIPPPackageImpl#getACTION_TYPE_ENUM()
 	 * @generated
 	 */
-	int ACTION_TYPE_ENUM = 5;
+	int ACTION_TYPE_ENUM = 7;
 
 	/**
 	 * The meta object id for the '{@link dsm.FRIPP.ACTUATOR_TYPE_ENUM <em>ACTUATOR TYPE ENUM</em>}' enum.
@@ -451,7 +534,7 @@ public interface FRIPPPackage extends EPackage {
 	 * @see dsm.FRIPP.impl.FRIPPPackageImpl#getACTUATOR_TYPE_ENUM()
 	 * @generated
 	 */
-	int ACTUATOR_TYPE_ENUM = 6;
+	int ACTUATOR_TYPE_ENUM = 8;
 
 	/**
 	 * The meta object id for the '{@link dsm.FRIPP.ORCHESTRATION_SERVICE_CATEGORY <em>ORCHESTRATION SERVICE CATEGORY</em>}' enum.
@@ -461,7 +544,7 @@ public interface FRIPPPackage extends EPackage {
 	 * @see dsm.FRIPP.impl.FRIPPPackageImpl#getORCHESTRATION_SERVICE_CATEGORY()
 	 * @generated
 	 */
-	int ORCHESTRATION_SERVICE_CATEGORY = 7;
+	int ORCHESTRATION_SERVICE_CATEGORY = 9;
 
 	/**
 	 * The meta object id for the '{@link dsm.FRIPP.REFERENCE_TYPE_ENUM <em>REFERENCE TYPE ENUM</em>}' enum.
@@ -471,7 +554,7 @@ public interface FRIPPPackage extends EPackage {
 	 * @see dsm.FRIPP.impl.FRIPPPackageImpl#getREFERENCE_TYPE_ENUM()
 	 * @generated
 	 */
-	int REFERENCE_TYPE_ENUM = 8;
+	int REFERENCE_TYPE_ENUM = 10;
 
 	/**
 	 * The meta object id for the '{@link dsm.FRIPP.GOALS_ENUM <em>GOALS ENUM</em>}' enum.
@@ -481,7 +564,7 @@ public interface FRIPPPackage extends EPackage {
 	 * @see dsm.FRIPP.impl.FRIPPPackageImpl#getGOALS_ENUM()
 	 * @generated
 	 */
-	int GOALS_ENUM = 9;
+	int GOALS_ENUM = 11;
 
 	/**
 	 * Returns the meta object for class '{@link dsm.FRIPP.PlaybookProcess <em>Playbook Process</em>}'.
@@ -558,6 +641,17 @@ public interface FRIPPPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getPlaybookProcess_Activityimpact();
+
+	/**
+	 * Returns the meta object for the reference list '{@link dsm.FRIPP.PlaybookProcess#getAssociatedRole <em>Associated Role</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Associated Role</em>'.
+	 * @see dsm.FRIPP.PlaybookProcess#getAssociatedRole()
+	 * @see #getPlaybookProcess()
+	 * @generated
+	 */
+	EReference getPlaybookProcess_AssociatedRole();
 
 	/**
 	 * Returns the meta object for class '{@link dsm.FRIPP.Actuator <em>Actuator</em>}'.
@@ -665,6 +759,48 @@ public interface FRIPPPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getActivityImpact_OriginalProbability();
+
+	/**
+	 * Returns the meta object for class '{@link dsm.FRIPP.Role <em>Role</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Role</em>'.
+	 * @see dsm.FRIPP.Role
+	 * @generated
+	 */
+	EClass getRole();
+
+	/**
+	 * Returns the meta object for class '{@link dsm.FRIPP.Organisation <em>Organisation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Organisation</em>'.
+	 * @see dsm.FRIPP.Organisation
+	 * @generated
+	 */
+	EClass getOrganisation();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link dsm.FRIPP.Organisation#getPlaybookprocess <em>Playbookprocess</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Playbookprocess</em>'.
+	 * @see dsm.FRIPP.Organisation#getPlaybookprocess()
+	 * @see #getOrganisation()
+	 * @generated
+	 */
+	EReference getOrganisation_Playbookprocess();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link dsm.FRIPP.Organisation#getRole <em>Role</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Role</em>'.
+	 * @see dsm.FRIPP.Organisation#getRole()
+	 * @see #getOrganisation()
+	 * @generated
+	 */
+	EReference getOrganisation_Role();
 
 	/**
 	 * Returns the meta object for enum '{@link dsm.FRIPP.OBJECTIVES_ENUM <em>OBJECTIVES ENUM</em>}'.
@@ -808,6 +944,14 @@ public interface FRIPPPackage extends EPackage {
 		EReference PLAYBOOK_PROCESS__ACTIVITYIMPACT = eINSTANCE.getPlaybookProcess_Activityimpact();
 
 		/**
+		 * The meta object literal for the '<em><b>Associated Role</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PLAYBOOK_PROCESS__ASSOCIATED_ROLE = eINSTANCE.getPlaybookProcess_AssociatedRole();
+
+		/**
 		 * The meta object literal for the '{@link dsm.FRIPP.impl.ActuatorImpl <em>Actuator</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -892,6 +1036,42 @@ public interface FRIPPPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute ACTIVITY_IMPACT__ORIGINAL_PROBABILITY = eINSTANCE.getActivityImpact_OriginalProbability();
+
+		/**
+		 * The meta object literal for the '{@link dsm.FRIPP.impl.RoleImpl <em>Role</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see dsm.FRIPP.impl.RoleImpl
+		 * @see dsm.FRIPP.impl.FRIPPPackageImpl#getRole()
+		 * @generated
+		 */
+		EClass ROLE = eINSTANCE.getRole();
+
+		/**
+		 * The meta object literal for the '{@link dsm.FRIPP.impl.OrganisationImpl <em>Organisation</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see dsm.FRIPP.impl.OrganisationImpl
+		 * @see dsm.FRIPP.impl.FRIPPPackageImpl#getOrganisation()
+		 * @generated
+		 */
+		EClass ORGANISATION = eINSTANCE.getOrganisation();
+
+		/**
+		 * The meta object literal for the '<em><b>Playbookprocess</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ORGANISATION__PLAYBOOKPROCESS = eINSTANCE.getOrganisation_Playbookprocess();
+
+		/**
+		 * The meta object literal for the '<em><b>Role</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ORGANISATION__ROLE = eINSTANCE.getOrganisation_Role();
 
 		/**
 		 * The meta object literal for the '{@link dsm.FRIPP.OBJECTIVES_ENUM <em>OBJECTIVES ENUM</em>}' enum.

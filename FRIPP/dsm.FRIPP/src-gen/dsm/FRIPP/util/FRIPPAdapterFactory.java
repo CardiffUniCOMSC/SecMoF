@@ -89,6 +89,16 @@ public class FRIPPAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseRole(Role object) {
+			return createRoleAdapter();
+		}
+
+		@Override
+		public Adapter caseOrganisation(Organisation object) {
+			return createOrganisationAdapter();
+		}
+
+		@Override
 		public Adapter caseProcess(PROVE.Process object) {
 			return createProcessAdapter();
 		}
@@ -170,6 +180,34 @@ public class FRIPPAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createActivityImpactAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link dsm.FRIPP.Role <em>Role</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see dsm.FRIPP.Role
+	 * @generated
+	 */
+	public Adapter createRoleAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link dsm.FRIPP.Organisation <em>Organisation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see dsm.FRIPP.Organisation
+	 * @generated
+	 */
+	public Adapter createOrganisationAdapter() {
 		return null;
 	}
 

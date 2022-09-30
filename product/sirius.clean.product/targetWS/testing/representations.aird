@@ -4,7 +4,7 @@
     <semanticResources>My.fripp</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_qIowcA2KEe2issAmA0jXFQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/FRIPP.design/description/FRIPP.odesign#//@ownedViewpoints[name='FRIPPviewpointMk2']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_qIu3EA2KEe2issAmA0jXFQ" name=" FRIPP representation" repPath="#_qIrMsA2KEe2issAmA0jXFQ" changeId="641f8d19-5f26-4b37-9f01-b92a80649224">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_qIu3EA2KEe2issAmA0jXFQ" name=" FRIPP representation" repPath="#_qIrMsA2KEe2issAmA0jXFQ" changeId="410911cb-7950-4faa-8e4d-3b079c2fa50a">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/FRIPP.design/description/FRIPP.odesign#//@ownedViewpoints[name='FRIPPviewpointMk2']/@ownedRepresentations[name='FRIPP%20Representation']"/>
         <target xmi:type="FRIPP:PlaybookProcess" href="My.fripp#/"/>
       </ownedRepresentationDescriptors>
@@ -23,11 +23,20 @@
             <children xmi:type="notation:Node" xmi:id="_qJCZEA2KEe2issAmA0jXFQ" type="3008" element="_qI52MA2KEe2issAmA0jXFQ">
               <children xmi:type="notation:Node" xmi:id="_qJCZEw2KEe2issAmA0jXFQ" type="5005"/>
               <children xmi:type="notation:Node" xmi:id="_qJCZFA2KEe2issAmA0jXFQ" type="7002">
+                <children xmi:type="notation:Node" xmi:id="_h8A5AA2lEe2ttOmloz_mgQ" type="3008" element="_h7vzQA2lEe2ttOmloz_mgQ">
+                  <children xmi:type="notation:Node" xmi:id="_h8INwA2lEe2ttOmloz_mgQ" type="5005"/>
+                  <children xmi:type="notation:Node" xmi:id="_h8I00A2lEe2ttOmloz_mgQ" type="7002">
+                    <styles xmi:type="notation:SortingStyle" xmi:id="_h8I00Q2lEe2ttOmloz_mgQ"/>
+                    <styles xmi:type="notation:FilteringStyle" xmi:id="_h8I00g2lEe2ttOmloz_mgQ"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_h8A5AQ2lEe2ttOmloz_mgQ" fontName="Segoe UI" fontHeight="12"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_h8A5Ag2lEe2ttOmloz_mgQ" x="32" y="30"/>
+                </children>
                 <styles xmi:type="notation:SortingStyle" xmi:id="_qJCZFQ2KEe2issAmA0jXFQ"/>
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_qJCZFg2KEe2issAmA0jXFQ"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_qJCZEQ2KEe2issAmA0jXFQ" fontName="Segoe UI" fontHeight="12"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qJCZEg2KEe2issAmA0jXFQ"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qJCZEg2KEe2issAmA0jXFQ" x="128" y="232"/>
             </children>
             <styles xmi:type="notation:SortingStyle" xmi:id="_qI_80Q2KEe2issAmA0jXFQ"/>
             <styles xmi:type="notation:FilteringStyle" xmi:id="_qI_80g2KEe2issAmA0jXFQ"/>
@@ -59,13 +68,24 @@
         <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/FRIPP.design/description/FRIPP.odesign#//@ownedViewpoints[name='FRIPPviewpointMk2']/@ownedRepresentations[name='FRIPP%20Representation']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/FRIPP.design/description/FRIPP.odesign#//@ownedViewpoints[name='FRIPPviewpointMk2']/@ownedRepresentations[name='FRIPP%20Representation']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']"/>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_qI52MA2KEe2issAmA0jXFQ" name="Invalid feature as name" tooltipText="Start: &#xA;End: &#xA;Resources: ">
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_qI52MA2KEe2issAmA0jXFQ" name="[] " tooltipText="Start: &#xA;End: &#xA;Resources: ">
         <target xmi:type="FRIPP:PlaybookProcess" href="My.fripp#/"/>
         <semanticElements xmi:type="FRIPP:PlaybookProcess" href="My.fripp#/"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
         <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_qI7rYA2KEe2issAmA0jXFQ" labelSize="12" showIcon="false" borderSize="2" borderSizeComputationExpression="2">
           <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/FRIPP.design/description/FRIPP.odesign#//@ownedViewpoints[name='FRIPPviewpointMk2']/@ownedRepresentations[name='FRIPP%20Representation']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/FRIPP.design/description/FRIPP.odesign#//@ownedViewpoints[name='FRIPPviewpointMk2']/@ownedRepresentations[name='FRIPP%20Representation']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']"/>
+        <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_h7vzQA2lEe2ttOmloz_mgQ" name="1[] " tooltipText="Start: &#xA;End: &#xA;Resources: ">
+          <target xmi:type="FRIPP:PlaybookProcess" href="My.fripp#//@process.0"/>
+          <semanticElements xmi:type="FRIPP:PlaybookProcess" href="My.fripp#//@process.0"/>
+          <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_h7xBYA2lEe2ttOmloz_mgQ" labelSize="12" showIcon="false" borderSize="2" borderSizeComputationExpression="2">
+            <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/FRIPP.design/description/FRIPP.odesign#//@ownedViewpoints[name='FRIPPviewpointMk2']/@ownedRepresentations[name='FRIPP%20Representation']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@subContainerMappings[name='ProcessHierarchy_PD']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/FRIPP.design/description/FRIPP.odesign#//@ownedViewpoints[name='FRIPPviewpointMk2']/@ownedRepresentations[name='FRIPP%20Representation']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@subContainerMappings[name='ProcessHierarchy_PD']"/>
+        </ownedDiagramElements>
       </ownedDiagramElements>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_qI8ScQ2KEe2issAmA0jXFQ" name="Related references:">
@@ -81,6 +101,7 @@
     <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/FRIPP.design/description/FRIPP.odesign#//@ownedViewpoints[name='FRIPPviewpointMk2']/@ownedRepresentations[name='FRIPP%20Representation']"/>
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_qIrzwA2KEe2issAmA0jXFQ"/>
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/FRIPP.design/description/FRIPP.odesign#//@ownedViewpoints[name='FRIPPviewpointMk2']/@ownedRepresentations[name='FRIPP%20Representation']/@defaultLayer"/>
+    <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/FRIPP.design/description/FRIPP.odesign#//@ownedViewpoints[name='FRIPPviewpointMk2']/@ownedRepresentations[name='FRIPP%20Representation']/@additionalLayers[name='DM%20Layer']"/>
     <target xmi:type="FRIPP:PlaybookProcess" href="My.fripp#/"/>
   </diagram:DSemanticDiagram>
   <diagram:DSemanticDiagram uid="_quLtgA2KEe2issAmA0jXFQ">

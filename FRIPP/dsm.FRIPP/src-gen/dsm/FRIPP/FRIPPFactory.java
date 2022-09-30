@@ -58,6 +58,24 @@ public interface FRIPPFactory extends EFactory {
 	ActivityImpact createActivityImpact();
 
 	/**
+	 * Returns a new object of class '<em>Role</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Role</em>'.
+	 * @generated
+	 */
+	Role createRole();
+
+	/**
+	 * Returns a new object of class '<em>Organisation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Organisation</em>'.
+	 * @generated
+	 */
+	Organisation createOrganisation();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

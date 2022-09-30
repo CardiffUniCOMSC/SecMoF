@@ -7,10 +7,10 @@
       <product
             application="org.eclipse.ui.ide.workbench"
             description="Security Modelling Framework"
-            name="SecMOF v0.1">
+            name="SecMoF v0.1">
          <property
                name="appName"
-               value="SecMOF v0.1">
+               value="SecMoF">
          </property>
          <property
                name="windowImages"
@@ -23,6 +23,10 @@
          <property
                name="preferenceCustomization"
                value="plugin_customization.ini">
+         </property>
+         <property
+               name="aboutText"
+               value="SecMoF v0.1">
          </property>
       </product>
    </extension>

@@ -13,6 +13,8 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="paragon" eType="ecore:EClass ../../DependencyModel/model/dependencyModel.ecore#//Paragon"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="activityimpact" upperBound="-1"
         eType="#//ActivityImpact" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="associatedRole" upperBound="-1"
+        eType="#//Role"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="OBJECTIVES_ENUM">
     <eLiterals name="INVESTIGATION"/>
@@ -56,5 +58,12 @@
         defaultValueLiteral="" derived="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="originalProbability" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"
         derived="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Role"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Organisation">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="playbookprocess" upperBound="-1"
+        eType="#//PlaybookProcess" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="role" upperBound="-1" eType="#//Role"
+        containment="true"/>
   </eClassifiers>
 </ecore:EPackage>

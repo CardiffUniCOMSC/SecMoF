@@ -64,6 +64,10 @@ public class FRIPPFactoryImpl extends EFactoryImpl implements FRIPPFactory {
 			return createExternalReference();
 		case FRIPPPackage.ACTIVITY_IMPACT:
 			return createActivityImpact();
+		case FRIPPPackage.ROLE:
+			return createRole();
+		case FRIPPPackage.ORGANISATION:
+			return createOrganisation();
 		default:
 			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -161,6 +165,28 @@ public class FRIPPFactoryImpl extends EFactoryImpl implements FRIPPFactory {
 	public ActivityImpact createActivityImpact() {
 		ActivityImpactImpl activityImpact = new ActivityImpactImpl();
 		return activityImpact;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Role createRole() {
+		RoleImpl role = new RoleImpl();
+		return role;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Organisation createOrganisation() {
+		OrganisationImpl organisation = new OrganisationImpl();
+		return organisation;
 	}
 
 	/**

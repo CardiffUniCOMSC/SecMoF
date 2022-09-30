@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbiosisDM:SYMBIOSIS xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:symbiosisDM="http://www.example.org/symbiosisDM">
+  <businessobjective object="Operator" scope="" purpose="The operator has required qualification(s)" viewpoint="CEO, CISO" context="Permanently">
+    <paragon href="WDS.dependencymodel#//@paragon.1/@paragon.0"/>
+  </businessobjective>
+  <securitymeasurementgoal object="Qualifications" viewpoint="HR qualification manager" context="dffdf" purpose="" criteria="" businessobjective="//@businessobjective.0"/>
+  <securitymetric description="Percent of qualifications achieved" goal="" securitymeasurementgoal="Qualifications"/>
+  <securitymetric description="Percent of up to date qualifications" basemeasurement="//@basemeasurement.0" securitymeasurementgoal="Qualifications"/>
+  <basemeasurement description="number of up to date qualifications"/>
+  <dependencyModel href="WDS.dependencymodel#/"/>
+</symbiosisDM:SYMBIOSIS>

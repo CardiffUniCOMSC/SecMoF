@@ -100,6 +100,20 @@ public class FRIPPSwitch<T> extends Switch<T> {
 				result = defaultCase(theEObject);
 			return result;
 		}
+		case FRIPPPackage.ROLE: {
+			Role role = (Role) theEObject;
+			T result = caseRole(role);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
+		case FRIPPPackage.ORGANISATION: {
+			Organisation organisation = (Organisation) theEObject;
+			T result = caseOrganisation(organisation);
+			if (result == null)
+				result = defaultCase(theEObject);
+			return result;
+		}
 		default:
 			return defaultCase(theEObject);
 		}
@@ -162,6 +176,36 @@ public class FRIPPSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseActivityImpact(ActivityImpact object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Role</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Role</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseRole(Role object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Organisation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Organisation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseOrganisation(Organisation object) {
 		return null;
 	}
 

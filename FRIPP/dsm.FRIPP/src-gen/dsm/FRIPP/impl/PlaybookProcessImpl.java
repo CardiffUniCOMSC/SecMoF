@@ -13,6 +13,7 @@ import dsm.FRIPP.FRIPPPackage;
 import dsm.FRIPP.OBJECTIVES_ENUM;
 import dsm.FRIPP.PlaybookProcess;
 
+import dsm.FRIPP.Role;
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -44,6 +45,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link dsm.FRIPP.impl.PlaybookProcessImpl#getExternalreferences <em>Externalreferences</em>}</li>
  *   <li>{@link dsm.FRIPP.impl.PlaybookProcessImpl#getParagon <em>Paragon</em>}</li>
  *   <li>{@link dsm.FRIPP.impl.PlaybookProcessImpl#getActivityimpact <em>Activityimpact</em>}</li>
+ *   <li>{@link dsm.FRIPP.impl.PlaybookProcessImpl#getAssociatedRole <em>Associated Role</em>}</li>
  * </ul>
  *
  * @generated
@@ -118,6 +120,16 @@ public class PlaybookProcessImpl extends ProcessImpl implements PlaybookProcess 
 	 * @ordered
 	 */
 	protected EList<ActivityImpact> activityimpact;
+
+	/**
+	 * The cached value of the '{@link #getAssociatedRole() <em>Associated Role</em>}' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAssociatedRole()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Role> associatedRole;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -266,6 +278,20 @@ public class PlaybookProcessImpl extends ProcessImpl implements PlaybookProcess 
 	 * @generated
 	 */
 	@Override
+	public EList<Role> getAssociatedRole() {
+		if (associatedRole == null) {
+			associatedRole = new EObjectResolvingEList<Role>(Role.class, this,
+					FRIPPPackage.PLAYBOOK_PROCESS__ASSOCIATED_ROLE);
+		}
+		return associatedRole;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case FRIPPPackage.PLAYBOOK_PROCESS__EXTERNALREFERENCES:
@@ -298,6 +324,8 @@ public class PlaybookProcessImpl extends ProcessImpl implements PlaybookProcess 
 			return basicGetParagon();
 		case FRIPPPackage.PLAYBOOK_PROCESS__ACTIVITYIMPACT:
 			return getActivityimpact();
+		case FRIPPPackage.PLAYBOOK_PROCESS__ASSOCIATED_ROLE:
+			return getAssociatedRole();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -333,6 +361,10 @@ public class PlaybookProcessImpl extends ProcessImpl implements PlaybookProcess 
 			getActivityimpact().clear();
 			getActivityimpact().addAll((Collection<? extends ActivityImpact>) newValue);
 			return;
+		case FRIPPPackage.PLAYBOOK_PROCESS__ASSOCIATED_ROLE:
+			getAssociatedRole().clear();
+			getAssociatedRole().addAll((Collection<? extends Role>) newValue);
+			return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -363,6 +395,9 @@ public class PlaybookProcessImpl extends ProcessImpl implements PlaybookProcess 
 		case FRIPPPackage.PLAYBOOK_PROCESS__ACTIVITYIMPACT:
 			getActivityimpact().clear();
 			return;
+		case FRIPPPackage.PLAYBOOK_PROCESS__ASSOCIATED_ROLE:
+			getAssociatedRole().clear();
+			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -387,6 +422,8 @@ public class PlaybookProcessImpl extends ProcessImpl implements PlaybookProcess 
 			return paragon != null;
 		case FRIPPPackage.PLAYBOOK_PROCESS__ACTIVITYIMPACT:
 			return activityimpact != null && !activityimpact.isEmpty();
+		case FRIPPPackage.PLAYBOOK_PROCESS__ASSOCIATED_ROLE:
+			return associatedRole != null && !associatedRole.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

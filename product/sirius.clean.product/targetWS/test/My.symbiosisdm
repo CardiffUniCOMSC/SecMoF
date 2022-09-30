@@ -3,5 +3,12 @@
   <businessobjective>
     <paragon href="My.dependencymodel#//@paragon.0"/>
   </businessobjective>
+  <businessobjective relatedBusinessobjective="//@businessobjective.0"/>
+  <securitymeasurementgoal>
+    <paragon href="My.dependencymodel#//@paragon.0"/>
+  </securitymeasurementgoal>
+  <securitymeasurementgoal businessobjective="//@businessobjective.1"/>
+  <securitymetric basemeasurement="//@basemeasurement.0" securitymeasurementgoal="//@securitymeasurementgoal.0"/>
+  <basemeasurement description="NewMEasure"/>
   <dependencyModel href="My.dependencymodel#/"/>
 </symbiosisDM:SYMBIOSIS>
