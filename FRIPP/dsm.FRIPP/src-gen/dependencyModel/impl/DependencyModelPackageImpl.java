@@ -2,10 +2,6 @@
  */
 package dependencyModel.impl;
 
-import PROVE.PROVEPackage;
-
-import PROVE.impl.PROVEPackageImpl;
-
 import dependencyModel.DependencyModelFactory;
 import dependencyModel.DependencyModelPackage;
 import dependencyModel.Paragon;
@@ -93,25 +89,22 @@ public class DependencyModelPackageImpl extends EPackageImpl implements Dependen
 
 		isInited = true;
 
+		// Initialize simple dependencies
+		dsm.PROVE.PROVEPackage.eINSTANCE.eClass();
+
 		// Obtain or create and register interdependencies
 		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(FRIPPPackage.eNS_URI);
 		FRIPPPackageImpl theFRIPPPackage = (FRIPPPackageImpl) (registeredPackage instanceof FRIPPPackageImpl
 				? registeredPackage
 				: FRIPPPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(PROVEPackage.eNS_URI);
-		PROVEPackageImpl thePROVEPackage = (PROVEPackageImpl) (registeredPackage instanceof PROVEPackageImpl
-				? registeredPackage
-				: PROVEPackage.eINSTANCE);
 
 		// Create package meta-data objects
 		theDependencyModelPackage.createPackageContents();
 		theFRIPPPackage.createPackageContents();
-		thePROVEPackage.createPackageContents();
 
 		// Initialize created meta-data
 		theDependencyModelPackage.initializePackageContents();
 		theFRIPPPackage.initializePackageContents();
-		thePROVEPackage.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
 		theDependencyModelPackage.freeze();

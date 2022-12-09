@@ -29,7 +29,6 @@
       </win>
    </launcher>
 
-
    <vm>
       <windows include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8</windows>
    </vm>
@@ -87,6 +86,7 @@ Developer/issuer is not responsible/liable for anything
       <feature id="org.eclipse.elk.algorithms.feature" installMode="root"/>
       <feature id="org.eclipse.sirius.properties.feature" installMode="root"/>
       <feature id="org.eclipse.sirius.specifier" installMode="root"/>
+      <feature id="PROVE.feature" installMode="root"/>
       <feature id="SecMoF.feature" installMode="root"/>
    </features>
 

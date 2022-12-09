@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:PROVE="dsm.PROVE" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_9laEgEToEe22bPSi0f318A" selectedViews="_9oNg4EToEe22bPSi0f318A" version="15.0.0.202201261500">
+    <semanticResources>test1.prove</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_9oNg4EToEe22bPSi0f318A">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_9oZuIEToEe22bPSi0f318A" name="test1 PROVE Diagram MK2" repPath="#_9oX48EToEe22bPSi0f318A" changeId="3b62a251-b4b0-4430-bfd4-8441ac1db7f8">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']"/>
+        <target xmi:type="PROVE:Process" href="test1.prove#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_9oX48EToEe22bPSi0f318A">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_9oiRAEToEe22bPSi0f318A" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_9oiRAUToEe22bPSi0f318A" type="Sirius" element="_9oX48EToEe22bPSi0f318A" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_9ot3METoEe22bPSi0f318A" type="2002" element="_9ojfIEToEe22bPSi0f318A">
+          <children xmi:type="notation:Node" xmi:id="_9owTcEToEe22bPSi0f318A" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_9owTcUToEe22bPSi0f318A" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_9o1zAEToEe22bPSi0f318A" type="3008" element="_9oqM0EToEe22bPSi0f318A">
+              <children xmi:type="notation:Node" xmi:id="_9o2aEEToEe22bPSi0f318A" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_9o3BIEToEe22bPSi0f318A" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_9o3BIUToEe22bPSi0f318A"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_9o3BIkToEe22bPSi0f318A"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_9o1zAUToEe22bPSi0f318A" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9o1zAkToEe22bPSi0f318A" x="98" y="102"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_9owTckToEe22bPSi0f318A"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_9owTc0ToEe22bPSi0f318A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_9ot3MUToEe22bPSi0f318A" fontColor="4539717" fontName="Segoe UI" fontHeight="12" italic="true" underline="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9ot3MkToEe22bPSi0f318A"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_9oiRAkToEe22bPSi0f318A"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_9osCAEToEe22bPSi0f318A" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_9osCAUToEe22bPSi0f318A"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_9ojfIEToEe22bPSi0f318A" name="test1 scope">
+      <target xmi:type="PROVE:Process" href="test1.prove#/"/>
+      <semanticElements xmi:type="PROVE:Process" href="test1.prove#/"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_9oktQEToEe22bPSi0f318A" labelSize="12" showIcon="false" labelColor="69,69,69" borderSize="3" borderSizeComputationExpression="3" borderColor="209,209,209">
+        <labelFormat>italic</labelFormat>
+        <labelFormat>underline</labelFormat>
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_9oqM0EToEe22bPSi0f318A" name="test1" tooltipText="Start: &#xA;End: &#xA;Resources: ">
+        <target xmi:type="PROVE:Process" href="test1.prove#/"/>
+        <semanticElements xmi:type="PROVE:Process" href="test1.prove#/"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_9oqz4EToEe22bPSi0f318A" labelSize="12" showIcon="false" borderSize="2" borderSizeComputationExpression="2">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_9oYgAEToEe22bPSi0f318A"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer"/>
+    <target xmi:type="PROVE:Process" href="test1.prove#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

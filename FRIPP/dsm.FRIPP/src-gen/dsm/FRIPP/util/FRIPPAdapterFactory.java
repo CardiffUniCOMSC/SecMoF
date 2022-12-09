@@ -2,8 +2,6 @@
  */
 package dsm.FRIPP.util;
 
-import PROVE.Resource;
-
 import dsm.FRIPP.*;
 
 import org.eclipse.emf.common.notify.Adapter;
@@ -99,12 +97,12 @@ public class FRIPPAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseProcess(PROVE.Process object) {
+		public Adapter caseProcess(dsm.PROVE.Process object) {
 			return createProcessAdapter();
 		}
 
 		@Override
-		public Adapter caseResource(Resource object) {
+		public Adapter caseResource(dsm.PROVE.Resource object) {
 			return createResourceAdapter();
 		}
 
@@ -212,13 +210,13 @@ public class FRIPPAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link PROVE.Process <em>Process</em>}'.
+	 * Creates a new adapter for an object of class '{@link dsm.PROVE.Process <em>Process</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see PROVE.Process
+	 * @see dsm.PROVE.Process
 	 * @generated
 	 */
 	public Adapter createProcessAdapter() {
@@ -226,13 +224,13 @@ public class FRIPPAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link PROVE.Resource <em>Resource</em>}'.
+	 * Creates a new adapter for an object of class '{@link dsm.PROVE.Resource <em>Resource</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see PROVE.Resource
+	 * @see dsm.PROVE.Resource
 	 * @generated
 	 */
 	public Adapter createResourceAdapter() {

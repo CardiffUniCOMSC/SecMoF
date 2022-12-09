@@ -2,8 +2,6 @@
  */
 package dsm.FRIPP;
 
-import PROVE.PROVEPackage;
-
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EEnum;
@@ -76,7 +74,7 @@ public interface FRIPPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAYBOOK_PROCESS__ARTIFACT = PROVEPackage.PROCESS__ARTIFACT;
+	int PLAYBOOK_PROCESS__ARTIFACT = dsm.PROVE.PROVEPackage.PROCESS__ARTIFACT;
 
 	/**
 	 * The feature id for the '<em><b>Process</b></em>' containment reference list.
@@ -85,7 +83,7 @@ public interface FRIPPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAYBOOK_PROCESS__PROCESS = PROVEPackage.PROCESS__PROCESS;
+	int PLAYBOOK_PROCESS__PROCESS = dsm.PROVE.PROVEPackage.PROCESS__PROCESS;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -94,7 +92,7 @@ public interface FRIPPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAYBOOK_PROCESS__NAME = PROVEPackage.PROCESS__NAME;
+	int PLAYBOOK_PROCESS__NAME = dsm.PROVE.PROVEPackage.PROCESS__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Notes</b></em>' attribute.
@@ -103,7 +101,7 @@ public interface FRIPPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAYBOOK_PROCESS__NOTES = PROVEPackage.PROCESS__NOTES;
+	int PLAYBOOK_PROCESS__NOTES = dsm.PROVE.PROVEPackage.PROCESS__NOTES;
 
 	/**
 	 * The feature id for the '<em><b>Artifact In State Used</b></em>' reference list.
@@ -112,7 +110,7 @@ public interface FRIPPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAYBOOK_PROCESS__ARTIFACT_IN_STATE_USED = PROVEPackage.PROCESS__ARTIFACT_IN_STATE_USED;
+	int PLAYBOOK_PROCESS__ARTIFACT_IN_STATE_USED = dsm.PROVE.PROVEPackage.PROCESS__ARTIFACT_IN_STATE_USED;
 
 	/**
 	 * The feature id for the '<em><b>Result Artifact In State</b></em>' reference list.
@@ -121,7 +119,7 @@ public interface FRIPPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAYBOOK_PROCESS__RESULT_ARTIFACT_IN_STATE = PROVEPackage.PROCESS__RESULT_ARTIFACT_IN_STATE;
+	int PLAYBOOK_PROCESS__RESULT_ARTIFACT_IN_STATE = dsm.PROVE.PROVEPackage.PROCESS__RESULT_ARTIFACT_IN_STATE;
 
 	/**
 	 * The feature id for the '<em><b>Shadownodeincoming</b></em>' containment reference.
@@ -130,7 +128,7 @@ public interface FRIPPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAYBOOK_PROCESS__SHADOWNODEINCOMING = PROVEPackage.PROCESS__SHADOWNODEINCOMING;
+	int PLAYBOOK_PROCESS__SHADOWNODEINCOMING = dsm.PROVE.PROVEPackage.PROCESS__SHADOWNODEINCOMING;
 
 	/**
 	 * The feature id for the '<em><b>Shadownodeoutgoing</b></em>' containment reference.
@@ -139,7 +137,7 @@ public interface FRIPPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAYBOOK_PROCESS__SHADOWNODEOUTGOING = PROVEPackage.PROCESS__SHADOWNODEOUTGOING;
+	int PLAYBOOK_PROCESS__SHADOWNODEOUTGOING = dsm.PROVE.PROVEPackage.PROCESS__SHADOWNODEOUTGOING;
 
 	/**
 	 * The feature id for the '<em><b>Start Date</b></em>' attribute.
@@ -148,7 +146,7 @@ public interface FRIPPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAYBOOK_PROCESS__START_DATE = PROVEPackage.PROCESS__START_DATE;
+	int PLAYBOOK_PROCESS__START_DATE = dsm.PROVE.PROVEPackage.PROCESS__START_DATE;
 
 	/**
 	 * The feature id for the '<em><b>End Date</b></em>' attribute.
@@ -157,7 +155,7 @@ public interface FRIPPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAYBOOK_PROCESS__END_DATE = PROVEPackage.PROCESS__END_DATE;
+	int PLAYBOOK_PROCESS__END_DATE = dsm.PROVE.PROVEPackage.PROCESS__END_DATE;
 
 	/**
 	 * The feature id for the '<em><b>Resource</b></em>' containment reference list.
@@ -166,7 +164,7 @@ public interface FRIPPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAYBOOK_PROCESS__RESOURCE = PROVEPackage.PROCESS__RESOURCE;
+	int PLAYBOOK_PROCESS__RESOURCE = dsm.PROVE.PROVEPackage.PROCESS__RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Resource Used</b></em>' reference list.
@@ -175,7 +173,7 @@ public interface FRIPPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAYBOOK_PROCESS__RESOURCE_USED = PROVEPackage.PROCESS__RESOURCE_USED;
+	int PLAYBOOK_PROCESS__RESOURCE_USED = dsm.PROVE.PROVEPackage.PROCESS__RESOURCE_USED;
 
 	/**
 	 * The feature id for the '<em><b>Status</b></em>' attribute.
@@ -184,7 +182,7 @@ public interface FRIPPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAYBOOK_PROCESS__STATUS = PROVEPackage.PROCESS__STATUS;
+	int PLAYBOOK_PROCESS__STATUS = dsm.PROVE.PROVEPackage.PROCESS__STATUS;
 
 	/**
 	 * The feature id for the '<em><b>Objectives</b></em>' attribute list.
@@ -193,7 +191,7 @@ public interface FRIPPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAYBOOK_PROCESS__OBJECTIVES = PROVEPackage.PROCESS_FEATURE_COUNT + 0;
+	int PLAYBOOK_PROCESS__OBJECTIVES = dsm.PROVE.PROVEPackage.PROCESS_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Action Type</b></em>' attribute.
@@ -202,7 +200,7 @@ public interface FRIPPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAYBOOK_PROCESS__ACTION_TYPE = PROVEPackage.PROCESS_FEATURE_COUNT + 1;
+	int PLAYBOOK_PROCESS__ACTION_TYPE = dsm.PROVE.PROVEPackage.PROCESS_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Relatedreferences</b></em>' reference list.
@@ -211,7 +209,7 @@ public interface FRIPPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAYBOOK_PROCESS__RELATEDREFERENCES = PROVEPackage.PROCESS_FEATURE_COUNT + 2;
+	int PLAYBOOK_PROCESS__RELATEDREFERENCES = dsm.PROVE.PROVEPackage.PROCESS_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Externalreferences</b></em>' containment reference list.
@@ -220,7 +218,7 @@ public interface FRIPPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAYBOOK_PROCESS__EXTERNALREFERENCES = PROVEPackage.PROCESS_FEATURE_COUNT + 3;
+	int PLAYBOOK_PROCESS__EXTERNALREFERENCES = dsm.PROVE.PROVEPackage.PROCESS_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Paragon</b></em>' reference.
@@ -229,7 +227,7 @@ public interface FRIPPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAYBOOK_PROCESS__PARAGON = PROVEPackage.PROCESS_FEATURE_COUNT + 4;
+	int PLAYBOOK_PROCESS__PARAGON = dsm.PROVE.PROVEPackage.PROCESS_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Activityimpact</b></em>' containment reference list.
@@ -238,7 +236,7 @@ public interface FRIPPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAYBOOK_PROCESS__ACTIVITYIMPACT = PROVEPackage.PROCESS_FEATURE_COUNT + 5;
+	int PLAYBOOK_PROCESS__ACTIVITYIMPACT = dsm.PROVE.PROVEPackage.PROCESS_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Associated Role</b></em>' reference list.
@@ -247,7 +245,7 @@ public interface FRIPPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAYBOOK_PROCESS__ASSOCIATED_ROLE = PROVEPackage.PROCESS_FEATURE_COUNT + 6;
+	int PLAYBOOK_PROCESS__ASSOCIATED_ROLE = dsm.PROVE.PROVEPackage.PROCESS_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Playbook Process</em>' class.
@@ -256,7 +254,7 @@ public interface FRIPPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAYBOOK_PROCESS_FEATURE_COUNT = PROVEPackage.PROCESS_FEATURE_COUNT + 7;
+	int PLAYBOOK_PROCESS_FEATURE_COUNT = dsm.PROVE.PROVEPackage.PROCESS_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of operations of the '<em>Playbook Process</em>' class.
@@ -265,7 +263,7 @@ public interface FRIPPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAYBOOK_PROCESS_OPERATION_COUNT = PROVEPackage.PROCESS_OPERATION_COUNT + 0;
+	int PLAYBOOK_PROCESS_OPERATION_COUNT = dsm.PROVE.PROVEPackage.PROCESS_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link dsm.FRIPP.impl.ActuatorImpl <em>Actuator</em>}' class.
@@ -284,7 +282,7 @@ public interface FRIPPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACTUATOR__NAME = PROVEPackage.RESOURCE__NAME;
+	int ACTUATOR__NAME = dsm.PROVE.PROVEPackage.RESOURCE__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Resource</b></em>' containment reference list.
@@ -293,7 +291,7 @@ public interface FRIPPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACTUATOR__RESOURCE = PROVEPackage.RESOURCE__RESOURCE;
+	int ACTUATOR__RESOURCE = dsm.PROVE.PROVEPackage.RESOURCE__RESOURCE;
 
 	/**
 	 * The feature id for the '<em><b>Type</b></em>' attribute.
@@ -302,7 +300,7 @@ public interface FRIPPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACTUATOR__TYPE = PROVEPackage.RESOURCE_FEATURE_COUNT + 0;
+	int ACTUATOR__TYPE = dsm.PROVE.PROVEPackage.RESOURCE_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Actuator</em>' class.
@@ -311,7 +309,7 @@ public interface FRIPPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACTUATOR_FEATURE_COUNT = PROVEPackage.RESOURCE_FEATURE_COUNT + 1;
+	int ACTUATOR_FEATURE_COUNT = dsm.PROVE.PROVEPackage.RESOURCE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Actuator</em>' class.
@@ -320,7 +318,7 @@ public interface FRIPPPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACTUATOR_OPERATION_COUNT = PROVEPackage.RESOURCE_OPERATION_COUNT + 0;
+	int ACTUATOR_OPERATION_COUNT = dsm.PROVE.PROVEPackage.RESOURCE_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link dsm.FRIPP.impl.ExternalReferenceImpl <em>External Reference</em>}' class.

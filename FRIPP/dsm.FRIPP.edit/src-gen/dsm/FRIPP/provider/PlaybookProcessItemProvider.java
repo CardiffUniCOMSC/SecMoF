@@ -2,12 +2,11 @@
  */
 package dsm.FRIPP.provider;
 
-import PROVE.provider.ProcessItemProvider;
-
 import dsm.FRIPP.FRIPPFactory;
 import dsm.FRIPP.FRIPPPackage;
 import dsm.FRIPP.PlaybookProcess;
 
+import dsm.PROVE.PROVEPackage;
 import java.util.Collection;
 import java.util.List;
 
@@ -29,7 +28,7 @@ import org.eclipse.emf.edit.provider.ViewerNotification;
  * <!-- end-user-doc -->
  * @generated
  */
-public class PlaybookProcessItemProvider extends ProcessItemProvider {
+public class PlaybookProcessItemProvider extends dsm.PROVE.provider.ProcessItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->
@@ -238,11 +237,39 @@ public class PlaybookProcessItemProvider extends ProcessItemProvider {
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 
+		newChildDescriptors.add(createChildParameter(PROVEPackage.Literals.PROCESS__PROCESS,
+				FRIPPFactory.eINSTANCE.createPlaybookProcess()));
+
+		newChildDescriptors.add(
+				createChildParameter(PROVEPackage.Literals.PROCESS__RESOURCE, FRIPPFactory.eINSTANCE.createActuator()));
+
 		newChildDescriptors.add(createChildParameter(FRIPPPackage.Literals.PLAYBOOK_PROCESS__EXTERNALREFERENCES,
 				FRIPPFactory.eINSTANCE.createExternalReference()));
 
 		newChildDescriptors.add(createChildParameter(FRIPPPackage.Literals.PLAYBOOK_PROCESS__ACTIVITYIMPACT,
 				FRIPPFactory.eINSTANCE.createActivityImpact()));
+	}
+
+	/**
+	 * This returns the label text for {@link org.eclipse.emf.edit.command.CreateChildCommand}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getCreateChildText(Object owner, Object feature, Object child, Collection<?> selection) {
+		Object childFeature = feature;
+		Object childObject = child;
+
+		boolean qualify = childFeature == PROVEPackage.Literals.PROCESS__PROCESS
+				|| childFeature == PROVEPackage.Literals.PROCESS__SHADOWNODEINCOMING
+				|| childFeature == PROVEPackage.Literals.PROCESS__SHADOWNODEOUTGOING;
+
+		if (qualify) {
+			return getString("_UI_CreateChild_text2",
+					new Object[] { getTypeText(childObject), getFeatureText(childFeature), getTypeText(owner) });
+		}
+		return super.getCreateChildText(owner, feature, child, selection);
 	}
 
 	/**

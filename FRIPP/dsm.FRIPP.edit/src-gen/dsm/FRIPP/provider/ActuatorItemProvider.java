@@ -2,11 +2,11 @@
  */
 package dsm.FRIPP.provider;
 
-import PROVE.provider.ResourceItemProvider;
-
 import dsm.FRIPP.Actuator;
+import dsm.FRIPP.FRIPPFactory;
 import dsm.FRIPP.FRIPPPackage;
 
+import dsm.PROVE.PROVEPackage;
 import java.util.Collection;
 import java.util.List;
 
@@ -26,7 +26,7 @@ import org.eclipse.emf.edit.provider.ViewerNotification;
  * <!-- end-user-doc -->
  * @generated
  */
-public class ActuatorItemProvider extends ResourceItemProvider {
+public class ActuatorItemProvider extends dsm.PROVE.provider.ResourceItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->
@@ -132,6 +132,9 @@ public class ActuatorItemProvider extends ResourceItemProvider {
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
+
+		newChildDescriptors.add(createChildParameter(PROVEPackage.Literals.RESOURCE__RESOURCE,
+				FRIPPFactory.eINSTANCE.createActuator()));
 	}
 
 	/**

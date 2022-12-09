@@ -28,7 +28,22 @@
                name="aboutText"
                value="SecMoF v0.1">
          </property>
+         <property
+               name="aboutImage"
+               value="icons/PROVElogo64.png">
+         </property>
       </product>
+   </extension>
+   <extension
+         point="org.eclipse.ui.splashHandlers">
+      <splashHandler
+            class="sirius.clean.branding.splashHandlers.InteractiveSplashHandler"
+            id="sirius.clean.branding.splashHandlers.interactive">
+      </splashHandler>
+      <splashHandlerProductBinding
+            productId="org.eclipse.equinox.p2.director.app.product"
+            splashId="sirius.clean.branding.splashHandlers.interactive">
+      </splashHandlerProductBinding>
    </extension>
 
 </plugin>

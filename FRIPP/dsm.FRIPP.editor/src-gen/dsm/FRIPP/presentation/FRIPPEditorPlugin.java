@@ -2,6 +2,7 @@
  */
 package dsm.FRIPP.presentation;
 
+import dsm.PROVE.provider.PROVEEditPlugin;
 import org.eclipse.emf.common.EMFPlugin;
 
 import org.eclipse.emf.common.ui.EclipseUIPlugin;
@@ -38,7 +39,7 @@ public final class FRIPPEditorPlugin extends EMFPlugin {
 	 * @generated
 	 */
 	public FRIPPEditorPlugin() {
-		super(new ResourceLocator[] {});
+		super(new ResourceLocator[] { PROVEEditPlugin.INSTANCE, });
 	}
 
 	/**

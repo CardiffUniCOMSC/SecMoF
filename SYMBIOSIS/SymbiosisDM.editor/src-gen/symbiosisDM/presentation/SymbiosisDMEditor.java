@@ -154,9 +154,7 @@ import org.eclipse.emf.edit.ui.util.EditUIUtil;
 import org.eclipse.emf.edit.ui.view.ExtendedPropertySheetPage;
 
 import symbiosisDM.provider.SymbiosisDMItemProviderAdapterFactory;
-
 import dependencyModel.provider.DependencyModelItemProviderAdapterFactory;
-
 import org.eclipse.ui.actions.WorkspaceModifyOperation;
 
 /**

@@ -50,17 +50,17 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference symbiosisDM.ecore#//SYMBIOSIS/dependencyModel"/>
     </genClasses>
   </genPackages>
-  <genPackages prefix="DependencyModel" ecorePackage="http://www.example.org/dependencyModel#/">
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="http://www.example.org/dependencyModel#//PARAGON_COMPOSITION_ENUM">
-      <genEnumLiterals ecoreEnumLiteral="http://www.example.org/dependencyModel#//PARAGON_COMPOSITION_ENUM/AND"/>
-      <genEnumLiterals ecoreEnumLiteral="http://www.example.org/dependencyModel#//PARAGON_COMPOSITION_ENUM/OR"/>
-      <genEnumLiterals ecoreEnumLiteral="http://www.example.org/dependencyModel#//PARAGON_COMPOSITION_ENUM/UNCONTROLLABLE"/>
+  <genPackages prefix="DependencyModel" ecorePackage="../../DependencyModel/model/dependencyModel.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="../../DependencyModel/model/dependencyModel.ecore#//PARAGON_COMPOSITION_ENUM">
+      <genEnumLiterals ecoreEnumLiteral="../../DependencyModel/model/dependencyModel.ecore#//PARAGON_COMPOSITION_ENUM/AND"/>
+      <genEnumLiterals ecoreEnumLiteral="../../DependencyModel/model/dependencyModel.ecore#//PARAGON_COMPOSITION_ENUM/OR"/>
+      <genEnumLiterals ecoreEnumLiteral="../../DependencyModel/model/dependencyModel.ecore#//PARAGON_COMPOSITION_ENUM/UNCONTROLLABLE"/>
     </genEnums>
-    <genClasses ecoreClass="http://www.example.org/dependencyModel#//Paragon">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute http://www.example.org/dependencyModel#//Paragon/description"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute http://www.example.org/dependencyModel#//Paragon/probability"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference http://www.example.org/dependencyModel#//Paragon/paragon"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute http://www.example.org/dependencyModel#//Paragon/Type"/>
+    <genClasses ecoreClass="../../DependencyModel/model/dependencyModel.ecore#//Paragon">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../DependencyModel/model/dependencyModel.ecore#//Paragon/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../DependencyModel/model/dependencyModel.ecore#//Paragon/probability"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ../../DependencyModel/model/dependencyModel.ecore#//Paragon/paragon"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ../../DependencyModel/model/dependencyModel.ecore#//Paragon/Type"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

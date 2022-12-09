@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:FRIPP="http://www.example.org/FRIPP" xmlns:PROVE="dsm.PROVE" xmlns:dependencyModel="http://www.example.org/dependencyModel" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_v36A8EsCEe2ggdHZVgXD2A" selectedViews="_v55lAEsCEe2ggdHZVgXD2A _0jSyAEsCEe2ggdHZVgXD2A __QIIIEsCEe2ggdHZVgXD2A" version="15.0.0.202201261500">
+    <semanticResources>temp.prove</semanticResources>
+    <semanticResources>My.fripp</semanticResources>
+    <semanticResources>My.dependencymodel</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_v55lAEsCEe2ggdHZVgXD2A">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_v6FLMEsCEe2ggdHZVgXD2A" name="temp PROVE Diagram MK2" repPath="#_v6DWAEsCEe2ggdHZVgXD2A" changeId="5f29fd8f-f4cc-47e9-b8ed-c8e83a03788a">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']"/>
+        <target xmi:type="PROVE:Process" href="temp.prove#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+    <ownedViews xmi:type="viewpoint:DView" uid="_0jSyAEsCEe2ggdHZVgXD2A">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/FRIPP.design/description/FRIPP.odesign#//@ownedViewpoints[name='FRIPPviewpointMk2']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_0jY4oEsCEe2ggdHZVgXD2A" name="temp FRIPP representation" repPath="#_0jVOQEsCEe2ggdHZVgXD2A" changeId="f21fdb20-cf30-46c2-ba1e-1708e45751ae">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/FRIPP.design/description/FRIPP.odesign#//@ownedViewpoints[name='FRIPPviewpointMk2']/@ownedRepresentations[name='FRIPP%20Representation']"/>
+        <target xmi:type="PROVE:Process" href="temp.prove#/"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_0jke0EsCEe2ggdHZVgXD2A" name="1212 FRIPP representation" repPath="#_0jjQsEsCEe2ggdHZVgXD2A" changeId="02a8775e-6cf9-4e5c-8398-bce433dc1569">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/FRIPP.design/description/FRIPP.odesign#//@ownedViewpoints[name='FRIPPviewpointMk2']/@ownedRepresentations[name='FRIPP%20Representation']"/>
+        <target xmi:type="PROVE:Process" href="temp.prove#//@process.0"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_0jrzkEsCEe2ggdHZVgXD2A" name=" FRIPP representation" repPath="#_0jrMgEsCEe2ggdHZVgXD2A" changeId="23485a6c-d72e-421c-9792-a94aea49e50f">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/FRIPP.design/description/FRIPP.odesign#//@ownedViewpoints[name='FRIPPviewpointMk2']/@ownedRepresentations[name='FRIPP%20Representation']"/>
+        <target xmi:type="FRIPP:PlaybookProcess" href="My.fripp#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+    <ownedViews xmi:type="viewpoint:DView" uid="__QIIIEsCEe2ggdHZVgXD2A">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/DependencyModel.design/description/DependencyModel.odesign#//@ownedViewpoints[name='DependencyModelViewpoint']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="__QJWQEsCEe2ggdHZVgXD2A" name="DependencyModelingDiagram" repPath="#__QIvMEsCEe2ggdHZVgXD2A" changeId="5acb493c-282c-4f23-82a2-c438ca5d62f7">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/DependencyModel.design/description/DependencyModel.odesign#//@ownedViewpoints[name='DependencyModelViewpoint']/@ownedRepresentations[name='DependencyModelingDiagram']"/>
+        <target xmi:type="dependencyModel:Paragon" href="My.dependencymodel#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_v6DWAEsCEe2ggdHZVgXD2A">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_v6KDsEsCEe2ggdHZVgXD2A" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_v6KDsUsCEe2ggdHZVgXD2A" type="Sirius" element="_v6DWAEsCEe2ggdHZVgXD2A" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_v6W4AEsCEe2ggdHZVgXD2A" type="2002" element="_v6LR0EsCEe2ggdHZVgXD2A">
+          <children xmi:type="notation:Node" xmi:id="_v6YtMEsCEe2ggdHZVgXD2A" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_v6ZUQEsCEe2ggdHZVgXD2A" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_v6bJcEsCEe2ggdHZVgXD2A" type="3008" element="_v6T0sEsCEe2ggdHZVgXD2A">
+              <children xmi:type="notation:Node" xmi:id="_v6bwgEsCEe2ggdHZVgXD2A" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_v6bwgUsCEe2ggdHZVgXD2A" type="7002">
+                <children xmi:type="notation:Node" xmi:id="_xSfIkEsCEe2ggdHZVgXD2A" type="3008" element="_xSa3IEsCEe2ggdHZVgXD2A">
+                  <children xmi:type="notation:Node" xmi:id="_xSfIk0sCEe2ggdHZVgXD2A" type="5005"/>
+                  <children xmi:type="notation:Node" xmi:id="_xSfIlEsCEe2ggdHZVgXD2A" type="7002">
+                    <styles xmi:type="notation:SortingStyle" xmi:id="_xSfIlUsCEe2ggdHZVgXD2A"/>
+                    <styles xmi:type="notation:FilteringStyle" xmi:id="_xSfIlksCEe2ggdHZVgXD2A"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_xSfIkUsCEe2ggdHZVgXD2A" fontName="Segoe UI" fontHeight="12"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xSfIkksCEe2ggdHZVgXD2A" x="9" y="18"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_v6bwgksCEe2ggdHZVgXD2A"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_v6bwg0sCEe2ggdHZVgXD2A"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_v6bJcUsCEe2ggdHZVgXD2A" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_v6bJcksCEe2ggdHZVgXD2A" x="98" y="102"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_v6ZUQUsCEe2ggdHZVgXD2A"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_v6ZUQksCEe2ggdHZVgXD2A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_v6W4AUsCEe2ggdHZVgXD2A" fontColor="4539717" fontName="Segoe UI" fontHeight="12" italic="true" underline="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_v6W4AksCEe2ggdHZVgXD2A"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_v6KDsksCEe2ggdHZVgXD2A"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_v6Vp4EsCEe2ggdHZVgXD2A" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_v6Vp4UsCEe2ggdHZVgXD2A"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_v6LR0EsCEe2ggdHZVgXD2A" name="temp scope">
+      <target xmi:type="PROVE:Process" href="temp.prove#/"/>
+      <semanticElements xmi:type="PROVE:Process" href="temp.prove#/"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_v6L44EsCEe2ggdHZVgXD2A" labelSize="12" showIcon="false" labelColor="69,69,69" borderSize="3" borderSizeComputationExpression="3" borderColor="209,209,209">
+        <labelFormat>italic</labelFormat>
+        <labelFormat>underline</labelFormat>
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_v6T0sEsCEe2ggdHZVgXD2A" name="temp" tooltipText="Start: &#xA;End: &#xA;Resources: ">
+        <target xmi:type="PROVE:Process" href="temp.prove#/"/>
+        <semanticElements xmi:type="PROVE:Process" href="temp.prove#/"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_v6UbwEsCEe2ggdHZVgXD2A" labelSize="12" showIcon="false" borderSize="2" borderSizeComputationExpression="2">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']"/>
+        <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_xSa3IEsCEe2ggdHZVgXD2A" name="1212" tooltipText="Start: &#xA;End: &#xA;Resources: ">
+          <target xmi:type="PROVE:Process" href="temp.prove#//@process.0"/>
+          <semanticElements xmi:type="PROVE:Process" href="temp.prove#//@process.0"/>
+          <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_xSa3IUsCEe2ggdHZVgXD2A" labelSize="12" showIcon="false" borderSize="2" borderSizeComputationExpression="2">
+            <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@subContainerMappings[name='ProcessHierarchy_PD']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@subContainerMappings[name='ProcessHierarchy_PD']"/>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_v6D9EEsCEe2ggdHZVgXD2A"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/PROVE.design/description/PROVE.odesign#//@ownedViewpoints[name='PROVEviewpointMk2']/@ownedRepresentations[name='PROVE%20diagram%20MK2']/@defaultLayer"/>
+    <target xmi:type="PROVE:Process" href="temp.prove#/"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_0jVOQEsCEe2ggdHZVgXD2A">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_0jZfsUsCEe2ggdHZVgXD2A" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_0jZfsksCEe2ggdHZVgXD2A" type="Sirius" element="_0jVOQEsCEe2ggdHZVgXD2A" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_0jg0cEsCEe2ggdHZVgXD2A" type="2002" element="_0jat0EsCEe2ggdHZVgXD2A">
+          <children xmi:type="notation:Node" xmi:id="_0jhbgEsCEe2ggdHZVgXD2A" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_0jhbgUsCEe2ggdHZVgXD2A" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_0jiCkEsCEe2ggdHZVgXD2A" type="3008" element="_0jb78EsCEe2ggdHZVgXD2A">
+              <children xmi:type="notation:Node" xmi:id="_0jiCk0sCEe2ggdHZVgXD2A" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_0jiClEsCEe2ggdHZVgXD2A" type="7002">
+                <children xmi:type="notation:Node" xmi:id="_0jiCl0sCEe2ggdHZVgXD2A" type="3008" element="_0je_QEsCEe2ggdHZVgXD2A">
+                  <children xmi:type="notation:Node" xmi:id="_0jipoEsCEe2ggdHZVgXD2A" type="5005"/>
+                  <children xmi:type="notation:Node" xmi:id="_0jipoUsCEe2ggdHZVgXD2A" type="7002">
+                    <styles xmi:type="notation:SortingStyle" xmi:id="_0jipoksCEe2ggdHZVgXD2A"/>
+                    <styles xmi:type="notation:FilteringStyle" xmi:id="_0jipo0sCEe2ggdHZVgXD2A"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_0jiCmEsCEe2ggdHZVgXD2A" fontName="Segoe UI" fontHeight="12"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0jiCmUsCEe2ggdHZVgXD2A"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_0jiClUsCEe2ggdHZVgXD2A"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_0jiClksCEe2ggdHZVgXD2A"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_0jiCkUsCEe2ggdHZVgXD2A" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0jiCkksCEe2ggdHZVgXD2A"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_0jhbgksCEe2ggdHZVgXD2A"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_0jhbg0sCEe2ggdHZVgXD2A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_0jg0cUsCEe2ggdHZVgXD2A" fontColor="4539717" fontName="Segoe UI" fontHeight="12" italic="true" underline="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0jg0cksCEe2ggdHZVgXD2A"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_0jZfs0sCEe2ggdHZVgXD2A"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_0jgNYEsCEe2ggdHZVgXD2A" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_0jgNYUsCEe2ggdHZVgXD2A"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_0jat0EsCEe2ggdHZVgXD2A" name="temp scope">
+      <target xmi:type="PROVE:Process" href="temp.prove#/"/>
+      <semanticElements xmi:type="PROVE:Process" href="temp.prove#/"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_0jat0UsCEe2ggdHZVgXD2A" labelSize="12" showIcon="false" labelColor="69,69,69" borderSize="3" borderSizeComputationExpression="3" borderColor="209,209,209">
+        <labelFormat>italic</labelFormat>
+        <labelFormat>underline</labelFormat>
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/FRIPP.design/description/FRIPP.odesign#//@ownedViewpoints[name='FRIPPviewpointMk2']/@ownedRepresentations[name='FRIPP%20Representation']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/FRIPP.design/description/FRIPP.odesign#//@ownedViewpoints[name='FRIPPviewpointMk2']/@ownedRepresentations[name='FRIPP%20Representation']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_0jb78EsCEe2ggdHZVgXD2A" name="Invalid feature as name" tooltipText="Start: &#xA;End: &#xA;Resources: ">
+        <target xmi:type="PROVE:Process" href="temp.prove#/"/>
+        <semanticElements xmi:type="PROVE:Process" href="temp.prove#/"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_0jdxIEsCEe2ggdHZVgXD2A" labelSize="12" showIcon="false" borderSize="2" borderSizeComputationExpression="2">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/FRIPP.design/description/FRIPP.odesign#//@ownedViewpoints[name='FRIPPviewpointMk2']/@ownedRepresentations[name='FRIPP%20Representation']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/FRIPP.design/description/FRIPP.odesign#//@ownedViewpoints[name='FRIPPviewpointMk2']/@ownedRepresentations[name='FRIPP%20Representation']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']"/>
+        <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_0je_QEsCEe2ggdHZVgXD2A" name="Invalid feature as name" tooltipText="Start: &#xA;End: &#xA;Resources: ">
+          <target xmi:type="PROVE:Process" href="temp.prove#//@process.0"/>
+          <semanticElements xmi:type="PROVE:Process" href="temp.prove#//@process.0"/>
+          <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_0jfmUEsCEe2ggdHZVgXD2A" labelSize="12" showIcon="false" borderSize="2" borderSizeComputationExpression="2">
+            <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/FRIPP.design/description/FRIPP.odesign#//@ownedViewpoints[name='FRIPPviewpointMk2']/@ownedRepresentations[name='FRIPP%20Representation']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@subContainerMappings[name='ProcessHierarchy_PD']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/FRIPP.design/description/FRIPP.odesign#//@ownedViewpoints[name='FRIPPviewpointMk2']/@ownedRepresentations[name='FRIPP%20Representation']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@subContainerMappings[name='ProcessHierarchy_PD']"/>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/FRIPP.design/description/FRIPP.odesign#//@ownedViewpoints[name='FRIPPviewpointMk2']/@ownedRepresentations[name='FRIPP%20Representation']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_0jVOQUsCEe2ggdHZVgXD2A"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/FRIPP.design/description/FRIPP.odesign#//@ownedViewpoints[name='FRIPPviewpointMk2']/@ownedRepresentations[name='FRIPP%20Representation']/@defaultLayer"/>
+    <target xmi:type="PROVE:Process" href="temp.prove#/"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_0jjQsEsCEe2ggdHZVgXD2A">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_0jlF4EsCEe2ggdHZVgXD2A" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_0jlF4UsCEe2ggdHZVgXD2A" type="Sirius" element="_0jjQsEsCEe2ggdHZVgXD2A" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_0joJMksCEe2ggdHZVgXD2A" type="2002" element="_0jls8EsCEe2ggdHZVgXD2A">
+          <children xmi:type="notation:Node" xmi:id="_0jowQEsCEe2ggdHZVgXD2A" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_0jowQUsCEe2ggdHZVgXD2A" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_0jpXUEsCEe2ggdHZVgXD2A" type="3008" element="_0jm7EEsCEe2ggdHZVgXD2A">
+              <children xmi:type="notation:Node" xmi:id="_0jpXU0sCEe2ggdHZVgXD2A" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_0jp-YEsCEe2ggdHZVgXD2A" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_0jp-YUsCEe2ggdHZVgXD2A"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_0jp-YksCEe2ggdHZVgXD2A"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_0jpXUUsCEe2ggdHZVgXD2A" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0jpXUksCEe2ggdHZVgXD2A"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_0jowQksCEe2ggdHZVgXD2A"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_0jowQ0sCEe2ggdHZVgXD2A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_0joJM0sCEe2ggdHZVgXD2A" fontColor="4539717" fontName="Segoe UI" fontHeight="12" italic="true" underline="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0joJNEsCEe2ggdHZVgXD2A"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_0jlF4ksCEe2ggdHZVgXD2A"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_0joJMEsCEe2ggdHZVgXD2A" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_0joJMUsCEe2ggdHZVgXD2A"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_0jls8EsCEe2ggdHZVgXD2A" name="1212 scope">
+      <target xmi:type="PROVE:Process" href="temp.prove#//@process.0"/>
+      <semanticElements xmi:type="PROVE:Process" href="temp.prove#//@process.0"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_0jls8UsCEe2ggdHZVgXD2A" labelSize="12" showIcon="false" labelColor="69,69,69" borderSize="3" borderSizeComputationExpression="3" borderColor="209,209,209">
+        <labelFormat>italic</labelFormat>
+        <labelFormat>underline</labelFormat>
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/FRIPP.design/description/FRIPP.odesign#//@ownedViewpoints[name='FRIPPviewpointMk2']/@ownedRepresentations[name='FRIPP%20Representation']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/FRIPP.design/description/FRIPP.odesign#//@ownedViewpoints[name='FRIPPviewpointMk2']/@ownedRepresentations[name='FRIPP%20Representation']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_0jm7EEsCEe2ggdHZVgXD2A" name="Invalid feature as name" tooltipText="Start: &#xA;End: &#xA;Resources: ">
+        <target xmi:type="PROVE:Process" href="temp.prove#//@process.0"/>
+        <semanticElements xmi:type="PROVE:Process" href="temp.prove#//@process.0"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_0jm7EUsCEe2ggdHZVgXD2A" labelSize="12" showIcon="false" borderSize="2" borderSizeComputationExpression="2">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/FRIPP.design/description/FRIPP.odesign#//@ownedViewpoints[name='FRIPPviewpointMk2']/@ownedRepresentations[name='FRIPP%20Representation']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/FRIPP.design/description/FRIPP.odesign#//@ownedViewpoints[name='FRIPPviewpointMk2']/@ownedRepresentations[name='FRIPP%20Representation']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/FRIPP.design/description/FRIPP.odesign#//@ownedViewpoints[name='FRIPPviewpointMk2']/@ownedRepresentations[name='FRIPP%20Representation']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_0jjQsUsCEe2ggdHZVgXD2A"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/FRIPP.design/description/FRIPP.odesign#//@ownedViewpoints[name='FRIPPviewpointMk2']/@ownedRepresentations[name='FRIPP%20Representation']/@defaultLayer"/>
+    <target xmi:type="PROVE:Process" href="temp.prove#//@process.0"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_0jrMgEsCEe2ggdHZVgXD2A">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_0jsaoEsCEe2ggdHZVgXD2A" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_0jsaoUsCEe2ggdHZVgXD2A" type="Sirius" element="_0jrMgEsCEe2ggdHZVgXD2A" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_0jwFAksCEe2ggdHZVgXD2A" type="2002" element="_0jtBsEsCEe2ggdHZVgXD2A">
+          <children xmi:type="notation:Node" xmi:id="_0jwsEEsCEe2ggdHZVgXD2A" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_0jwsEUsCEe2ggdHZVgXD2A" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_0jzIU0sCEe2ggdHZVgXD2A" type="3008" element="_0jtowEsCEe2ggdHZVgXD2A">
+              <children xmi:type="notation:Node" xmi:id="_0jzvYEsCEe2ggdHZVgXD2A" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_0jzvYUsCEe2ggdHZVgXD2A" type="7002">
+                <children xmi:type="notation:Node" xmi:id="_2YjqgEsCEe2ggdHZVgXD2A" type="3008" element="_2YicYUsCEe2ggdHZVgXD2A">
+                  <children xmi:type="notation:Node" xmi:id="_2Yjqg0sCEe2ggdHZVgXD2A" type="5005"/>
+                  <children xmi:type="notation:Node" xmi:id="_2YjqhEsCEe2ggdHZVgXD2A" type="7002">
+                    <styles xmi:type="notation:SortingStyle" xmi:id="_2YjqhUsCEe2ggdHZVgXD2A"/>
+                    <styles xmi:type="notation:FilteringStyle" xmi:id="_2YjqhksCEe2ggdHZVgXD2A"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_2YjqgUsCEe2ggdHZVgXD2A" fontName="Segoe UI" fontHeight="12"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2YjqgksCEe2ggdHZVgXD2A" x="6" y="5" width="45" height="40"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_0jzvYksCEe2ggdHZVgXD2A"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_0jzvY0sCEe2ggdHZVgXD2A"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_0jzIVEsCEe2ggdHZVgXD2A" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0jzIVUsCEe2ggdHZVgXD2A" x="5" y="4" width="69" height="64"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_0jwsEksCEe2ggdHZVgXD2A"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_0jwsE0sCEe2ggdHZVgXD2A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_0jwFA0sCEe2ggdHZVgXD2A" fontColor="4539717" fontName="Segoe UI" fontHeight="12" italic="true" underline="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0jwFBEsCEe2ggdHZVgXD2A" x="20" y="84" width="93" height="88"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_0jx6MEsCEe2ggdHZVgXD2A" type="2003" element="_0ju24EsCEe2ggdHZVgXD2A">
+          <children xmi:type="notation:Node" xmi:id="_0jyhQEsCEe2ggdHZVgXD2A" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_0jzIUEsCEe2ggdHZVgXD2A" type="7004">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_0jzIUUsCEe2ggdHZVgXD2A"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_0jzIUksCEe2ggdHZVgXD2A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_0jx6MUsCEe2ggdHZVgXD2A" fontName="Segoe UI" fontHeight="12" bold="true" italic="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0jx6MksCEe2ggdHZVgXD2A" x="21" y="20" width="143" height="46"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_9irH0EsCEe2ggdHZVgXD2A" type="2002" element="_9ilBMEsCEe2ggdHZVgXD2A">
+          <children xmi:type="notation:Node" xmi:id="_9iru4ksCEe2ggdHZVgXD2A" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_9iru40sCEe2ggdHZVgXD2A" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_9isV8EsCEe2ggdHZVgXD2A" type="3007" element="_9indcEsCEe2ggdHZVgXD2A">
+              <children xmi:type="notation:Node" xmi:id="_9isV80sCEe2ggdHZVgXD2A" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_9isV9EsCEe2ggdHZVgXD2A" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_9is9AEsCEe2ggdHZVgXD2A" type="3006" element="_9indcUsCEe2ggdHZVgXD2A">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_9is9AUsCEe2ggdHZVgXD2A" fontName="Segoe UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9is9AksCEe2ggdHZVgXD2A"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_9isV8UsCEe2ggdHZVgXD2A" fontName="Segoe UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9isV8ksCEe2ggdHZVgXD2A" x="8" y="28" width="50" height="50"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_9iru5EsCEe2ggdHZVgXD2A"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_9iru5UsCEe2ggdHZVgXD2A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_9iru4EsCEe2ggdHZVgXD2A" fontName="Segoe UI"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9iru4UsCEe2ggdHZVgXD2A" x="560" y="265" width="76" height="97"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_0jsaoksCEe2ggdHZVgXD2A"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_0jwFAEsCEe2ggdHZVgXD2A" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_0jwFAUsCEe2ggdHZVgXD2A"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_0jtBsEsCEe2ggdHZVgXD2A" name=" scope">
+      <target xmi:type="FRIPP:PlaybookProcess" href="My.fripp#/"/>
+      <semanticElements xmi:type="FRIPP:PlaybookProcess" href="My.fripp#/"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_0jtBsUsCEe2ggdHZVgXD2A" labelSize="12" showIcon="false" labelColor="69,69,69" borderSize="3" borderSizeComputationExpression="3" borderColor="209,209,209">
+        <labelFormat>italic</labelFormat>
+        <labelFormat>underline</labelFormat>
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/FRIPP.design/description/FRIPP.odesign#//@ownedViewpoints[name='FRIPPviewpointMk2']/@ownedRepresentations[name='FRIPP%20Representation']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/FRIPP.design/description/FRIPP.odesign#//@ownedViewpoints[name='FRIPPviewpointMk2']/@ownedRepresentations[name='FRIPP%20Representation']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_0jtowEsCEe2ggdHZVgXD2A" name="[] " tooltipText="Start: &#xA;End: &#xA;Resources: ">
+        <target xmi:type="FRIPP:PlaybookProcess" href="My.fripp#/"/>
+        <semanticElements xmi:type="FRIPP:PlaybookProcess" href="My.fripp#/"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_0juP0EsCEe2ggdHZVgXD2A" labelSize="12" showIcon="false" borderSize="2" borderSizeComputationExpression="2">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/FRIPP.design/description/FRIPP.odesign#//@ownedViewpoints[name='FRIPPviewpointMk2']/@ownedRepresentations[name='FRIPP%20Representation']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/FRIPP.design/description/FRIPP.odesign#//@ownedViewpoints[name='FRIPPviewpointMk2']/@ownedRepresentations[name='FRIPP%20Representation']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']"/>
+        <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_2YicYUsCEe2ggdHZVgXD2A" name="test[] " tooltipText="Start: &#xA;End: &#xA;Resources: ">
+          <target xmi:type="FRIPP:PlaybookProcess" href="My.fripp#//@process.0"/>
+          <semanticElements xmi:type="FRIPP:PlaybookProcess" href="My.fripp#//@process.0"/>
+          <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_2YicYksCEe2ggdHZVgXD2A" labelSize="12" showIcon="false" borderSize="2" borderSizeComputationExpression="2">
+            <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/FRIPP.design/description/FRIPP.odesign#//@ownedViewpoints[name='FRIPPviewpointMk2']/@ownedRepresentations[name='FRIPP%20Representation']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@subContainerMappings[name='ProcessHierarchy_PD']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/FRIPP.design/description/FRIPP.odesign#//@ownedViewpoints[name='FRIPPviewpointMk2']/@ownedRepresentations[name='FRIPP%20Representation']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@subContainerMappings[name='ProcessHierarchy_PD']"/>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_0ju24EsCEe2ggdHZVgXD2A" name="Related references:">
+      <target xmi:type="FRIPP:PlaybookProcess" href="My.fripp#/"/>
+      <semanticElements xmi:type="FRIPP:PlaybookProcess" href="My.fripp#/"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_0ju24UsCEe2ggdHZVgXD2A" labelSize="12" showIcon="false" borderSize="1" borderSizeComputationExpression="1">
+        <labelFormat>italic</labelFormat>
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/FRIPP.design/description/FRIPP.odesign#//@ownedViewpoints[name='FRIPPviewpointMk2']/@ownedRepresentations[name='FRIPP%20Representation']/@defaultLayer/@containerMappings[name='RefContainer']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/FRIPP.design/description/FRIPP.odesign#//@ownedViewpoints[name='FRIPPviewpointMk2']/@ownedRepresentations[name='FRIPP%20Representation']/@defaultLayer/@containerMappings[name='RefContainer']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_9ilBMEsCEe2ggdHZVgXD2A">
+      <target xmi:type="dependencyModel:Paragon" href="My.dependencymodel#/"/>
+      <semanticElements xmi:type="dependencyModel:Paragon" href="My.dependencymodel#/"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/FRIPP.design/description/FRIPP.odesign#//@ownedViewpoints[name='FRIPPviewpointMk2']/@ownedRepresentations[name='FRIPP%20Representation']/@additionalLayers[name='DM%20Layer']/@containerMappings[name='DepModelCont']"/>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_9indcEsCEe2ggdHZVgXD2A" name="Main" tooltipText="Main" width="5" height="5" resizeKind="NSEW">
+        <target xmi:type="dependencyModel:Paragon" href="My.dependencymodel#/"/>
+        <semanticElements xmi:type="dependencyModel:Paragon" href="My.dependencymodel#/"/>
+        <ownedStyle xmi:type="diagram:GaugeCompositeStyle" uid="_9indcUsCEe2ggdHZVgXD2A" labelSize="12" showIcon="false" labelPosition="node">
+          <description xmi:type="style:GaugeCompositeStyleDescription" href="platform:/plugin/DependencyModel.design/description/DependencyModel.odesign#//@ownedViewpoints[name='DependencyModelViewpoint']/@ownedRepresentations[name='DependencyModelingDiagram']/@defaultLayer/@nodeMappings[name='ParagonNode']/@style"/>
+          <sections xmi:type="diagram:GaugeSection" uid="_9ioEgUsCEe2ggdHZVgXD2A" min="0" max="100" value="0" label="'" backgroundColor="239,41,41"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/DependencyModel.design/description/DependencyModel.odesign#//@ownedViewpoints[name='DependencyModelViewpoint']/@ownedRepresentations[name='DependencyModelingDiagram']/@defaultLayer/@nodeMappings[name='ParagonNode']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/FRIPP.design/description/FRIPP.odesign#//@ownedViewpoints[name='FRIPPviewpointMk2']/@ownedRepresentations[name='FRIPP%20Representation']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_0jrMgUsCEe2ggdHZVgXD2A"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/FRIPP.design/description/FRIPP.odesign#//@ownedViewpoints[name='FRIPPviewpointMk2']/@ownedRepresentations[name='FRIPP%20Representation']/@defaultLayer"/>
+    <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/FRIPP.design/description/FRIPP.odesign#//@ownedViewpoints[name='FRIPPviewpointMk2']/@ownedRepresentations[name='FRIPP%20Representation']/@additionalLayers[name='DM%20Layer']"/>
+    <target xmi:type="FRIPP:PlaybookProcess" href="My.fripp#/"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="__QIvMEsCEe2ggdHZVgXD2A">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="__QJWQksCEe2ggdHZVgXD2A" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="__QJWQ0sCEe2ggdHZVgXD2A" type="Sirius" element="__QIvMEsCEe2ggdHZVgXD2A" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="__QRSEEsCEe2ggdHZVgXD2A" type="2001" element="__QKkYEsCEe2ggdHZVgXD2A">
+          <children xmi:type="notation:Node" xmi:id="__QRSE0sCEe2ggdHZVgXD2A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="__QRSFEsCEe2ggdHZVgXD2A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="__QR5IEsCEe2ggdHZVgXD2A" type="3001" element="__QLygEsCEe2ggdHZVgXD2A">
+            <children xmi:type="notation:Node" xmi:id="__QR5I0sCEe2ggdHZVgXD2A" type="5001">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="__QR5JEsCEe2ggdHZVgXD2A" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="__QTuUEsCEe2ggdHZVgXD2A" type="3002" element="__QOOwEsCEe2ggdHZVgXD2A">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="__QTuUUsCEe2ggdHZVgXD2A" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="__QTuUksCEe2ggdHZVgXD2A"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="__QR5IUsCEe2ggdHZVgXD2A" fontName="Segoe UI" fontHeight="5"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="__QR5IksCEe2ggdHZVgXD2A" x="46" y="19" width="10" height="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="__QSgMEsCEe2ggdHZVgXD2A" type="3001" element="__QO10UsCEe2ggdHZVgXD2A">
+            <children xmi:type="notation:Node" xmi:id="__QSgM0sCEe2ggdHZVgXD2A" type="5001">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="__QSgNEsCEe2ggdHZVgXD2A" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="__QUVYEsCEe2ggdHZVgXD2A" type="3003" element="__QO10ksCEe2ggdHZVgXD2A">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="__QUVYUsCEe2ggdHZVgXD2A" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="__QUVYksCEe2ggdHZVgXD2A"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="__QSgMUsCEe2ggdHZVgXD2A" fontName="Segoe UI" fontHeight="5"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="__QSgMksCEe2ggdHZVgXD2A" x="13" y="-2" width="20" height="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="__QTHQEsCEe2ggdHZVgXD2A" type="3006" element="__QLLcEsCEe2ggdHZVgXD2A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="__QTHQUsCEe2ggdHZVgXD2A" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="__QTHQksCEe2ggdHZVgXD2A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="__QRSEUsCEe2ggdHZVgXD2A" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="__QRSEksCEe2ggdHZVgXD2A" x="20" y="22" width="54" height="41"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="__QJWREsCEe2ggdHZVgXD2A"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="__QQD8EsCEe2ggdHZVgXD2A" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="__QQD8UsCEe2ggdHZVgXD2A"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="__QKkYEsCEe2ggdHZVgXD2A" name="Main" tooltipText="Main" width="5" height="5" resizeKind="NSEW">
+      <target xmi:type="dependencyModel:Paragon" href="My.dependencymodel#/"/>
+      <semanticElements xmi:type="dependencyModel:Paragon" href="My.dependencymodel#/"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="__QLygEsCEe2ggdHZVgXD2A" name="UNCONTROLLABLE" width="0" height="0" resizeKind="NSEW">
+        <target xmi:type="dependencyModel:Paragon" href="My.dependencymodel#/"/>
+        <semanticElements xmi:type="dependencyModel:Paragon" href="My.dependencymodel#/"/>
+        <ownedStyle xmi:type="diagram:Dot" uid="__QOOwEsCEe2ggdHZVgXD2A" labelSize="5" showIcon="false" labelPosition="node" strokeSizeComputationExpression="0">
+          <description xmi:type="style:DotDescription" href="platform:/plugin/DependencyModel.design/description/DependencyModel.odesign#//@ownedViewpoints[name='DependencyModelViewpoint']/@ownedRepresentations[name='DependencyModelingDiagram']/@defaultLayer/@nodeMappings[name='ParagonNode']/@borderedNodeMappings[name='ParagonTypeBorderNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/DependencyModel.design/description/DependencyModel.odesign#//@ownedViewpoints[name='DependencyModelViewpoint']/@ownedRepresentations[name='DependencyModelingDiagram']/@defaultLayer/@nodeMappings[name='ParagonNode']/@borderedNodeMappings[name='ParagonTypeBorderNode']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="__QO10UsCEe2ggdHZVgXD2A" name="0.0" tooltipText="0.0" width="2" height="1" resizeKind="NSEW">
+        <target xmi:type="dependencyModel:Paragon" href="My.dependencymodel#/"/>
+        <semanticElements xmi:type="dependencyModel:Paragon" href="My.dependencymodel#/"/>
+        <ownedStyle xmi:type="diagram:Square" uid="__QO10ksCEe2ggdHZVgXD2A" labelSize="5" showIcon="false" labelPosition="node" width="2" height="1">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/DependencyModel.design/description/DependencyModel.odesign#//@ownedViewpoints[name='DependencyModelViewpoint']/@ownedRepresentations[name='DependencyModelingDiagram']/@defaultLayer/@nodeMappings[name='ParagonNode']/@borderedNodeMappings[name='ParagonProbabilityBorderNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/DependencyModel.design/description/DependencyModel.odesign#//@ownedViewpoints[name='DependencyModelViewpoint']/@ownedRepresentations[name='DependencyModelingDiagram']/@defaultLayer/@nodeMappings[name='ParagonNode']/@borderedNodeMappings[name='ParagonProbabilityBorderNode']"/>
+      </ownedBorderedNodes>
+      <ownedStyle xmi:type="diagram:GaugeCompositeStyle" uid="__QLLcEsCEe2ggdHZVgXD2A" labelSize="12" showIcon="false" labelPosition="node">
+        <description xmi:type="style:GaugeCompositeStyleDescription" href="platform:/plugin/DependencyModel.design/description/DependencyModel.odesign#//@ownedViewpoints[name='DependencyModelViewpoint']/@ownedRepresentations[name='DependencyModelingDiagram']/@defaultLayer/@nodeMappings[name='ParagonNode']/@style"/>
+        <sections xmi:type="diagram:GaugeSection" uid="__QLLcksCEe2ggdHZVgXD2A" min="0" max="100" value="0" label="'" backgroundColor="239,41,41"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/DependencyModel.design/description/DependencyModel.odesign#//@ownedViewpoints[name='DependencyModelViewpoint']/@ownedRepresentations[name='DependencyModelingDiagram']/@defaultLayer/@nodeMappings[name='ParagonNode']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/DependencyModel.design/description/DependencyModel.odesign#//@ownedViewpoints[name='DependencyModelViewpoint']/@ownedRepresentations[name='DependencyModelingDiagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="__QIvMUsCEe2ggdHZVgXD2A"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/DependencyModel.design/description/DependencyModel.odesign#//@ownedViewpoints[name='DependencyModelViewpoint']/@ownedRepresentations[name='DependencyModelingDiagram']/@defaultLayer"/>
+    <target xmi:type="dependencyModel:Paragon" href="My.dependencymodel#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

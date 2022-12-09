@@ -5,4 +5,8 @@ Bundle-SymbolicName: sirius.clean.branding;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Automatic-Module-Name: sirius.clean.branding
 Bundle-RequiredExecutionEnvironment: JavaSE-11
-Require-Bundle: org.eclipse.equinox.app
+Require-Bundle: org.eclipse.equinox.app,
+ org.eclipse.core.runtime,
+ org.eclipse.swt,
+ org.eclipse.jface,
+ org.eclipse.ui.workbench

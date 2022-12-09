@@ -127,5 +127,7 @@
 		<module>../sirius.clean.branding</module>
 		<module>../sirius.clean.product</module>
 		<module>../../SYMBIOSIS/symbiosis.design</module>
+		<module>../../../PROVE/PROVE.design</module>
+		<module>../../../PROVE/PROVE.feature</module>
 	</modules>
 </project>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROVE:Process xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:PROVE="dsm.PROVE" artifactInStateUsed="//@artifact.0/@state.0/@artifactstateinstance.0">
+  <artifact name="testing">
+    <state artifactName="testing" name="123">
+      <artifactstateinstance usedByActivity="/" originatingActivity="//@process.0"/>
+    </state>
+  </artifact>
+  <process name="test" resultArtifactInState="//@artifact.0/@state.0/@artifactstateinstance.0"/>
+</PROVE:Process>

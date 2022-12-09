@@ -10,7 +10,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="context" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="relatedBusinessobjective"
         upperBound="-1" eType="#//BusinessObjective"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="paragon" eType="ecore:EClass http://www.example.org/dependencyModel#//Paragon"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="paragon" eType="ecore:EClass ../../DependencyModel/model/dependencyModel.ecore#//Paragon"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SecurityMeasurementGoal">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="object" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
@@ -24,7 +24,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="criteria" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="businessobjective" upperBound="-1"
         eType="#//BusinessObjective"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="paragon" eType="ecore:EClass http://www.example.org/dependencyModel#//Paragon"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="paragon" eType="ecore:EClass ../../DependencyModel/model/dependencyModel.ecore#//Paragon"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SecurityMetric">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -51,6 +51,6 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="basemeasurement" upperBound="-1"
         eType="#//BaseMeasurement" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="dependencyModel" upperBound="-1"
-        eType="ecore:EClass http://www.example.org/dependencyModel#//Paragon"/>
+        eType="ecore:EClass ../../DependencyModel/model/dependencyModel.ecore#//Paragon"/>
   </eClassifiers>
 </ecore:EPackage>

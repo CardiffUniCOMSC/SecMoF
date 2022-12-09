@@ -154,9 +154,6 @@ import org.eclipse.emf.edit.ui.util.EditUIUtil;
 import org.eclipse.emf.edit.ui.view.ExtendedPropertySheetPage;
 
 import dependencyModel.provider.DependencyModelItemProviderAdapterFactory;
-
-import PROVE.provider.PROVEItemProviderAdapterFactory;
-
 import dsm.FRIPP.presentation.FRIPPEditorPlugin;
 
 import dsm.FRIPP.provider.FRIPPItemProviderAdapterFactory;
@@ -692,8 +689,8 @@ public class DependencyModelEditor extends MultiPageEditorPart
 
 		adapterFactory.addAdapterFactory(new ResourceItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new FRIPPItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new PROVEItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new DependencyModelItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new dsm.PROVE.provider.PROVEItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new ReflectiveItemProviderAdapterFactory());
 
 		// Create the command stack that will notify this editor as commands are executed.

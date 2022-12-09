@@ -2,8 +2,6 @@
  */
 package dsm.FRIPP;
 
-import PROVE.Resource;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Actuator</b></em>'.
@@ -20,10 +18,10 @@ import PROVE.Resource;
  * @model
  * @generated
  */
-public interface Actuator extends Resource {
+public interface Actuator extends dsm.PROVE.Resource {
 	/**
 	 * Returns the value of the '<em><b>Type</b></em>' attribute.
-	 * The default value is <code>""</code>.
+	 * The default value is <code>"HUMAN"</code>.
 	 * The literals are from the enumeration {@link dsm.FRIPP.ACTUATOR_TYPE_ENUM}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -31,7 +29,7 @@ public interface Actuator extends Resource {
 	 * @see dsm.FRIPP.ACTUATOR_TYPE_ENUM
 	 * @see #setType(ACTUATOR_TYPE_ENUM)
 	 * @see dsm.FRIPP.FRIPPPackage#getActuator_Type()
-	 * @model default=""
+	 * @model default="HUMAN"
 	 * @generated
 	 */
 	ACTUATOR_TYPE_ENUM getType();

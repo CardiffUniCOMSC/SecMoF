@@ -14,5 +14,7 @@ Export-Package: PROVE.provider,
  dsm.FRIPP.provider
 Require-Bundle: org.eclipse.core.runtime,
  dsm.FRIPP;visibility:=reexport,
- org.eclipse.emf.edit;visibility:=reexport
+ org.eclipse.emf.edit;visibility:=reexport,
+ dsm.PROVE;visibility:=reexport,
+ dsm.PROVE.edit;visibility:=reexport
 Bundle-ActivationPolicy: lazy

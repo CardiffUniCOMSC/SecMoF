@@ -5,12 +5,12 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="objectives" upperBound="-1"
         eType="#//OBJECTIVES_ENUM"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="actionType" eType="#//ACTION_TYPE_ENUM"
-        defaultValueLiteral=""/>
+        defaultValueLiteral="MANUAL"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="relatedreferences" upperBound="-1"
         eType="#//ExternalReference"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="externalreferences" upperBound="-1"
         eType="#//ExternalReference" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="paragon" eType="ecore:EClass ../../DependencyModel/model/dependencyModel.ecore#//Paragon"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="paragon" eType="ecore:EClass dependencyModel.ecore#//Paragon"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="activityimpact" upperBound="-1"
         eType="#//ActivityImpact" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="associatedRole" upperBound="-1"
@@ -28,7 +28,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Actuator" eSuperTypes="../../dsm.PROVE/model/PROVE.ecore#//Resource">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//ACTUATOR_TYPE_ENUM"
-        defaultValueLiteral=""/>
+        defaultValueLiteral="HUMAN"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="ACTUATOR_TYPE_ENUM">
     <eLiterals name="HUMAN"/>
@@ -37,7 +37,7 @@
   <eClassifiers xsi:type="ecore:EEnum" name="ORCHESTRATION_SERVICE_CATEGORY"/>
   <eClassifiers xsi:type="ecore:EClass" name="ExternalReference">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="referenceType" eType="#//REFERENCE_TYPE_ENUM"
-        defaultValueLiteral=""/>
+        defaultValueLiteral="BEST_PRACTICE"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="REFERENCE_TYPE_ENUM">
@@ -52,9 +52,9 @@
     <eLiterals name="MAKE_DECISION" value="3"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ActivityImpact">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="paragon" eType="ecore:EClass ../../DependencyModel/model/dependencyModel.ecore#//Paragon"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="paragon" eType="ecore:EClass dependencyModel.ecore#//Paragon"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="newValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="originalType" eType="ecore:EEnum ../../DependencyModel/model/dependencyModel.ecore#//PARAGON_COMPOSITION_ENUM"
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="originalType" eType="ecore:EEnum dependencyModel.ecore#//PARAGON_COMPOSITION_ENUM"
         defaultValueLiteral="" derived="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="originalProbability" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"
         derived="true"/>

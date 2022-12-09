@@ -28,7 +28,7 @@ import org.eclipse.emf.common.util.EList;
  * @model
  * @generated
  */
-public interface PlaybookProcess extends PROVE.Process {
+public interface PlaybookProcess extends dsm.PROVE.Process {
 	/**
 	 * Returns the value of the '<em><b>Objectives</b></em>' attribute list.
 	 * The list contents are of type {@link dsm.FRIPP.OBJECTIVES_ENUM}.
@@ -45,7 +45,7 @@ public interface PlaybookProcess extends PROVE.Process {
 
 	/**
 	 * Returns the value of the '<em><b>Action Type</b></em>' attribute.
-	 * The default value is <code>""</code>.
+	 * The default value is <code>"MANUAL"</code>.
 	 * The literals are from the enumeration {@link dsm.FRIPP.ACTION_TYPE_ENUM}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -53,7 +53,7 @@ public interface PlaybookProcess extends PROVE.Process {
 	 * @see dsm.FRIPP.ACTION_TYPE_ENUM
 	 * @see #setActionType(ACTION_TYPE_ENUM)
 	 * @see dsm.FRIPP.FRIPPPackage#getPlaybookProcess_ActionType()
-	 * @model default=""
+	 * @model default="MANUAL"
 	 * @generated
 	 */
 	ACTION_TYPE_ENUM getActionType();

@@ -2,8 +2,6 @@
  */
 package dsm.FRIPP.impl;
 
-import PROVE.impl.ResourceImpl;
-
 import dsm.FRIPP.ACTUATOR_TYPE_ENUM;
 import dsm.FRIPP.Actuator;
 import dsm.FRIPP.FRIPPPackage;
@@ -27,7 +25,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public class ActuatorImpl extends ResourceImpl implements Actuator {
+public class ActuatorImpl extends dsm.PROVE.impl.ResourceImpl implements Actuator {
 	/**
 	 * The default value of the '{@link #getType() <em>Type</em>}' attribute.
 	 * <!-- begin-user-doc -->

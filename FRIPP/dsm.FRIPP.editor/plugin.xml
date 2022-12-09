@@ -40,34 +40,6 @@
             id="org.eclipse.emf.ecore.Wizard.category.ID"
             name="%_UI_Wizard_category"/>
       <wizard
-            id="PROVE.presentation.PROVEModelWizardID"
-            name="%_UI_PROVEModelWizard_label"
-            class="PROVE.presentation.PROVEModelWizard"
-            category="org.eclipse.emf.ecore.Wizard.category.ID"
-            icon="icons/full/obj16/PROVEModelFile.gif">
-         <description>%_UI_PROVEModelWizard_description</description>
-         <selection class="org.eclipse.core.resources.IResource"/>
-      </wizard>
-   </extension>
-
-   <extension point="org.eclipse.ui.editors">
-      <!-- @generated FRIPP -->
-      <editor
-            id="PROVE.presentation.PROVEEditorID"
-            name="%_UI_PROVEEditor_label"
-            icon="icons/full/obj16/PROVEModelFile.gif"
-            extensions="prove"
-            class="PROVE.presentation.PROVEEditor"
-            contributorClass="PROVE.presentation.PROVEActionBarContributor">
-      </editor>
-   </extension>
-
-   <extension point="org.eclipse.ui.newWizards">
-      <!-- @generated FRIPP -->
-      <category
-            id="org.eclipse.emf.ecore.Wizard.category.ID"
-            name="%_UI_Wizard_category"/>
-      <wizard
             id="dependencyModel.presentation.DependencyModelModelWizardID"
             name="%_UI_DependencyModelModelWizard_label"
             class="dependencyModel.presentation.DependencyModelModelWizard"

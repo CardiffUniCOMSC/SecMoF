@@ -24,7 +24,7 @@ import org.eclipse.emf.ecore.EObject;
 public interface ExternalReference extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Reference Type</b></em>' attribute.
-	 * The default value is <code>""</code>.
+	 * The default value is <code>"BEST_PRACTICE"</code>.
 	 * The literals are from the enumeration {@link dsm.FRIPP.REFERENCE_TYPE_ENUM}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -32,7 +32,7 @@ public interface ExternalReference extends EObject {
 	 * @see dsm.FRIPP.REFERENCE_TYPE_ENUM
 	 * @see #setReferenceType(REFERENCE_TYPE_ENUM)
 	 * @see dsm.FRIPP.FRIPPPackage#getExternalReference_ReferenceType()
-	 * @model default=""
+	 * @model default="BEST_PRACTICE"
 	 * @generated
 	 */
 	REFERENCE_TYPE_ENUM getReferenceType();

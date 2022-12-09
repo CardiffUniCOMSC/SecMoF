@@ -2,10 +2,6 @@
  */
 package dsm.FRIPP.impl;
 
-import PROVE.PROVEPackage;
-
-import PROVE.impl.PROVEPackageImpl;
-
 import dependencyModel.DependencyModelPackage;
 
 import dependencyModel.impl.DependencyModelPackageImpl;
@@ -17,8 +13,8 @@ import dsm.FRIPP.FRIPPFactory;
 import dsm.FRIPP.FRIPPPackage;
 import dsm.FRIPP.Organisation;
 import dsm.FRIPP.PlaybookProcess;
-
 import dsm.FRIPP.Role;
+
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EEnum;
@@ -168,24 +164,21 @@ public class FRIPPPackageImpl extends EPackageImpl implements FRIPPPackage {
 
 		isInited = true;
 
+		// Initialize simple dependencies
+		dsm.PROVE.PROVEPackage.eINSTANCE.eClass();
+
 		// Obtain or create and register interdependencies
-		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(PROVEPackage.eNS_URI);
-		PROVEPackageImpl thePROVEPackage = (PROVEPackageImpl) (registeredPackage instanceof PROVEPackageImpl
-				? registeredPackage
-				: PROVEPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(DependencyModelPackage.eNS_URI);
+		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(DependencyModelPackage.eNS_URI);
 		DependencyModelPackageImpl theDependencyModelPackage = (DependencyModelPackageImpl) (registeredPackage instanceof DependencyModelPackageImpl
 				? registeredPackage
 				: DependencyModelPackage.eINSTANCE);
 
 		// Create package meta-data objects
 		theFRIPPPackage.createPackageContents();
-		thePROVEPackage.createPackageContents();
 		theDependencyModelPackage.createPackageContents();
 
 		// Initialize created meta-data
 		theFRIPPPackage.initializePackageContents();
-		thePROVEPackage.initializePackageContents();
 		theDependencyModelPackage.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
@@ -568,7 +561,8 @@ public class FRIPPPackageImpl extends EPackageImpl implements FRIPPPackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		PROVEPackage thePROVEPackage = (PROVEPackage) EPackage.Registry.INSTANCE.getEPackage(PROVEPackage.eNS_URI);
+		dsm.PROVE.PROVEPackage thePROVEPackage = (dsm.PROVE.PROVEPackage) EPackage.Registry.INSTANCE
+				.getEPackage(dsm.PROVE.PROVEPackage.eNS_URI);
 		DependencyModelPackage theDependencyModelPackage = (DependencyModelPackage) EPackage.Registry.INSTANCE
 				.getEPackage(DependencyModelPackage.eNS_URI);
 
@@ -586,7 +580,7 @@ public class FRIPPPackageImpl extends EPackageImpl implements FRIPPPackage {
 		initEAttribute(getPlaybookProcess_Objectives(), this.getOBJECTIVES_ENUM(), "objectives", null, 0, -1,
 				PlaybookProcess.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
 				!IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPlaybookProcess_ActionType(), this.getACTION_TYPE_ENUM(), "actionType", "", 0, 1,
+		initEAttribute(getPlaybookProcess_ActionType(), this.getACTION_TYPE_ENUM(), "actionType", "MANUAL", 0, 1,
 				PlaybookProcess.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
 				!IS_DERIVED, IS_ORDERED);
 		initEReference(getPlaybookProcess_Relatedreferences(), this.getExternalReference(), null, "relatedreferences",
@@ -607,14 +601,14 @@ public class FRIPPPackageImpl extends EPackageImpl implements FRIPPPackage {
 
 		initEClass(actuatorEClass, Actuator.class, "Actuator", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getActuator_Type(), this.getACTUATOR_TYPE_ENUM(), "type", "", 0, 1, Actuator.class,
+		initEAttribute(getActuator_Type(), this.getACTUATOR_TYPE_ENUM(), "type", "HUMAN", 0, 1, Actuator.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(externalReferenceEClass, ExternalReference.class, "ExternalReference", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getExternalReference_ReferenceType(), this.getREFERENCE_TYPE_ENUM(), "referenceType", "", 0, 1,
-				ExternalReference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getExternalReference_ReferenceType(), this.getREFERENCE_TYPE_ENUM(), "referenceType",
+				"BEST_PRACTICE", 0, 1, ExternalReference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getExternalReference_Name(), ecorePackage.getEString(), "name", null, 0, 1,
 				ExternalReference.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
 				!IS_DERIVED, IS_ORDERED);

@@ -7,7 +7,7 @@ Bundle-Version: 1.0.0.qualifier
 Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Export-Package: PROVE;
   uses:="org.eclipse.emf.ecore,
    org.eclipse.emf.common.util",
@@ -65,7 +65,7 @@ Export-Package: PROVE;
 Require-Bundle: org.eclipse.emf.ecore;visibility:=reexport,
  org.eclipse.emf.ecore.xmi;visibility:=reexport,
  org.eclipse.core.runtime,
- dsm.PROVE;bundle-version="1.0.0",
+ dsm.PROVE;bundle-version="0.1.0";visibility:=reexport,
  dsm.PROVE.edit;bundle-version="1.0.0",
  dsm.PROVE.editor;bundle-version="1.0.0",
  DependencyModel;bundle-version="0.1.0",

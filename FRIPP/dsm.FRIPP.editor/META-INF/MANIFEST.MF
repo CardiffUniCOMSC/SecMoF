@@ -17,5 +17,6 @@ Require-Bundle: org.eclipse.core.runtime,
  dsm.FRIPP.edit;visibility:=reexport,
  org.eclipse.emf.ecore.xmi;visibility:=reexport,
  org.eclipse.emf.edit.ui;visibility:=reexport,
- org.eclipse.ui.ide;visibility:=reexport
+ org.eclipse.ui.ide;visibility:=reexport,
+ dsm.PROVE.edit;visibility:=reexport
 Bundle-ActivationPolicy: lazy

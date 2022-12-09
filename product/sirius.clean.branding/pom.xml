@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <artifactId>sirius.clean.branding</artifactId>
   <packaging>eclipse-plugin</packaging>
-  
+  <name>SecMOF branding plug-in</name>
   <parent>
   	<groupId>sirius.clean</groupId>
   	<artifactId>sirius.clean.parent</artifactId>

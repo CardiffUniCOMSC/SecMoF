@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FRIPP:PlaybookProcess xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:FRIPP="http://www.example.org/FRIPP" name="Malware response" relatedreferences="//@externalreferences.0">
+  <artifact name="undefined">
+    <state artifactName="undefined" name="undefined">
+      <artifactstateinstance usedByActivity="//@process.0" originatingActivity="//@process.1"/>
+      <artifactstateinstance usedByActivity="//@process.2" originatingActivity="//@process.3"/>
+      <artifactstateinstance usedByActivity="//@process.3" originatingActivity="//@process.0"/>
+    </state>
+  </artifact>
+  <process xsi:type="FRIPP:PlaybookProcess" name="Disconnect infected device from network" artifactInStateUsed="//@artifact.0/@state.0/@artifactstateinstance.0" resultArtifactInState="//@artifact.0/@state.0/@artifactstateinstance.2" resourceUsed="//@resource.0">
+    <activityimpact originalType="UNCONTROLLABLE" originalProbability="1.0">
+      <paragon href="WDS.dependencymodel#//@paragon.0/@paragon.0/@paragon.0/@paragon.2"/>
+    </activityimpact>
+  </process>
+  <process xsi:type="FRIPP:PlaybookProcess" name="Report malware existence in device software and its impact" resultArtifactInState="//@artifact.0/@state.0/@artifactstateinstance.0" resourceUsed="//@resource.1">
+    <activityimpact newValue="0.2" originalType="UNCONTROLLABLE" originalProbability="0.1">
+      <paragon href="WDS.dependencymodel#//@paragon.0/@paragon.1"/>
+    </activityimpact>
+  </process>
+  <process xsi:type="FRIPP:PlaybookProcess" name="Reconnect device" notes="Back to business as usual" artifactInStateUsed="//@artifact.0/@state.0/@artifactstateinstance.1" resourceUsed="//@resource.0">
+    <activityimpact newValue="0.97" originalType="UNCONTROLLABLE">
+      <paragon href="WDS.dependencymodel#//@paragon.0/@paragon.0/@paragon.0/@paragon.2"/>
+    </activityimpact>
+  </process>
+  <process xsi:type="FRIPP:PlaybookProcess" name="Restore Device Software[] " notes="Restore the device's software to a verified configuration (&quot;re-image&quot;)" artifactInStateUsed="//@artifact.0/@state.0/@artifactstateinstance.2" resultArtifactInState="//@artifact.0/@state.0/@artifactstateinstance.1">
+    <activityimpact newValue="1.0" originalType="UNCONTROLLABLE" originalProbability="0.2">
+      <paragon href="WDS.dependencymodel#//@paragon.0/@paragon.1"/>
+    </activityimpact>
+  </process>
+  <resource xsi:type="FRIPP:Actuator" name="field technician"/>
+  <resource xsi:type="FRIPP:Actuator" name="SOC Operator"/>
+  <resource xsi:type="FRIPP:Actuator" name="Avi"/>
+  <externalreferences name="Scottish Govt Malware Playbook"/>
+  <paragon href="WDS.dependencymodel#/"/>
+</FRIPP:PlaybookProcess>
