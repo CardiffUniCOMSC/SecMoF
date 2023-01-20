@@ -21,12 +21,5 @@
             class="dsm.FRIPP.util.FRIPPResourceFactoryImpl"/>
    </extension>
 
-   <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated FRIPP -->
-      <package
-            uri="http://www.example.org/dependencyModel"
-            class="dependencyModel.DependencyModelPackage"
-            genModel="model/FRIPP.genmodel"/>
-   </extension>
 
 </plugin>

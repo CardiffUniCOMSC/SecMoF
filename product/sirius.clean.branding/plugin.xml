@@ -14,7 +14,7 @@
          </property>
          <property
                name="windowImages"
-               value="icons/PROVElogo16.png,icons/PROVElogo32.png,icons/PROVElogo48.png,icons/PROVElogo64.png">
+               value="icons/SecMoFlogo16.png,icons/SecMoFlogo32.png,icons/SecMoFlogo48.png,icons/SecMoFlogo64.png">
          </property>
          <property
                name="startupProgressRect"
@@ -26,11 +26,11 @@
          </property>
          <property
                name="aboutText"
-               value="SecMoF v0.1">
+               value="SecMoF v0.1, developed by Cardiff University COMSC">
          </property>
          <property
                name="aboutImage"
-               value="icons/PROVElogo64.png">
+               value="icons/SecMoFlogo64.png">
          </property>
       </product>
    </extension>

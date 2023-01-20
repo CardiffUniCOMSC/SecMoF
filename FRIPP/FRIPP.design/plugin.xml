@@ -7,4 +7,17 @@
 	       name="FRIPP">
     </component>
   </extension>
+  <extension
+        point="org.eclipse.ui.newWizards">
+     <wizard
+           category="dsm.FRIPP.wizardCat"
+           class="FRIPP.design.wizards.FRIPPprojectNewWizard"
+           finalPerspective="org.eclipse.sirius.ui.tools.perspective.modeling"
+           icon="icons/SecMof16.png"
+           id="FRIPP.design.newProject"
+           name="New Incident Response Playbook Project (FRIPP)"
+           preferredPerspectives="org.eclipse.sirius.ui.tools.perspective.modeling"
+           project="true">
+     </wizard>
+  </extension>
 </plugin>

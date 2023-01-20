@@ -14,12 +14,5 @@
             genModel="model/symbiosisDM.genmodel"/>
    </extension>
 
-   <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated symbiosisDM -->
-      <package
-            uri="http://www.example.org/dependencyModel"
-            class="dependencyModel.DependencyModelPackage"
-            genModel="model/symbiosisDM.genmodel"/>
-   </extension>
 
 </plugin>

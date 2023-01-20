@@ -4960,3 +4960,199 @@ Command-line arguments:  -eclipse.keyring C:\Users\scmas9\AppData\Local\Temp\tyc
 !MESSAGE Add request for Eclipse Layout Kernel (Incubation) - UI Components 0.7.1 (org.eclipse.elk.ui.feature.feature.group 0.7.1) is satisfiable
 !SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2022-12-09 18:27:38.178
 !MESSAGE Add request for Git integration for Eclipse 6.2.0.202206071550-r (org.eclipse.egit.feature.group 6.2.0.202206071550-r) is satisfiable
+!SESSION 2023-01-20 13:28:23.736 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.14.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  -eclipse.keyring C:\Users\scmas9\AppData\Local\Temp\tycho15255185851191969742secure_storage
+Command-line arguments:  -eclipse.keyring C:\Users\scmas9\AppData\Local\Temp\tycho15255185851191969742secure_storage
+
+!ENTRY org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Overall install request is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Add request for ECF Core SSL Feature 1.1.501.v20210409-2301 (org.eclipse.ecf.core.ssl.feature.feature.group 1.1.501.v20210409-2301) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Add request for Eclipse 4 Rich Client Platform 4.24.0.v20220530-1036 (org.eclipse.e4.rcp.feature.group 4.24.0.v20220530-1036) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Add request for Sirius ELK Integration (Experimental) 7.0.1.202205300817 (org.eclipse.sirius.diagram.elk.feature.feature.group 7.0.1.202205300817) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Add request for Equinox p2, minimal support for RCP applications 1.4.1600.v20220518-1326 (org.eclipse.equinox.p2.rcp.feature.feature.group 1.4.1600.v20220518-1326) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Add request for Draw2d 3.10.100.201606061308 (org.eclipse.draw2d.feature.group 3.10.100.201606061308) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Add request for Eclipse Help System 2.3.1000.v20220607-0700 (org.eclipse.help.feature.group 2.3.1000.v20220607-0700) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Add request for EMF Model Transaction 1.12.0.201805140824 (org.eclipse.emf.transaction.feature.group 1.12.0.201805140824) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Add request for EMF Ecore Edit 2.15.0.v20210924-1718 (org.eclipse.emf.ecore.edit.feature.group 2.15.0.v20210924-1718) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Add request for JustJ OpenJDK Hotspot JRE Complete 11.0.2.v20200815-0835 (org.eclipse.justj.openjdk.hotspot.jre.full.feature.group 11.0.2.v20200815-0835) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Add request for Equinox p2, backward compatibility support 1.4.1600.v20220518-1326 (org.eclipse.equinox.p2.extras.feature.feature.group 1.4.1600.v20220518-1326) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Add request for Java implementation of Git - GPG support using BouncyCastle 6.2.0.202206071550-r (org.eclipse.jgit.gpg.bc.feature.group 6.2.0.202206071550-r) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Add request for Sirius Core Runtime 7.0.1.202205300817 (org.eclipse.sirius.runtime.feature.group 7.0.1.202205300817) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Add request for EMF Edit 2.18.0.v20220201-1551 (org.eclipse.emf.edit.feature.group 2.18.0.v20220201-1551) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Add request for ECF Filetransfer Feature 3.14.1800.v20220215-0126 (org.eclipse.ecf.filetransfer.feature.feature.group 3.14.1800.v20220215-0126) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Add request for PROVE Tool Feature 1.0.0.202301201326 (PROVE.feature.feature.group 1.0.0.202301201326) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Add request for Eclipse Layout Kernel (Incubation) - Graphviz Library Support 0.7.1 (org.eclipse.elk.graphviz.feature.feature.group 0.7.1) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Add request for Java implementation of Git 6.2.0.202206071550-r (org.eclipse.jgit.feature.group 6.2.0.202206071550-r) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Add request for Eclipse Platform 4.24.0.v20220607-0700 (org.eclipse.platform.feature.group 4.24.0.v20220607-0700) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Add request for ECF Apache Httpclient 5 FileTransfer Provider 1.1.600.v20220215-0126 (org.eclipse.ecf.filetransfer.httpclient5.feature.feature.group 1.1.600.v20220215-0126) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Add request for SecMoF 1.0.0.202301201326 (SecMoF.feature.feature.group 1.0.0.202301201326) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Add request for Equinox p2, Provisioning for IDEs. 2.4.1600.v20220518-1326 (org.eclipse.equinox.p2.user.ui.feature.group 2.4.1600.v20220518-1326) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Add request for Eclipse Layout Kernel (Incubation) - Layout Algorithms 0.7.1 (org.eclipse.elk.algorithms.feature.feature.group 0.7.1) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Add request for ECF Filetransfer SSL Feature 1.1.401.v20210409-2301 (org.eclipse.ecf.filetransfer.ssl.feature.feature.group 1.1.401.v20210409-2301) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Add request for EMF - Eclipse Modeling Framework Core Runtime 2.28.0.v20220426-0617 (org.eclipse.emf.ecore.feature.group 2.28.0.v20220426-0617) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Add request for SecMoF v0.1 1.0.0.202301201326 (SecMoF 1.0.0.202301201326) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Add request for ECF Core Feature 1.6.1.v20211005-1944 (org.eclipse.ecf.core.feature.feature.group 1.6.1.v20211005-1944) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Add request for Graphical Modeling Framework (GMF) Notation 1.13.0.202004160913 (org.eclipse.gmf.runtime.notation.feature.group 1.13.0.202004160913) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Add request for Sirius IDE Support for Acceleo Interpreter view 7.0.1.202205300817 (org.eclipse.sirius.runtime.ide.ui.acceleo.feature.group 7.0.1.202205300817) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Add request for Java implementation of Git - ssh support using Apache MINA sshd 6.2.0.202206071550-r (org.eclipse.jgit.ssh.apache.feature.group 6.2.0.202206071550-r) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Add request for Java implementation of Git - optional Http support using Apache httpclient 6.2.0.202206071550-r (org.eclipse.jgit.http.apache.feature.group 6.2.0.202206071550-r) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Add request for Eclipse RCP 4.24.0.v20220607-0700 (org.eclipse.rcp.feature.group 4.24.0.v20220607-0700) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Add request for EMF Common 2.26.0.v20220325-0806 (org.eclipse.emf.common.feature.group 2.26.0.v20220325-0806) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Add request for Equinox p2, headless functionalities 1.6.1400.v20220518-1326 (org.eclipse.equinox.p2.core.feature.feature.group 1.6.1400.v20220518-1326) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Add request for EMF Validation Framework 1.12.2.202008210805 (org.eclipse.emf.validation.feature.group 1.12.2.202008210805) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Add request for Eclipse Layout Kernel (Incubation) - Core Components 0.7.1 (org.eclipse.elk.feature.feature.group 0.7.1) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Add request for Sirius Runtime IDE 7.0.1.202205300817 (org.eclipse.sirius.runtime.ide.ui.feature.group 7.0.1.202205300817) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Add request for Sirius Properties Views - Runtime Support 7.0.1.202205300817 (org.eclipse.sirius.properties.feature.feature.group 7.0.1.202205300817) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Add request for Sirius Specifier Environment 7.0.1.202205300817 (org.eclipse.sirius.specifier.feature.group 7.0.1.202205300817) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Add request for Graphical Modeling Framework (GMF) Runtime 1.14.2.202204130739 (org.eclipse.gmf.feature.group 1.14.2.202204130739) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Add request for EMF Model Transaction Workbench Integration 1.12.0.201805140824 (org.eclipse.emf.workspace.feature.group 1.12.0.201805140824) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Add request for Graphical Modeling Framework (GMF) Runtime Third-Party Components 1.14.2.202204130739 (org.eclipse.gmf.runtime.thirdparty.feature.group 1.14.2.202204130739) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Add request for GEF (MVC) 3.11.0.201606061308 (org.eclipse.gef.feature.group 3.11.0.201606061308) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Add request for Eclipse Layout Kernel (Incubation) - UI Components 0.7.1 (org.eclipse.elk.ui.feature.feature.group 0.7.1) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:28:23.737
+!MESSAGE Add request for Git integration for Eclipse 6.2.0.202206071550-r (org.eclipse.egit.feature.group 6.2.0.202206071550-r) is satisfiable
+!SESSION 2023-01-20 13:39:16.694 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.14.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  -eclipse.keyring C:\Users\scmas9\AppData\Local\Temp\tycho10583479532103908487secure_storage
+Command-line arguments:  -eclipse.keyring C:\Users\scmas9\AppData\Local\Temp\tycho10583479532103908487secure_storage
+
+!ENTRY org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.694
+!MESSAGE Overall install request is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.694
+!MESSAGE Add request for ECF Core SSL Feature 1.1.501.v20210409-2301 (org.eclipse.ecf.core.ssl.feature.feature.group 1.1.501.v20210409-2301) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.694
+!MESSAGE Add request for Eclipse 4 Rich Client Platform 4.24.0.v20220530-1036 (org.eclipse.e4.rcp.feature.group 4.24.0.v20220530-1036) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.694
+!MESSAGE Add request for Sirius ELK Integration (Experimental) 7.0.1.202205300817 (org.eclipse.sirius.diagram.elk.feature.feature.group 7.0.1.202205300817) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.694
+!MESSAGE Add request for SecMoF 1.0.0.202301201338 (SecMoF.feature.feature.group 1.0.0.202301201338) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.694
+!MESSAGE Add request for Equinox p2, minimal support for RCP applications 1.4.1600.v20220518-1326 (org.eclipse.equinox.p2.rcp.feature.feature.group 1.4.1600.v20220518-1326) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.694
+!MESSAGE Add request for SecMoF v0.1 1.0.0.202301201338 (SecMoF 1.0.0.202301201338) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.694
+!MESSAGE Add request for Draw2d 3.10.100.201606061308 (org.eclipse.draw2d.feature.group 3.10.100.201606061308) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.694
+!MESSAGE Add request for Eclipse Help System 2.3.1000.v20220607-0700 (org.eclipse.help.feature.group 2.3.1000.v20220607-0700) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.694
+!MESSAGE Add request for EMF Model Transaction 1.12.0.201805140824 (org.eclipse.emf.transaction.feature.group 1.12.0.201805140824) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.694
+!MESSAGE Add request for EMF Ecore Edit 2.15.0.v20210924-1718 (org.eclipse.emf.ecore.edit.feature.group 2.15.0.v20210924-1718) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.694
+!MESSAGE Add request for JustJ OpenJDK Hotspot JRE Complete 11.0.2.v20200815-0835 (org.eclipse.justj.openjdk.hotspot.jre.full.feature.group 11.0.2.v20200815-0835) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.694
+!MESSAGE Add request for Equinox p2, backward compatibility support 1.4.1600.v20220518-1326 (org.eclipse.equinox.p2.extras.feature.feature.group 1.4.1600.v20220518-1326) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.694
+!MESSAGE Add request for Java implementation of Git - GPG support using BouncyCastle 6.2.0.202206071550-r (org.eclipse.jgit.gpg.bc.feature.group 6.2.0.202206071550-r) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.695
+!MESSAGE Add request for Sirius Core Runtime 7.0.1.202205300817 (org.eclipse.sirius.runtime.feature.group 7.0.1.202205300817) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.695
+!MESSAGE Add request for EMF Edit 2.18.0.v20220201-1551 (org.eclipse.emf.edit.feature.group 2.18.0.v20220201-1551) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.695
+!MESSAGE Add request for ECF Filetransfer Feature 3.14.1800.v20220215-0126 (org.eclipse.ecf.filetransfer.feature.feature.group 3.14.1800.v20220215-0126) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.695
+!MESSAGE Add request for Eclipse Layout Kernel (Incubation) - Graphviz Library Support 0.7.1 (org.eclipse.elk.graphviz.feature.feature.group 0.7.1) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.695
+!MESSAGE Add request for Java implementation of Git 6.2.0.202206071550-r (org.eclipse.jgit.feature.group 6.2.0.202206071550-r) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.695
+!MESSAGE Add request for Eclipse Platform 4.24.0.v20220607-0700 (org.eclipse.platform.feature.group 4.24.0.v20220607-0700) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.695
+!MESSAGE Add request for ECF Apache Httpclient 5 FileTransfer Provider 1.1.600.v20220215-0126 (org.eclipse.ecf.filetransfer.httpclient5.feature.feature.group 1.1.600.v20220215-0126) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.695
+!MESSAGE Add request for Equinox p2, Provisioning for IDEs. 2.4.1600.v20220518-1326 (org.eclipse.equinox.p2.user.ui.feature.group 2.4.1600.v20220518-1326) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.695
+!MESSAGE Add request for Eclipse Layout Kernel (Incubation) - Layout Algorithms 0.7.1 (org.eclipse.elk.algorithms.feature.feature.group 0.7.1) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.695
+!MESSAGE Add request for ECF Filetransfer SSL Feature 1.1.401.v20210409-2301 (org.eclipse.ecf.filetransfer.ssl.feature.feature.group 1.1.401.v20210409-2301) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.695
+!MESSAGE Add request for EMF - Eclipse Modeling Framework Core Runtime 2.28.0.v20220426-0617 (org.eclipse.emf.ecore.feature.group 2.28.0.v20220426-0617) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.695
+!MESSAGE Add request for ECF Core Feature 1.6.1.v20211005-1944 (org.eclipse.ecf.core.feature.feature.group 1.6.1.v20211005-1944) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.695
+!MESSAGE Add request for Graphical Modeling Framework (GMF) Notation 1.13.0.202004160913 (org.eclipse.gmf.runtime.notation.feature.group 1.13.0.202004160913) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.695
+!MESSAGE Add request for Sirius IDE Support for Acceleo Interpreter view 7.0.1.202205300817 (org.eclipse.sirius.runtime.ide.ui.acceleo.feature.group 7.0.1.202205300817) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.695
+!MESSAGE Add request for Java implementation of Git - ssh support using Apache MINA sshd 6.2.0.202206071550-r (org.eclipse.jgit.ssh.apache.feature.group 6.2.0.202206071550-r) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.695
+!MESSAGE Add request for Java implementation of Git - optional Http support using Apache httpclient 6.2.0.202206071550-r (org.eclipse.jgit.http.apache.feature.group 6.2.0.202206071550-r) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.695
+!MESSAGE Add request for Eclipse RCP 4.24.0.v20220607-0700 (org.eclipse.rcp.feature.group 4.24.0.v20220607-0700) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.695
+!MESSAGE Add request for EMF Common 2.26.0.v20220325-0806 (org.eclipse.emf.common.feature.group 2.26.0.v20220325-0806) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.695
+!MESSAGE Add request for Equinox p2, headless functionalities 1.6.1400.v20220518-1326 (org.eclipse.equinox.p2.core.feature.feature.group 1.6.1400.v20220518-1326) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.695
+!MESSAGE Add request for EMF Validation Framework 1.12.2.202008210805 (org.eclipse.emf.validation.feature.group 1.12.2.202008210805) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.695
+!MESSAGE Add request for Eclipse Layout Kernel (Incubation) - Core Components 0.7.1 (org.eclipse.elk.feature.feature.group 0.7.1) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.695
+!MESSAGE Add request for Sirius Runtime IDE 7.0.1.202205300817 (org.eclipse.sirius.runtime.ide.ui.feature.group 7.0.1.202205300817) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.695
+!MESSAGE Add request for Sirius Properties Views - Runtime Support 7.0.1.202205300817 (org.eclipse.sirius.properties.feature.feature.group 7.0.1.202205300817) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.695
+!MESSAGE Add request for Sirius Specifier Environment 7.0.1.202205300817 (org.eclipse.sirius.specifier.feature.group 7.0.1.202205300817) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.695
+!MESSAGE Add request for PROVE Tool Feature 1.0.0.202301201338 (PROVE.feature.feature.group 1.0.0.202301201338) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.695
+!MESSAGE Add request for Graphical Modeling Framework (GMF) Runtime 1.14.2.202204130739 (org.eclipse.gmf.feature.group 1.14.2.202204130739) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.695
+!MESSAGE Add request for EMF Model Transaction Workbench Integration 1.12.0.201805140824 (org.eclipse.emf.workspace.feature.group 1.12.0.201805140824) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.695
+!MESSAGE Add request for Graphical Modeling Framework (GMF) Runtime Third-Party Components 1.14.2.202204130739 (org.eclipse.gmf.runtime.thirdparty.feature.group 1.14.2.202204130739) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.695
+!MESSAGE Add request for GEF (MVC) 3.11.0.201606061308 (org.eclipse.gef.feature.group 3.11.0.201606061308) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.695
+!MESSAGE Add request for Eclipse Layout Kernel (Incubation) - UI Components 0.7.1 (org.eclipse.elk.ui.feature.feature.group 0.7.1) is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2023-01-20 13:39:16.695
+!MESSAGE Add request for Git integration for Eclipse 6.2.0.202206071550-r (org.eclipse.egit.feature.group 6.2.0.202206071550-r) is satisfiable

@@ -12,7 +12,15 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.sirius.common.acceleo.aql,
  dsm.PROVE;bundle-version="1.0.0",
  dsm.PROVE.edit;bundle-version="1.0.0",
- dsm.PROVE.editor;bundle-version="1.0.0"
+ dsm.PROVE.editor;bundle-version="1.0.0",
+ org.eclipse.sirius.diagram,
+ org.eclipse.sirius.ui,
+ org.eclipse.sirius.common,
+ org.eclipse.emf.transaction,
+ org.eclipse.sirius.ext.base,
+ dsm.FRIPP;bundle-version="1.0.0",
+ dsm.FRIPP.edit;bundle-version="1.0.0",
+ dsm.FRIPP.editor;bundle-version="1.0.0"
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-11
 Bundle-Vendor: %providerName

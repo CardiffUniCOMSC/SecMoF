@@ -17,7 +17,7 @@
       </vmArgsMac>
    </launcherArgs>
 
-   <windowImages i16="/sirius.clean.branding/icons/PROVElogo16.png" i32="/sirius.clean.branding/icons/PROVElogo32.png" i48="/sirius.clean.branding/icons/PROVElogo48.png" i64="/sirius.clean.branding/icons/PROVElogo64.png"/>
+   <windowImages i16="/sirius.clean.branding/icons/SecMoFlogo16.png" i32="/sirius.clean.branding/icons/SecMoFlogo32.png" i48="/sirius.clean.branding/icons/SecMoFlogo48.png" i64="/sirius.clean.branding/icons/SecMoFlogo64.png"/>
 
    <splash
       location="sirius.clean.branding"
@@ -29,15 +29,17 @@
       </win>
    </launcher>
 
+
    <vm>
       <windows include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8</windows>
    </vm>
 
    <license>
         <text>
-   SecMoF
-Use at your own risk.
-Developer/issuer is not responsible/liable for anything
+   Security Modelling Framework (SecMoF)
+
+Developed by Cardiff University COMSC and contributors 
+The developers are not responsible for any implications of using this application.
          </text>
    </license>
 

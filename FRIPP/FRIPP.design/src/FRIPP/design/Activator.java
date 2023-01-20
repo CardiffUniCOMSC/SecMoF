@@ -18,7 +18,8 @@ public class Activator extends AbstractUIPlugin {
     // The shared instance
     private static Activator plugin;
 
-    private static Set<Viewpoint> viewpoints; 
+    private static Set<Viewpoint> viewpoints;
+    public static String VIEWPOINT_NAME = "FRIPPviewpoint";
 
     /**
      * The constructor
@@ -62,5 +63,13 @@ public class Activator extends AbstractUIPlugin {
      */
     public static Activator getDefault() {
 	return plugin;
+    }
+    public static void logError(String message, Throwable e) {
+		if (plugin != null) {
+			//plugin.doLogError(message, e); //removed by Avi due to compilation error - TEMPORARY
+		} else {
+			System.err.println(message);
+			e.printStackTrace();
+		}
     }
 }
