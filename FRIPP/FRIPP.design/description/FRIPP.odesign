@@ -681,11 +681,30 @@
         <edgeMappings name="ParagonImpact" semanticCandidatesExpression="aql: self.eAllContents()" sourceMapping="//@ownedViewpoints[name='FRIPPviewpoint']/@ownedRepresentations[name='FRIPP%20Representation']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@subContainerMappings[name='ProcessHierarchy_PD']" targetFinderExpression="aql: self.paragon" sourceFinderExpression="aql: self.eContainer()" domainClass="ActivityImpact" useDomainElement="true">
           <targetMapping xsi:type="description_1:NodeMapping" href="../../DependencyModel.design/description/DependencyModel.odesign#//@ownedViewpoints[name='DependencyModelViewpoint']/@ownedRepresentations[name='DependencyModelingDiagram']/@defaultLayer/@nodeMappings[name='ParagonNode']"/>
           <style lineStyle="dash" targetArrow="InputClosedArrow" sizeComputationExpression="2">
-            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-            <centerLabelStyleDescription labelSize="12">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="aql: '['+self.newValue+']'">
+              <labelFormat>italic</labelFormat>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </centerLabelStyleDescription>
           </style>
+          <conditionnalStyles predicateExpression="aql: self.newValue &lt; self.originalProbability">
+            <style lineStyle="dash" targetArrow="InputClosedArrow" sizeComputationExpression="2">
+              <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
+              <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="aql: '['+self.newValue+']'">
+                <labelFormat>italic</labelFormat>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
+              </centerLabelStyleDescription>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="aql: self.newValue > self.originalProbability">
+            <style lineStyle="dash" targetArrow="InputClosedArrow" sizeComputationExpression="2">
+              <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_green']"/>
+              <centerLabelStyleDescription labelSize="12" showIcon="false" labelExpression="aql: '['+self.newValue+']'">
+                <labelFormat>italic</labelFormat>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_green']"/>
+              </centerLabelStyleDescription>
+            </style>
+          </conditionnalStyles>
         </edgeMappings>
         <edgeMappingImports>
           <importedMapping xsi:type="description_1:EdgeMapping" href="../../DependencyModel.design/description/DependencyModel.odesign#//@ownedViewpoints[name='DependencyModelViewpoint']/@ownedRepresentations[name='DependencyModelingDiagram']/@defaultLayer/@edgeMappings[name='ParagonCompositionEdge']"/>
