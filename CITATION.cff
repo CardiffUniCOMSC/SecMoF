@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Shaked"
+  given-names: "Avi"
+  orcid: "https://orcid.org/0000-0001-7976-1942"
+- family-names: "Cherdantseva"
+  given-names: "Yulia"
+  orcid: "https://orcid.org/0000-0002-3527-1121"
+- family-names: "Burnap"
+  given-names: "Pete"
+- family-names: "Maynard"
+  given-names: "Pete"
+  orcid: "https://orcid.org/0000-0002-6267-7530"
+date-released: 2022-07-19
+title: "Security Modelling Framework (SecMoF)"
+version: 0.1.0
+url: "https://github.com/CardiffUniCOMSC/SecMoF"
+preferred-citation: 
+  type: article
+  authors: 
+  - family-names: "Shaked"
+    given-names: "Avi"
+    orcid: "https://orcid.org/0000-0001-7976-1942"
+  - family-names: "Cherdantseva"
+    given-names: "Yulia"
+    orcid: "https://orcid.org/0000-0002-3527-1121"
+  - family-names: "Burnap"
+    given-names: "Pete"
+  - family-names: "Maynard"
+    given-names: "Pete"
+    orcid: "https://orcid.org/0000-0002-6267-7530"
+  doi: 10.1016/j.cose.2023.103454
+  journal: "Computers & Security"
+  title: "Operations-informed incident response playbooks"
+  month: 11
+  year: 2023
+  volume: 134

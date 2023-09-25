@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependencyModel:Paragon xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dependencyModel="http://www.example.org/dependencyModel" description="1) Root Goal" probability="0.69140625" Type="AND">
+  <paragon description="1.3) Sub-goal/Dependency" probability="0.7375" Type="OR">
+    <paragon description="1.3.2) Dependency" probability="0.25"/>
+    <paragon description="1.3.1) Dependency" probability="0.65"/>
+  </paragon>
+  <paragon description="1.2) Sub-goal/Dependency" probability="1.0" Type="OR">
+    <paragon description="1.2.1) Dependency" probability="1.0"/>
+    <paragon description="1.2.2) Dependency" probability="1.0"/>
+  </paragon>
+  <paragon description="1.1) Sub-goal/Dependency" probability="0.9375" Type="OR">
+    <paragon description="1.1.2) Dependency" probability="0.75"/>
+    <paragon description="1.1.1) Dependency" probability="0.75"/>
+  </paragon>
+</dependencyModel:Paragon>
+

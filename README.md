@@ -1,7 +1,11 @@
-# SecMOF
+# SecMoF
 Security Modelling Framework
 
+* [Documentation](Documentation)
+* [Examples and Templates](ExamplesAndTemplates)
+
 Includes the following integrated components:
+
 1. FRIPP Playbooks
 2. Dependency Modelling – lightweight implementation of The Open Group standard https://publications.opengroup.org/c133 for Eclipse
 3. Metrics

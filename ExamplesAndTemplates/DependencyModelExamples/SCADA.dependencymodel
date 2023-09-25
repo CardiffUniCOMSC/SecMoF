@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependencyModel:Paragon xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dependencyModel="http://www.example.org/dependencyModel" description="Secure and safe operation of a SCADA system" Type="AND">
+  <paragon description="System Architecture is Ok" Type="AND">
+    <paragon description="Software is Ok" probability="1.0" Type="AND">
+      <paragon description="HMI runtime software application(s) is Ok" probability="1.0" Type="AND">
+        <paragon description="Plant control &amp; view is Ok" probability="1.0" Type="AND">
+          <paragon description="Plant control is Ok" probability="1.0" Type="AND">
+            <paragon description="Set thresholds are Ok" probability="1.0"/>
+            <paragon description="Set modes are Ok" probability="1.0"/>
+            <paragon description="Analogue control is Ok" probability="1.0"/>
+            <paragon description="Digital start/stop/reset is Ok" probability="1.0"/>
+          </paragon>
+          <paragon description="Plant view is Ok" probability="1.0" Type="AND">
+            <paragon description="Process unit support is Ok" probability="1.0"/>
+            <paragon description="Diagnostic display is Ok" probability="1.0"/>
+            <paragon description="Process unit detail display is Ok" probability="1.0"/>
+            <paragon description="Process unit control view is Ok" probability="1.0"/>
+            <paragon description="Process area view is Ok" probability="1.0"/>
+          </paragon>
+        </paragon>
+        <paragon description="SCADA control &amp; view is Ok" probability="1.0" Type="AND">
+          <paragon description="SCADA control interface is Ok" probability="1.0"/>
+          <paragon description="CCTV system control interface is Ok" probability="1.0"/>
+          <paragon description="MIS interface control is Ok" probability="1.0"/>
+          <paragon description="Alarm system control interface is Ok" probability="1.0"/>
+          <paragon description="Historian control is Ok" probability="1.0"/>
+        </paragon>
+        <paragon description="GUI is Ok" probability="1.0" Type="AND">
+          <paragon description="Graphical representation is clear" probability="1.0"/>
+          <paragon description="Semi-graphical representation is clear" probability="1.0"/>
+        </paragon>
+        <paragon description="Monitoring software is Ok" probability="1.0" Type="AND">
+          <paragon description="Digital monitoring is Ok" probability="1.0"/>
+          <paragon description="Analogue monitoring is Ok" probability="1.0"/>
+          <paragon description="Previous data is available" probability="1.0"/>
+          <paragon description="Alarms issuing and control are Ok" probability="1.0" Type="AND">
+            <paragon description="Thresholds are Ok" probability="1.0"/>
+            <paragon description="View of all alarms is Ok" probability="1.0"/>
+            <paragon description="Shelved alarm view is Ok" probability="1.0"/>
+            <paragon description="Operational alarm display is Ok" probability="1.0"/>
+            <paragon description="Alarm handling is Ok" probability="1.0"/>
+            <paragon description="Alarm SMS interface is Ok" probability="1.0"/>
+            <paragon description="Alarm email interface is Ok" probability="1.0"/>
+          </paragon>
+          <paragon description="Events display is Ok" probability="1.0"/>
+        </paragon>
+      </paragon>
+      <paragon description="Operating system(s) is Okay" probability="1.0">
+        <paragon description="Operating system is free from vulnerabilities" probability="1.0"/>
+      </paragon>
+      <paragon description="Software applications in use are Okay" probability="1.0" Type="AND">
+        <paragon description="GIS system is Ok" probability="1.0"/>
+        <paragon description="Customer invoicing system is Ok " probability="1.0"/>
+        <paragon description="Enterprise management system is Okay" probability="1.0"/>
+        <paragon description="Archiving software (Historian) is Ok" probability="1.0"/>
+        <paragon description="Training  simulation software is Ok" probability="1.0"/>
+        <paragon description="Bespoke applications are Ok and free from bugs" probability="1.0"/>
+        <paragon description="COTs are Ok and free from bugs" probability="1.0"/>
+      </paragon>
+      <paragon description="Only authorized access to the system" probability="1.0" Type="AND">
+        <paragon description="User credentials are Ok" probability="1.0"/>
+        <paragon description="User privileges are Ok" probability="1.0"/>
+        <paragon description="Login and logout are Ok" probability="1.0"/>
+      </paragon>
+      <paragon description="Patching management is Okay" probability="1.0" Type="AND">
+        <paragon description="Vendor support is Ok" probability="1.0"/>
+        <paragon description="Policies are Ok" probability="1.0"/>
+        <paragon description="Patching and updates are regular" probability="1.0"/>
+      </paragon>
+      <paragon description="Virtualization and virtual servers are Okay" probability="1.0"/>
+    </paragon>
+    <paragon description="Hardware is Ok" Type="AND">
+      <paragon description="Control center is Ok" probability="1.0" Type="OR">
+        <paragon description="Primary control center is Ok" probability="1.0" Type="AND">
+          <paragon description="HMI workstations are Ok" probability="1.0" Type="AND">
+            <paragon description="Graphic card is Ok" probability="1.0"/>
+            <paragon description="Ergonomics is Ok" probability="1.0"/>
+            <paragon description="Client management is Ok" probability="1.0" Type="AND">
+              <paragon description="Thick clients are Ok" probability="1.0"/>
+              <paragon description="Thin clients are Ok" probability="1.0"/>
+              <paragon description="Mobile clients are Ok" probability="1.0"/>
+            </paragon>
+          </paragon>
+          <paragon description="MTU (SCADA server) is Ok" probability="1.0" Type="AND">
+            <paragon description="Processor and processing power is Ok" probability="1.0"/>
+            <paragon description="RAM is Ok" probability="1.0"/>
+          </paragon>
+          <paragon description="Large screen display is Ok" probability="1.0"/>
+          <paragon description="Historian server is Ok" probability="1.0" Type="AND">
+            <paragon description="Database implementation is Ok" probability="1.0" Type="AND">
+              <paragon description="Database schema is Ok" probability="1.0"/>
+              <paragon description="Stored procedures and functions are Ok" probability="1.0"/>
+              <paragon description="Real-time processing is Ok" probability="1.0"/>
+              <paragon description="Database disruption statistics is maintained" probability="1.0"/>
+            </paragon>
+            <paragon description="Backups are regular and secure" probability="1.0"/>
+          </paragon>
+          <paragon description="Device hardening is Ok" probability="1.0"/>
+        </paragon>
+        <paragon description="Backup control center is Ok" probability="1.0"/>
+      </paragon>
+      <paragon description="Field devices are Ok" Type="AND">
+        <paragon description="IEDs are Ok" probability="1.0"/>
+        <paragon description="PLCs are Ok">
+          <paragon description="Safety PLC is Ok" probability="1.0"/>
+          <paragon description="Control function is Ok" probability="1.0"/>
+          <paragon description="Ladder logic is Ok" probability="1.0"/>
+          <paragon description="Settings are Ok" probability="0.9"/>
+        </paragon>
+        <paragon description="Passive components are Ok" probability="1.0" Type="AND">
+          <paragon description="Sensors are Ok" probability="1.0">
+            <paragon description="No sensor overloading" probability="1.0"/>
+          </paragon>
+          <paragon description="Meters are Ok" probability="1.0">
+            <paragon description="Customer meters are Ok" probability="1.0"/>
+            <paragon description="Interllegent meters are Ok" probability="1.0"/>
+          </paragon>
+        </paragon>
+        <paragon description="Active components (actuators) are Ok" probability="1.0" Type="AND">
+          <paragon description="Emergency shutdown function is Ok" probability="1.0"/>
+          <paragon description="Control action is Ok" probability="1.0"/>
+          <paragon description="Protection relay" probability="1.0"/>
+        </paragon>
+        <paragon description="RTUs are Ok" probability="1.0" Type="AND">
+          <paragon description="Panel earthing is Ok" probability="1.0"/>
+          <paragon description="DI module is Ok" probability="1.0"/>
+          <paragon description="Enclosure is Ok" probability="1.0"/>
+          <paragon description="DO module is Ok" probability="1.0">
+            <paragon description="Interposing relay is Ok" probability="1.0"/>
+          </paragon>
+          <paragon description="AI module is Ok" probability="1.0"/>
+          <paragon description="Communication module is Ok" probability="1.0"/>
+          <paragon description="Control wiring is Ok" probability="1.0"/>
+        </paragon>
+        <paragon description="GPS clock (time signal) is Ok" probability="1.0"/>
+        <paragon description="Position is stable" probability="1.0"/>
+        <paragon description="Shelter from adverse weather is Ok" probability="1.0"/>
+        <paragon description="No device fragility" probability="1.0"/>
+      </paragon>
+      <paragon description="Communication server is Okay" probability="1.0"/>
+      <paragon description="All other embedded systems are Okay" probability="1.0"/>
+      <paragon description="Power supply is Ok" probability="1.0" Type="AND">
+        <paragon description="Power supply wiring is Ok" probability="1.0"/>
+        <paragon description="CNI is Ok" probability="1.0"/>
+      </paragon>
+    </paragon>
+    <paragon description="Networks are Ok" probability="0.2" Type="AND">
+      <paragon description="Physical layer is Ok" probability="1.0" Type="AND">
+        <paragon description="Wired communications are Ok" probability="1.0" Type="AND">
+          <paragon description="Patch cables are Ok" probability="1.0">
+            <paragon description="Serial communication is Ok" probability="1.0"/>
+          </paragon>
+          <paragon description="Control cable is Ok" probability="1.0"/>
+          <paragon description="Masts/trunks are Ok" probability="1.0"/>
+          <paragon description="Source is Ok" probability="1.0"/>
+          <paragon description="Destination is Ok" probability="1.0"/>
+          <paragon description="Dedicated line is Ok" probability="1.0"/>
+          <paragon description="Ports are Ok" probability="1.0"/>
+        </paragon>
+        <paragon description="Wireless communications are Ok" probability="1.0">
+          <paragon description="Radio communication is Ok" probability="1.0" Type="AND">
+            <paragon description="Public band is Ok" probability="1.0"/>
+            <paragon description="Licences radio communication is Ok" probability="1.0"/>
+            <paragon description="GPRS is Ok" probability="1.0"/>
+            <paragon description="GMS is Ok" probability="1.0"/>
+          </paragon>
+          <paragon description="Satellite (mobile) communication is Ok" probability="1.0"/>
+        </paragon>
+        <paragon description="All equipment is Ok" probability="1.0" Type="AND">
+          <paragon description="Modems are Ok" probability="1.0"/>
+          <paragon description="Router is Ok" probability="1.0"/>
+          <paragon description="Switches are Ok" probability="1.0"/>
+          <paragon description="Connectors are Ok" probability="1.0"/>
+        </paragon>
+      </paragon>
+      <paragon description="Communication protocols are Ok" probability="1.0">
+        <paragon description="All protocols are Ok" probability="1.0">
+          <paragon description="PLC protocols are Ok"/>
+          <paragon description="TCP/IP is Ok"/>
+          <paragon description="OPC server si Ok" probability="1.0"/>
+          <paragon description="Standardized protocols are Ok" probability="1.0"/>
+          <paragon description="Proprietary protocols are Ok" probability="1.0"/>
+          <paragon description="Secure mechanisms in protocols are Ok" probability="1.0"/>
+          <paragon description="Latency is Ok" probability="1.0"/>
+          <paragon description="Interoperability is Ok" probability="1.0"/>
+          <paragon description="Protocol converter is Ok" probability="1.0"/>
+          <paragon description="SCADA handshake is Ok" probability="1.0"/>
+        </paragon>
+      </paragon>
+      <paragon description="All zones are Ok" probability="0.2" Type="AND">
+        <paragon description="External zone is Ok" probability="1.0">
+          <paragon description="Internet is Ok" probability="1.0"/>
+        </paragon>
+        <paragon description="Corporate zone is Ok" probability="1.0">
+          <paragon description="Enterprise LAN is Ok" probability="1.0" Type="AND">
+            <paragon description="Ethernet is Ok" probability="1.0"/>
+            <paragon description="VPN is Ok" probability="1.0"/>
+            <paragon description="Access pointe are secure" probability="1.0"/>
+            <paragon description="Handheld devices are secure" probability="1.0"/>
+            <paragon description="Other systems are Ok" probability="1.0"/>
+          </paragon>
+        </paragon>
+        <paragon description="Control zone is Ok" probability="0.2" Type="AND">
+          <paragon description="PLC network is Ok" probability="0.2"/>
+          <paragon description="Industrial Ethernet is Ok" probability="1.0"/>
+          <paragon description="Remote I/O systems are Ok" probability="1.0"/>
+          <paragon description="Local control LAN is Ok" probability="1.0">
+            <paragon description="Load bay is Ok" probability="1.0"/>
+            <paragon description="Line bay is Ok" probability="1.0"/>
+            <paragon description="Generator bay is Ok" probability="1.0"/>
+          </paragon>
+          <paragon description="Remote control is Okay" probability="1.0"/>
+        </paragon>
+      </paragon>
+      <paragon description="Network management is Ok" probability="1.0" Type="AND">
+        <paragon description="Fault management is Ok" probability="1.0"/>
+        <paragon description="Redundancy management is Ok" probability="1.0"/>
+        <paragon description="Configuration is Ok" probability="1.0"/>
+        <paragon description="Service Level Agreements are Ok" probability="1.0"/>
+        <paragon description="Performance management is Ok" probability="1.0" Type="AND">
+          <paragon description="Actual use of capacity is ok" probability="1.0"/>
+          <paragon description="Performance evaluation is Ok" probability="1.0" Type="AND">
+            <paragon description="Bandwidth is Ok" probability="1.0"/>
+            <paragon description="Jitter is Ok" probability="1.0"/>
+          </paragon>
+        </paragon>
+        <paragon description="Network plans is Ok" probability="1.0" Type="AND">
+          <paragon description="New area plans are Ok" probability="1.0"/>
+          <paragon description="Long-term planning is Ok" probability="1.0"/>
+        </paragon>
+        <paragon description="Network monitoring is Okay" probability="1.0"/>
+      </paragon>
+      <paragon description="Other networks are Ok" probability="1.0"/>
+      <paragon description="All networks are available" probability="1.0"/>
+      <paragon description="Security is Ok" probability="1.0" Type="AND">
+        <paragon description="Isolation is Ok" probability="1.0" Type="AND">
+          <paragon description="Physical isolation is Ok" probability="1.0"/>
+          <paragon description="Logical isolation is Ok" probability="1.0" Type="AND">
+            <paragon description="Airgap is Ok" probability="1.0"/>
+            <paragon description="Firewall is Ok" probability="1.0"/>
+            <paragon description="Default deny policy" probability="1.0"/>
+            <paragon description="Access control is Ok" probability="1.0">
+              <paragon description="Authorisation mechanisms are Ok" probability="1.0"/>
+              <paragon description="Access rights are Ok" probability="1.0"/>
+            </paragon>
+          </paragon>
+        </paragon>
+        <paragon description="IDS/IPS is Ok" probability="1.0" Type="AND">
+          <paragon description="IDS sensors are Ok" probability="1.0"/>
+          <paragon description="Alerting is Ok" probability="1.0"/>
+        </paragon>
+        <paragon description="Penetration testing is regular" probability="1.0"/>
+        <paragon description="Network audit and diagnostics is regular" probability="1.0"/>
+        <paragon description="Data encryption (cryptography) is Ok" probability="1.0"/>
+        <paragon description="Device discovery is Ok" probability="1.0"/>
+        <paragon description="Known vulnerabilities are eliminated or otherwise addressed" probability="1.0"/>
+      </paragon>
+      <paragon description="Bandwidth is Okay" probability="1.0"/>
+    </paragon>
+  </paragon>
+  <paragon description="Management is effective" probability="1.0">
+    <paragon description="Quality criteria are satisfied" probability="1.0">
+      <paragon description="Readiness for incident response is Ok" probability="1.0"/>
+      <paragon description="All system components are available" probability="1.0"/>
+      <paragon description="System is sustainable" probability="1.0"/>
+      <paragon description="System integrity is Ok" probability="1.0"/>
+      <paragon description="Confidentiality is ensured" probability="1.0"/>
+      <paragon description="System is Agile" probability="1.0"/>
+      <paragon description="Maintainability is Ok" probability="1.0"/>
+      <paragon description="Operability is Ok" probability="1.0"/>
+      <paragon description="System is resiliant" probability="1.0"/>
+      <paragon description="System is reliable" probability="1.0"/>
+    </paragon>
+    <paragon description="Operations monitoring is Ok" probability="1.0">
+      <paragon description="Metrics and KPIs are Ok" probability="1.0" Type="AND">
+        <paragon description="Acceptance level is adequte" probability="1.0"/>
+        <paragon description="Baseline is Ok" probability="1.0"/>
+        <paragon description="Uptime Metrics are OK" probability="1.0"/>
+        <paragon description="Throughput Metrics are OK" probability="1.0"/>
+      </paragon>
+    </paragon>
+    <paragon description="Safety is Ok" probability="1.0" Type="AND">
+      <paragon description="Safety analysis is Ok" probability="1.0"/>
+      <paragon description="Safety Process is Ok" probability="1.0"/>
+      <paragon description="Safety control and instrumentation is Ok" probability="1.0"/>
+    </paragon>
+    <paragon description="Change management is OK" probability="1.0" Type="AND">
+      <paragon description="Change in function is properly managed" probability="1.0"/>
+      <paragon description="Change in business model is properly managed" probability="1.0"/>
+    </paragon>
+    <paragon description="Control center and remote station buildings are Ok" probability="1.0" Type="AND">
+      <paragon description="Facilities are Ok" probability="1.0" Type="AND">
+        <paragon description="Power is Ok" probability="1.0" Type="OR">
+          <paragon description="CNI is OK" probability="1.0"/>
+          <paragon description="Emergency power system" probability="1.0"/>
+        </paragon>
+        <paragon description="Water is Ok" probability="1.0">
+          <paragon description="CNI is OK" probability="1.0"/>
+        </paragon>
+        <paragon description="Oil is Ok" probability="1.0">
+          <paragon description="CNI is OK" probability="1.0"/>
+        </paragon>
+      </paragon>
+      <paragon description="Physical security is Ok" probability="1.0" Type="AND">
+        <paragon description="Access points are Ok" probability="1.0" Type="OR">
+          <paragon description="Biometric access control is Ok" probability="1.0"/>
+          <paragon description="Passwords are Ok" probability="1.0"/>
+        </paragon>
+        <paragon description="Access in controlled and monitored" probability="1.0"/>
+        <paragon description="Gates, locks, keys are Ok" probability="1.0"/>
+        <paragon description="CCTV system is OK" probability="1.0" Type="AND">
+          <paragon description="Camera control is Ok" probability="1.0"/>
+          <paragon description="Camera images are Ok" probability="1.0"/>
+          <paragon description="Interface is Ok" probability="1.0"/>
+        </paragon>
+        <paragon description="Physical penetration testing is regular" probability="1.0"/>
+        <paragon description="Area is secure" probability="1.0"/>
+      </paragon>
+      <paragon description="No hazards" probability="1.0"/>
+    </paragon>
+    <paragon description="Business context is well understood" probability="1.0" Type="AND">
+      <paragon description="Business objective(s) is clear" probability="1.0"/>
+      <paragon description="Economic case/Finance/Budget are Ok" probability="1.0"/>
+      <paragon description="Customer requirements are analysed" probability="1.0"/>
+      <paragon description="Business planning is Ok" probability="1.0"/>
+      <paragon description="Resource constraints are addressed" probability="1.0"/>
+    </paragon>
+    <paragon description="Contract management is Ok" probability="1.0"/>
+    <paragon description="Interest and understanding at decision level is Ok" probability="1.0"/>
+    <paragon description="Certification is Ok" probability="1.0" Type="AND">
+      <paragon description="Certification body accreditation is Ok" probability="1.0"/>
+      <paragon description="Assurance testing is Ok" probability="1.0"/>
+      <paragon description="Inspections are Ok" probability="1.0"/>
+      <paragon description="Documentation is Ok" probability="1.0"/>
+      <paragon description="Compliance is Ok" probability="1.0"/>
+    </paragon>
+    <paragon description="Marketing is Ok" probability="1.0"/>
+    <paragon description="Logistics is Ok" probability="1.0"/>
+    <paragon description="Life cycle management is Ok" probability="1.0"/>
+    <paragon description="Risk management and contingency are Ok" probability="1.0" Type="AND">
+      <paragon description="Risk assessment and analysis are Ok" probability="1.0"/>
+      <paragon description="Disruption planning is Ok" probability="1.0"/>
+      <paragon description="Replacement strategies are Ok" probability="1.0"/>
+      <paragon description="Resource planning is Ok" probability="1.0"/>
+      <paragon description="Reporting for regulation, customers and stakeholders is Ok" probability="1.0"/>
+      <paragon description="Coordination with all concerned parties is Ok" probability="1.0"/>
+      <paragon description="Personnel management in a case of an incident is Ok" probability="1.0"/>
+      <paragon description="Incident management is Ok" probability="1.0" Type="AND">
+        <paragon description="No loss" probability="1.0" Type="AND">
+          <paragon description="No environmental loss" probability="1.0"/>
+          <paragon description="No life loss" probability="1.0"/>
+          <paragon description="No injuries" probability="1.0"/>
+          <paragon description="No financial loss" probability="1.0"/>
+          <paragon description="No loss or damage of material" probability="1.0"/>
+        </paragon>
+        <paragon description="Incident response (cross IT/OT) is Ok" probability="1.0" Type="AND">
+          <paragon description="Press/media handling is Ok" probability="1.0"/>
+          <paragon description="Response procedures are Ok" probability="1.0" Type="AND">
+            <paragon description="Response exercises and testing are Ok" probability="1.0"/>
+            <paragon description="Automated (rule-driven) responses are Ok" probability="1.0"/>
+            <paragon description="Non-automated alarm responses are Ok" probability="1.0"/>
+          </paragon>
+          <paragon description="Forensics is Ok" probability="1.0" Type="AND">
+            <paragon description="Investigation methodology is Ok" probability="1.0"/>
+            <paragon description="Investigation capabilities are Ok" probability="1.0"/>
+          </paragon>
+          <paragon description="Concerned customers are dealt with timely and effectivelly" probability="1.0"/>
+        </paragon>
+      </paragon>
+    </paragon>
+    <paragon description="System maintenance is Ok" probability="1.0" Type="AND">
+      <paragon description="Diverse maintenance team is Ok" probability="1.0"/>
+      <paragon description="Maintenance procedures are Ok" probability="1.0" Type="AND">
+        <paragon description="Replacement is Ok" probability="1.0"/>
+        <paragon description="Cleaning is Ok" probability="1.0"/>
+        <paragon description="Repair is Ok" probability="1.0"/>
+      </paragon>
+      <paragon description="Remote maintenance is Ok" probability="1.0"/>
+      <paragon description="Onsite maintenance is Ok" probability="1.0"/>
+    </paragon>
+    <paragon description="System legacy management is Ok" probability="1.0">
+      <paragon description="Asset management system is Ok" probability="1.0"/>
+    </paragon>
+    <paragon description="Cyber security governance is Ok" probability="1.0" Type="AND">
+      <paragon description="Cyber Security Operations Center (SOC) is Ok" probability="1.0"/>
+      <paragon description="Cyber security policies are Ok" probability="1.0"/>
+      <paragon description="Complicance with cyber security regulations is Ok" probability="1.0"/>
+      <paragon description="Cyber security analytics is Ok" probability="1.0"/>
+      <paragon description="Organisational security culture is Okay" probability="1.0"/>
+      <paragon description="Unknown vulnerabilities are anticipated" probability="1.0"/>
+      <paragon description="Known vulnerabilities are understood and addressed" probability="1.0"/>
+    </paragon>
+  </paragon>
+  <paragon description="Data (Information) is properly handled" probability="1.0" Type="AND">
+    <paragon description="Data security is Ok" probability="1.0" Type="AND">
+      <paragon description="Appropriate data is encrypted" probability="1.0"/>
+      <paragon description="Non-encrypted  data are properly handled " probability="1.0"/>
+    </paragon>
+    <paragon description="Data of all types are Ok" probability="1.0" Type="AND">
+      <paragon description="Time signal (GPS clock) is precise" probability="1.0"/>
+      <paragon description="Emails are Ok" probability="1.0"/>
+      <paragon description="Alarms  are Ok" probability="1.0" Type="AND">
+        <paragon description="Control system generated alarms are OK" probability="1.0"/>
+        <paragon description="Field device generated alarms are Ok" probability="1.0"/>
+      </paragon>
+      <paragon description="SMS communication is Ok" probability="1.0"/>
+      <paragon description="Software data/Settigns is Ok" probability="1.0"/>
+      <paragon description="Configuration data is Ok" probability="1.0"/>
+      <paragon description="Sensor readings are Ok" probability="1.0" Type="AND">
+        <paragon description="Primary/raw data is Ok" probability="1.0">
+          <paragon description="Consumption data is Ok" probability="1.0"/>
+        </paragon>
+        <paragon description="Analysed data is Ok" probability="1.0"/>
+        <paragon description="Backup data is Ok" probability="1.0"/>
+      </paragon>
+      <paragon description="Climate data is Ok" probability="1.0"/>
+      <paragon description="Event data is Ok" probability="1.0" Type="AND">
+        <paragon description="Event data generated by control system is Ok" probability="1.0"/>
+        <paragon description="Event data generated byfield devices is Ok" probability="1.0"/>
+      </paragon>
+      <paragon description="Operator actions data is Ok" probability="1.0"/>
+    </paragon>
+    <paragon description="All actions with data are Ok" probability="1.0" Type="AND">
+      <paragon description="Acquisitions (Logging) is Ok" probability="1.0"/>
+      <paragon description="Storage for review is Ok" probability="1.0"/>
+      <paragon description="Forensics is possible" probability="1.0"/>
+      <paragon description="Data backup is Ok" probability="1.0"/>
+      <paragon description="Analysis is Ok" probability="1.0" Type="AND">
+        <paragon description="Trending is Ok" probability="1.0"/>
+        <paragon description="Alarm/alert generation is Ok" probability="1.0"/>
+        <paragon description="Real-time parsing" probability="1.0"/>
+        <paragon description="Calculations and formulas are correct" probability="1.0"/>
+      </paragon>
+      <paragon description="Reporting is Ok" probability="1.0" Type="AND">
+        <paragon description="Periodic reporting is Ok " probability="1.0"/>
+        <paragon description="Customary reporting is Ok" probability="1.0"/>
+        <paragon description="Management reporting is Ok" probability="1.0"/>
+        <paragon description="Real-time reporting is Ok" probability="1.0"/>
+        <paragon description="Alerting is Ok" probability="1.0"/>
+      </paragon>
+      <paragon description="Access to data is Okay" probability="1.0"/>
+    </paragon>
+    <paragon description="Data flow is Okay" probability="1.0"/>
+    <paragon description="Data presentation is clear and effective" probability="1.0"/>
+  </paragon>
+  <paragon description="External Dependencies (Environment) are recognized and dealt with appropriatly" probability="1.0" Type="AND">
+    <paragon description="Third parties are Ok" probability="1.0" Type="AND">
+      <paragon description="Third party support is Ok" probability="1.0" Type="AND">
+        <paragon description="On-site third party support is Ok" probability="1.0"/>
+        <paragon description="Remote third party support is Ok" probability="1.0"/>
+      </paragon>
+      <paragon description="Third parties of all types are Ok" probability="1.0" Type="AND">
+        <paragon description="Supply chain is Ok" probability="1.0"/>
+        <paragon description="Vendors are Ok" probability="1.0" Type="AND">
+          <paragon description="Vendors are trustworthy" probability="1.0"/>
+          <paragon description="Vendors help with expansion" probability="1.0"/>
+          <paragon description="Vendors do regular updates" probability="1.0"/>
+          <paragon description="Vendor exposure is Ok" probability="1.0"/>
+        </paragon>
+        <paragon description="Service providers are Ok" probability="1.0" Type="AND">
+          <paragon description="Energy service providers are Ok" probability="1.0">
+            <paragon description="CNI is Ok" probability="1.0"/>
+          </paragon>
+          <paragon description="Other service providers are Ok" probability="1.0"/>
+        </paragon>
+        <paragon description="Equipment and system designers are Ok" probability="1.0"/>
+        <paragon description="Equipment and system integrators are Ok" probability="1.0"/>
+        <paragon description="Customers are Ok" probability="1.0"/>
+        <paragon description="Manufacturers are Ok" probability="1.0"/>
+      </paragon>
+    </paragon>
+    <paragon description="No threats or threat agents" probability="1.0" Type="AND">
+      <paragon description="History of threats is maintained and analysed" probability="1.0"/>
+      <paragon description="Current threats are analysed " probability="1.0"/>
+      <paragon description="No software attacks" probability="1.0"/>
+      <paragon description="No hardware attacks" probability="1.0"/>
+      <paragon description="No protocol attacks" probability="1.0"/>
+      <paragon description="No insider attacks" probability="1.0"/>
+      <paragon description="No outsider attacks" probability="1.0"/>
+    </paragon>
+    <paragon description="International linkage is Ok" probability="1.0"/>
+    <paragon description="Connections with industry working groups is maintained" probability="1.0"/>
+    <paragon description="Links with media/press are established" probability="1.0"/>
+    <paragon description="Government (local and departments) are Ok" probability="1.0" Type="AND">
+      <paragon description="Regulation is Ok" probability="1.0"/>
+      <paragon description="Advice is useful and timely" probability="1.0"/>
+      <paragon description="Funding is Ok" probability="1.0"/>
+      <paragon description="Policies are Ok" probability="1.0"/>
+      <paragon description="Legislation is Ok" probability="1.0"/>
+      <paragon description="Political landscape is Ok" probability="1.0"/>
+    </paragon>
+    <paragon description="Standardization bodies are Ok" probability="1.0" Type="AND">
+      <paragon description="EU standards are Ok" probability="1.0"/>
+      <paragon description="UK (National) standards are Ok" probability="1.0"/>
+      <paragon description="US standards are Ok" probability="1.0">
+        <paragon description="Good practice guides are Ok" probability="1.0"/>
+      </paragon>
+    </paragon>
+  </paragon>
+  <paragon description="System Life Cycle is Ok" probability="1.0" Type="AND">
+    <paragon description="Requirements Engineering stage is dealt with effectivelly" probability="1.0">
+      <paragon description="Stakeholder analysis is ok" probability="1.0"/>
+    </paragon>
+    <paragon description="Design is aligned with actual requirements" probability="1.0" Type="AND">
+      <paragon description="Design specification is accurate" probability="1.0"/>
+      <paragon description="No poor design decisions " probability="1.0"/>
+      <paragon description="Design validation is detailed and accurate" probability="1.0"/>
+      <paragon description="Design is secure (security by design)" probability="1.0"/>
+    </paragon>
+    <paragon description="Integration and system delivery stages are Ok" probability="1.0" Type="AND">
+      <paragon description="Software development is OK" probability="1.0"/>
+      <paragon description="Software installation" probability="1.0"/>
+      <paragon description="Software configuration" probability="1.0"/>
+      <paragon description="Software compatibility is Ok" probability="1.0"/>
+    </paragon>
+    <paragon description="Operation stage is Ok" probability="1.0" Type="AND">
+      <paragon description="Software is well maintained" probability="1.0"/>
+      <paragon description="Versioning is Ok" probability="1.0"/>
+      <paragon description="Updates and patches are timely" probability="1.0"/>
+      <paragon description="Monitoring is persistent " probability="1.0"/>
+      <paragon description="Backups are regular" probability="1.0"/>
+    </paragon>
+    <paragon description="Disposal stage is Ok" probability="1.0"/>
+  </paragon>
+  <paragon description="Employees are Ok" probability="1.0" Type="AND">
+    <paragon description="All roles are Ok" probability="1.0" Type="AND">
+      <paragon description="Software Engineers are Ok" probability="1.0"/>
+      <paragon description="System Designers are Ok" probability="1.0"/>
+      <paragon description="InfoSec Engineers are Ok" probability="1.0"/>
+      <paragon description="Physical Security Personnel (guards etc.) are Ok" probability="1.0"/>
+      <paragon description="Managers are Ok" probability="1.0"/>
+      <paragon description="Engineers are Ok" probability="1.0"/>
+      <paragon description="Operators are Ok" probability="1.0" Type="AND">
+        <paragon description="Opearators have required capabilities" probability="1.0"/>
+        <paragon description="Intentions are tracked and observed" probability="1.0"/>
+        <paragon description="Malicious operators are eliminated" probability="1.0"/>
+        <paragon description="All operators are diligent" probability="1.0"/>
+        <paragon description="All operators are competent" probability="1.0"/>
+        <paragon description="Manual supervision is Ok" probability="1.0"/>
+        <paragon description="Automatic supervision is Ok" probability="1.0"/>
+        <paragon description="Operator interaction is Okay" probability="1.0"/>
+        <paragon description="Situational awareness is Okay" probability="1.0"/>
+      </paragon>
+      <paragon description="CSO is Ok" probability="1.0"/>
+    </paragon>
+    <paragon description="Training is Ok" probability="1.0" Type="AND">
+      <paragon description="Training needs are anlysed" probability="1.0"/>
+      <paragon description="Individual training is Ok" probability="1.0"/>
+      <paragon description="Team training is Ok" probability="1.0"/>
+      <paragon description="Use cases are examined" probability="1.0"/>
+      <paragon description="Training on operating instructions and procedures is Ok" probability="1.0"/>
+    </paragon>
+    <paragon description="Employees understand the importance of safety and cyber security" probability="1.0"/>
+    <paragon description="IT hygiene is appropriate" probability="1.0"/>
+    <paragon description="Employees have required education/knowledge" probability="1.0"/>
+    <paragon description="Employees have required qualification" probability="1.0"/>
+    <paragon description="Awareness is at the appropriate level" probability="1.0"/>
+    <paragon description="Employees have required Experience/Skills" probability="1.0"/>
+    <paragon description="Health and Safety is Ok" probability="1.0">
+      <paragon description="Employees feel safe" probability="1.0"/>
+    </paragon>
+    <paragon description="Staff retention program is in place" probability="1.0"/>
+    <paragon description="Procedures for new personnel are Ok" probability="1.0"/>
+    <paragon description="Procedures for leaving personnel are Ok" probability="1.0"/>
+    <paragon description="Background checks for appropriate personnel are performed" probability="1.0"/>
+    <paragon description="Administration of human resources is effective" probability="1.0"/>
+  </paragon>
+</dependencyModel:Paragon>
