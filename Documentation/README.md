@@ -16,7 +16,7 @@
   This guides briefly covers the Windows download and setup for Cardiff University machines (The steps are similar for other systems). Along with importing an example project containing a example Dependency Model and Playbook Process. 
 
 
-* [Import Existing Dependency Model](#Import-Existing-Dependency-Model)
+* [Import Existing Model or Playbook](#Import-Existing-Model-or-Playbook)
 
   This covers how to import existing models into an existing project. Using one of the example models from this repository. 
 
@@ -110,19 +110,33 @@ The Palette pane (**B**) allows you to create new a new Activity, Artifact in St
 
 The main Viewer pane (**C**) shows two Activities linked.
 
-# Import Existing Dependency Model
+# Import Existing Model or Playbook
 
-## 1. Download Model 
+## 1. Download File
 
-Find and download the Dependency Model as an XML file to your Desktop. 
+Find and download the Dependency Model or Playbook Process as an XML file to your Desktop. 
+
+This example we use the large SCADA Dependency Model.
 
 https://github.com/CardiffUniCOMSC/SecMoF/blob/main/ExamplesAndTemplates/DependencyModelExamples/SCADA.dependencymodel
 
-## 2. Import Model into Project
+## 2. Import into Project
 
 Right Click on project (example) -> Import -> File System -> Identify Directory [Desktop] -> Check "SCADA.dependencymodel" [Finish]
 
 ![Image showing the model imported](img/imported-model.png)
+
+## 3. Create Representation
+
+Once the Model has been imported into the project, you will need to create a new visual representation of it. 
+
+Right Click on project (example) -> Create Representation -> Select Representation Type [Next] -> Select the Root Node (**C**) [Finish] -> Name the new representation [OK].
+
+The Representation can either be (**A**) DependencyModellingDiagram for Dependency Models, or (**B**) FRIPP Representation for Playbooks.
+
+![Image showing the create representation method](img/create-representation.png)
+
+
 
 # Export Projects
 
