@@ -9,7 +9,7 @@
   * [SCADA.dependencymodel](DependencyModelExamples/SCADA.dependencymodel): The complete SCADA model from the paper "*A Configurable Dependency Model of a SCADA System for Goal-Oriented Risk Assessment*"[^1]
   * [example-probabilities.dependencymodel](DependencyModelExamples/example-probabilities.dependencymodel): An example dependency model showing simple probabilities and relationships. 
 * Playbook Templates
-  * None.
+  * [Web Injection Analysis](PlaybookTemplates/web-injection/injection-attack-analysis.fripp) and [Web Injection Containment/Eradication](PlaybookTemplates/web-injection/injection-attack-containment-eradication.fripp): An example of a detailed IR Playbook showing the Analysis, Containment, and Eradication phases. *By Muhammad Huzaifa Jamil*.
 
 *This work is licensed under [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0).* 
 

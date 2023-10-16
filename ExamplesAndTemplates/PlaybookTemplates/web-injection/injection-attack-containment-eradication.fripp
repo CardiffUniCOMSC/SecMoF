@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FRIPP:PlaybookProcess xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:FRIPP="http://www.example.org/FRIPP" name="Web Injection Attack Containment/ Eradication" artifactInStateUsed="//@artifact.1/@state.0/@artifactstateinstance.3" resultArtifactInState="//@artifact.0/@state.0/@artifactstateinstance.0">
+  <artifact name="undefined">
+    <state artifactName="undefined" name="undefined">
+      <artifactstateinstance usedByActivity="//@process.0" originatingActivity="/"/>
+      <artifactstateinstance usedByActivity="//@process.1" originatingActivity="//@process.0"/>
+      <artifactstateinstance usedByActivity="//@process.4" originatingActivity="//@process.2"/>
+      <artifactstateinstance usedByActivity="//@process.2" originatingActivity="//@process.1"/>
+      <artifactstateinstance usedByActivity="//@process.3" originatingActivity="//@process.1"/>
+      <artifactstateinstance usedByActivity="//@process.5" originatingActivity="//@process.4"/>
+      <artifactstateinstance usedByActivity="//@process.6" originatingActivity="//@process.4"/>
+      <artifactstateinstance usedByActivity="//@process.7" originatingActivity="//@process.5"/>
+      <artifactstateinstance usedByActivity="//@process.8" originatingActivity="//@process.6"/>
+      <artifactstateinstance usedByActivity="//@process.12" originatingActivity="//@process.7"/>
+      <artifactstateinstance usedByActivity="//@process.10" originatingActivity="//@process.9"/>
+      <artifactstateinstance usedByActivity="//@process.9" originatingActivity="//@process.3"/>
+      <artifactstateinstance usedByActivity="//@process.13" originatingActivity="//@process.12"/>
+      <artifactstateinstance usedByActivity="//@process.18" originatingActivity="//@process.17"/>
+      <artifactstateinstance usedByActivity="//@process.19" originatingActivity="//@process.18"/>
+      <artifactstateinstance usedByActivity="//@process.20" originatingActivity="//@process.19"/>
+      <artifactstateinstance usedByActivity="//@process.21" originatingActivity="//@process.20"/>
+      <artifactstateinstance usedByActivity="//@process.22" originatingActivity="//@process.21"/>
+      <artifactstateinstance usedByActivity="//@process.25" originatingActivity="//@process.15"/>
+      <artifactstateinstance usedByActivity="//@process.16" originatingActivity="//@process.25"/>
+      <artifactstateinstance usedByActivity="//@process.13" originatingActivity="//@process.11"/>
+      <artifactstateinstance usedByActivity="//@process.14" originatingActivity="//@process.13"/>
+      <artifactstateinstance usedByActivity="//@process.22/@process.0" originatingActivity="//@process.22"/>
+      <artifactstateinstance usedByActivity="//@process.22" originatingActivity="//@process.22/@process.0"/>
+      <artifactstateinstance usedByActivity="//@process.22/@process.1" originatingActivity="//@process.22"/>
+      <artifactstateinstance usedByActivity="//@process.22" originatingActivity="//@process.22/@process.1"/>
+      <artifactstateinstance usedByActivity="//@process.23" originatingActivity="//@process.22"/>
+      <artifactstateinstance usedByActivity="//@process.25/@process.0" originatingActivity="//@process.25"/>
+      <artifactstateinstance usedByActivity="//@process.25" originatingActivity="//@process.25/@process.0"/>
+      <artifactstateinstance usedByActivity="//@process.0" originatingActivity="//@process.24"/>
+    </state>
+  </artifact>
+  <artifact name="Yes">
+    <state artifactName="Yes" name="undefined">
+      <artifactstateinstance usedByActivity="//@process.11" originatingActivity="//@process.10"/>
+      <artifactstateinstance usedByActivity="//@process.15" originatingActivity="//@process.14"/>
+      <artifactstateinstance usedByActivity="//@process.17" originatingActivity="//@process.16"/>
+      <artifactstateinstance usedByActivity="/" originatingActivity="//@process.23"/>
+      <artifactstateinstance usedByActivity="//@process.9" originatingActivity="//@process.8"/>
+    </state>
+  </artifact>
+  <artifact name="No">
+    <state artifactName="No" name="undefined">
+      <artifactstateinstance usedByActivity="//@process.13" originatingActivity="//@process.10"/>
+      <artifactstateinstance usedByActivity="//@process.16" originatingActivity="//@process.14"/>
+      <artifactstateinstance usedByActivity="//@process.18" originatingActivity="//@process.16"/>
+      <artifactstateinstance usedByActivity="//@process.24" originatingActivity="//@process.23"/>
+      <artifactstateinstance usedByActivity="//@process.12" originatingActivity="//@process.8"/>
+    </state>
+  </artifact>
+  <process xsi:type="FRIPP:PlaybookProcess" name="Verify targeted asset (P1)" notes="Cross check the affected asset details." artifactInStateUsed="//@artifact.0/@state.0/@artifactstateinstance.0 //@artifact.0/@state.0/@artifactstateinstance.29" resultArtifactInState="//@artifact.0/@state.0/@artifactstateinstance.1" resourceUsed="//@resource.0"/>
+  <process xsi:type="FRIPP:PlaybookProcess" name="Check Firewall Status (P2)" notes="Check the firewall logs for the affected asset and status on attack." artifactInStateUsed="//@artifact.0/@state.0/@artifactstateinstance.1" resultArtifactInState="//@artifact.0/@state.0/@artifactstateinstance.3 //@artifact.0/@state.0/@artifactstateinstance.4" resourceUsed="//@resource.0"/>
+  <process xsi:type="FRIPP:PlaybookProcess" name="Permitted (P4)" artifactInStateUsed="//@artifact.0/@state.0/@artifactstateinstance.3" resultArtifactInState="//@artifact.0/@state.0/@artifactstateinstance.2" resourceUsed="//@resource.0"/>
+  <process xsi:type="FRIPP:PlaybookProcess" name="Blocked (P3)" artifactInStateUsed="//@artifact.0/@state.0/@artifactstateinstance.4" resultArtifactInState="//@artifact.0/@state.0/@artifactstateinstance.11" resourceUsed="//@resource.0"/>
+  <process xsi:type="FRIPP:PlaybookProcess" name="Determine WAF mode (P5)" notes="Check if the attack passed through firewall than we need to check the WAF log but first we need to check the WAF mode. " artifactInStateUsed="//@artifact.0/@state.0/@artifactstateinstance.2" resultArtifactInState="//@artifact.0/@state.0/@artifactstateinstance.5 //@artifact.0/@state.0/@artifactstateinstance.6" resourceUsed="//@resource.0"/>
+  <process xsi:type="FRIPP:PlaybookProcess" name="Detecting/Learning (P7)" notes="In detecting mode WAF monitors the real-time traffic and generates alerts. In learning mode WAF analyses patterns and increase the accuracy but neither of them blocks the traffic. " artifactInStateUsed="//@artifact.0/@state.0/@artifactstateinstance.5" resultArtifactInState="//@artifact.0/@state.0/@artifactstateinstance.7"/>
+  <process xsi:type="FRIPP:PlaybookProcess" name="Blocking (P6)" notes="WAF blocks malicious traffic" artifactInStateUsed="//@artifact.0/@state.0/@artifactstateinstance.6" resultArtifactInState="//@artifact.0/@state.0/@artifactstateinstance.8"/>
+  <process xsi:type="FRIPP:PlaybookProcess" name="Enable blocking mode (P9)" notes="Go to the WAF management console and enable blocking mode." artifactInStateUsed="//@artifact.0/@state.0/@artifactstateinstance.7" resultArtifactInState="//@artifact.0/@state.0/@artifactstateinstance.9" resourceUsed="//@resource.1 //@resource.2"/>
+  <process xsi:type="FRIPP:PlaybookProcess" name="Was the attack blocked? (P8)" notes="Check the WAF log against the target asset and determine the action taken by WAF " artifactInStateUsed="//@artifact.0/@state.0/@artifactstateinstance.8" resultArtifactInState="//@artifact.2/@state.0/@artifactstateinstance.4 //@artifact.1/@state.0/@artifactstateinstance.4" resourceUsed="//@resource.0"/>
+  <process xsi:type="FRIPP:PlaybookProcess" name="Determine no of injection attempts (P10)" notes="Search for WAF log on the targeted asset and filter out injection attempts and note down the number of injection attempts." artifactInStateUsed="//@artifact.0/@state.0/@artifactstateinstance.11 //@artifact.1/@state.0/@artifactstateinstance.4" resultArtifactInState="//@artifact.0/@state.0/@artifactstateinstance.10" resourceUsed="//@resource.0"/>
+  <process xsi:type="FRIPP:PlaybookProcess" name="Was the injection attack effecting avalibility? (P11)" notes="Check if the injection attempts are excessive which will affect the availability of public facing website" artifactInStateUsed="//@artifact.0/@state.0/@artifactstateinstance.10" resultArtifactInState="//@artifact.1/@state.0/@artifactstateinstance.0 //@artifact.2/@state.0/@artifactstateinstance.0" resourceUsed="//@resource.0"/>
+  <process xsi:type="FRIPP:PlaybookProcess" name="Run DoS/DDoS playbook (P12)" notes="DoS/DDoS playbook is provided within this paper" artifactInStateUsed="//@artifact.1/@state.0/@artifactstateinstance.0" resultArtifactInState="//@artifact.0/@state.0/@artifactstateinstance.20" resourceUsed="//@resource.0"/>
+  <process xsi:type="FRIPP:PlaybookProcess" name="Block attack Source (P13)" notes="After identifying the attack source IP block it on security controls. If the SOAR is implemented in the organization then directly push the IP in the blocklist of tool. If not then send the malicious IP with evidences attached to the network and infrastructure/operations team for blockage" artifactInStateUsed="//@artifact.2/@state.0/@artifactstateinstance.4 //@artifact.0/@state.0/@artifactstateinstance.9" resultArtifactInState="//@artifact.0/@state.0/@artifactstateinstance.12" resourceUsed="//@resource.0 //@resource.2 //@resource.3"/>
+  <process xsi:type="FRIPP:PlaybookProcess" name="Update Firewall/WAF rules (P14)" notes="Identify all the attack signatures observed on the targeted asset, then create new or update firewall and WAF rules accordingly." artifactInStateUsed="//@artifact.0/@state.0/@artifactstateinstance.12 //@artifact.2/@state.0/@artifactstateinstance.0 //@artifact.0/@state.0/@artifactstateinstance.20" resultArtifactInState="//@artifact.0/@state.0/@artifactstateinstance.21" resourceUsed="//@resource.2 //@resource.3"/>
+  <process xsi:type="FRIPP:PlaybookProcess" name="Is database tampered (P15)" notes="Check if any changes or modifications observed to data base from injection attack" artifactInStateUsed="//@artifact.0/@state.0/@artifactstateinstance.21" resultArtifactInState="//@artifact.1/@state.0/@artifactstateinstance.1 //@artifact.2/@state.0/@artifactstateinstance.1" resourceUsed="//@resource.2 //@resource.0"/>
+  <process xsi:type="FRIPP:PlaybookProcess" name="Run Dataloss playbook (P16)" notes="Data loss playbook is provided in this paper." artifactInStateUsed="//@artifact.1/@state.0/@artifactstateinstance.1" resultArtifactInState="//@artifact.0/@state.0/@artifactstateinstance.18" resourceUsed="//@resource.0 //@resource.4 //@resource.2"/>
+  <process xsi:type="FRIPP:PlaybookProcess" name="Was Malware Deployed? (P18)" notes="Check if the malware was deployed during the injection attack " artifactInStateUsed="//@artifact.2/@state.0/@artifactstateinstance.1 //@artifact.0/@state.0/@artifactstateinstance.19" resultArtifactInState="//@artifact.1/@state.0/@artifactstateinstance.2 //@artifact.2/@state.0/@artifactstateinstance.2" resourceUsed="//@resource.0 //@resource.2"/>
+  <process xsi:type="FRIPP:PlaybookProcess" name="Run Malware playbook (P19)" artifactInStateUsed="//@artifact.1/@state.0/@artifactstateinstance.2" resultArtifactInState="//@artifact.0/@state.0/@artifactstateinstance.13" resourceUsed="//@resource.0 //@resource.2"/>
+  <process xsi:type="FRIPP:PlaybookProcess" name="Run Anti-Malware scan (P20)" notes="Use the Anti-virus or anti-malware solution to run scan on the affected device." artifactInStateUsed="//@artifact.2/@state.0/@artifactstateinstance.2 //@artifact.0/@state.0/@artifactstateinstance.13" resultArtifactInState="//@artifact.0/@state.0/@artifactstateinstance.14" resourceUsed="//@resource.1 //@resource.6 //@resource.5"/>
+  <process xsi:type="FRIPP:PlaybookProcess" name="Identify the vulnerability exploited by attacker (P21)" notes="Find out if any vulnerability was exploited by the malware, analyst needs to mention that vulnerability and report it to the department concerned." artifactInStateUsed="//@artifact.0/@state.0/@artifactstateinstance.14" resultArtifactInState="//@artifact.0/@state.0/@artifactstateinstance.15" resourceUsed="//@resource.0 //@resource.2"/>
+  <process xsi:type="FRIPP:PlaybookProcess" name="Patch Vulnerability (P22)" notes="Different departments are responsible for patching different types of vulnerabilities, the analyst should communicate with the right department.&#xD;&#xA;IT Operations/Infrastructure Department:&#xD;&#xA;•&#x9;Operating System Patches&#xD;&#xA;•&#x9;Hardware Firmware/BIOS Updates&#xD;&#xA;Application Development and IT Development:&#xD;&#xA;•&#x9;Application Patches&#xD;&#xA;•&#x9;Software Development Kits&#xD;&#xA;Network and System Administrators:&#xD;&#xA;•&#x9;Network Device Patches&#xD;&#xA;" artifactInStateUsed="//@artifact.0/@state.0/@artifactstateinstance.15" resultArtifactInState="//@artifact.0/@state.0/@artifactstateinstance.16" resourceUsed="//@resource.1 //@resource.4 //@resource.2 //@resource.5"/>
+  <process xsi:type="FRIPP:PlaybookProcess" name="Contact Application Security Team (P23)" artifactInStateUsed="//@artifact.0/@state.0/@artifactstateinstance.16" resultArtifactInState="//@artifact.0/@state.0/@artifactstateinstance.17"/>
+  <process xsi:type="FRIPP:PlaybookProcess" name="Ask to perform necessary actions (P24)" notes="Ask to perform necessary actions&#xD;&#xA;•&#x9;Secure coding&#xD;&#xA;•&#x9;Input validation/sanitization.&#xD;&#xA;" artifactInStateUsed="//@artifact.0/@state.0/@artifactstateinstance.17 //@artifact.0/@state.0/@artifactstateinstance.23 //@artifact.0/@state.0/@artifactstateinstance.25" resultArtifactInState="//@artifact.0/@state.0/@artifactstateinstance.22 //@artifact.0/@state.0/@artifactstateinstance.24 //@artifact.0/@state.0/@artifactstateinstance.26" resourceUsed="//@resource.6 //@resource.5 //@resource.7">
+    <process xsi:type="FRIPP:PlaybookProcess" name="Secure Coding" artifactInStateUsed="//@artifact.0/@state.0/@artifactstateinstance.22" resultArtifactInState="//@artifact.0/@state.0/@artifactstateinstance.23"/>
+    <process xsi:type="FRIPP:PlaybookProcess" name="Input validation/ sanitization" artifactInStateUsed="//@artifact.0/@state.0/@artifactstateinstance.24" resultArtifactInState="//@artifact.0/@state.0/@artifactstateinstance.25"/>
+  </process>
+  <process xsi:type="FRIPP:PlaybookProcess" name="All affected assets contained (P25)" notes="Check if all the affected devices have been contained" artifactInStateUsed="//@artifact.0/@state.0/@artifactstateinstance.26" resultArtifactInState="//@artifact.2/@state.0/@artifactstateinstance.3 //@artifact.1/@state.0/@artifactstateinstance.3" resourceUsed="//@resource.2"/>
+  <process xsi:type="FRIPP:PlaybookProcess" name="New IOCs observed (P26)" notes="If new IOCs are detected " artifactInStateUsed="//@artifact.2/@state.0/@artifactstateinstance.3" resultArtifactInState="//@artifact.0/@state.0/@artifactstateinstance.29" resourceUsed="//@resource.0"/>
+  <process xsi:type="FRIPP:PlaybookProcess" name="Rollback any changes done by attacker (P17)" notes="Identify the attack time and restore from backup." artifactInStateUsed="//@artifact.0/@state.0/@artifactstateinstance.18 //@artifact.0/@state.0/@artifactstateinstance.28" resultArtifactInState="//@artifact.0/@state.0/@artifactstateinstance.19 //@artifact.0/@state.0/@artifactstateinstance.27" resourceUsed="//@resource.1 //@resource.5">
+    <process xsi:type="FRIPP:PlaybookProcess" name="Restore form backup" artifactInStateUsed="//@artifact.0/@state.0/@artifactstateinstance.27" resultArtifactInState="//@artifact.0/@state.0/@artifactstateinstance.28"/>
+  </process>
+  <resource xsi:type="FRIPP:Actuator" name="SOC analyst"/>
+  <resource xsi:type="FRIPP:Actuator" name="IT operations"/>
+  <resource xsi:type="FRIPP:Actuator" name="Senior SOC analyst"/>
+  <resource xsi:type="FRIPP:Actuator" name="NOC"/>
+  <resource xsi:type="FRIPP:Actuator" name="SOC manager"/>
+  <resource xsi:type="FRIPP:Actuator" name="Asset custodian"/>
+  <resource xsi:type="FRIPP:Actuator" name="Information security department"/>
+  <resource xsi:type="FRIPP:Actuator" name="Devops"/>
+</FRIPP:PlaybookProcess>
