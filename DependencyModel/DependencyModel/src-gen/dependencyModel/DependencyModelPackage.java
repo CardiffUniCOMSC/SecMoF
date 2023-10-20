@@ -106,13 +106,22 @@ public interface DependencyModelPackage extends EPackage {
 	int PARAGON__TYPE = 3;
 
 	/**
+	 * The feature id for the '<em><b>Dependency</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARAGON__DEPENDENCY = 4;
+
+	/**
 	 * The number of structural features of the '<em>Paragon</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PARAGON_FEATURE_COUNT = 4;
+	int PARAGON_FEATURE_COUNT = 5;
 
 	/**
 	 * The number of operations of the '<em>Paragon</em>' class.
@@ -188,6 +197,17 @@ public interface DependencyModelPackage extends EPackage {
 	EAttribute getParagon_Type();
 
 	/**
+	 * Returns the meta object for the reference list '{@link dependencyModel.Paragon#getDependency <em>Dependency</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Dependency</em>'.
+	 * @see dependencyModel.Paragon#getDependency()
+	 * @see #getParagon()
+	 * @generated
+	 */
+	EReference getParagon_Dependency();
+
+	/**
 	 * Returns the meta object for enum '{@link dependencyModel.PARAGON_COMPOSITION_ENUM <em>PARAGON COMPOSITION ENUM</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -261,6 +281,14 @@ public interface DependencyModelPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute PARAGON__TYPE = eINSTANCE.getParagon_Type();
+
+		/**
+		 * The meta object literal for the '<em><b>Dependency</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PARAGON__DEPENDENCY = eINSTANCE.getParagon_Dependency();
 
 		/**
 		 * The meta object literal for the '{@link dependencyModel.PARAGON_COMPOSITION_ENUM <em>PARAGON COMPOSITION ENUM</em>}' enum.

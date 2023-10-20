@@ -148,6 +148,15 @@ public class DependencyModelPackageImpl extends EPackageImpl implements Dependen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getParagon_Dependency() {
+		return (EReference) paragonEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EEnum getPARAGON_COMPOSITION_ENUM() {
 		return paragoN_COMPOSITION_ENUMEEnum;
 	}
@@ -186,6 +195,7 @@ public class DependencyModelPackageImpl extends EPackageImpl implements Dependen
 		createEAttribute(paragonEClass, PARAGON__PROBABILITY);
 		createEReference(paragonEClass, PARAGON__PARAGON);
 		createEAttribute(paragonEClass, PARAGON__TYPE);
+		createEReference(paragonEClass, PARAGON__DEPENDENCY);
 
 		// Create enums
 		paragoN_COMPOSITION_ENUMEEnum = createEEnum(PARAGON_COMPOSITION_ENUM);
@@ -233,6 +243,9 @@ public class DependencyModelPackageImpl extends EPackageImpl implements Dependen
 		initEAttribute(getParagon_Type(), this.getPARAGON_COMPOSITION_ENUM(), "Type", "UNCONTROLLABLE", 0, 1,
 				Paragon.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
 				!IS_DERIVED, IS_ORDERED);
+		initEReference(getParagon_Dependency(), this.getParagon(), null, "dependency", null, 0, -1, Paragon.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Initialize enums and add enum literals
 		initEEnum(paragoN_COMPOSITION_ENUMEEnum, dependencyModel.PARAGON_COMPOSITION_ENUM.class,
@@ -240,6 +253,7 @@ public class DependencyModelPackageImpl extends EPackageImpl implements Dependen
 		addEEnumLiteral(paragoN_COMPOSITION_ENUMEEnum, dependencyModel.PARAGON_COMPOSITION_ENUM.AND);
 		addEEnumLiteral(paragoN_COMPOSITION_ENUMEEnum, dependencyModel.PARAGON_COMPOSITION_ENUM.OR);
 		addEEnumLiteral(paragoN_COMPOSITION_ENUMEEnum, dependencyModel.PARAGON_COMPOSITION_ENUM.UNCONTROLLABLE);
+		addEEnumLiteral(paragoN_COMPOSITION_ENUMEEnum, dependencyModel.PARAGON_COMPOSITION_ENUM.TEMP);
 
 		// Create resource
 		createResource(eNS_URI);

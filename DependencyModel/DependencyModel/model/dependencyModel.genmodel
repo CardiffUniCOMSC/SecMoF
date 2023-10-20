@@ -13,6 +13,7 @@
       <genEnumLiterals ecoreEnumLiteral="dependencyModel.ecore#//PARAGON_COMPOSITION_ENUM/AND"/>
       <genEnumLiterals ecoreEnumLiteral="dependencyModel.ecore#//PARAGON_COMPOSITION_ENUM/OR"/>
       <genEnumLiterals ecoreEnumLiteral="dependencyModel.ecore#//PARAGON_COMPOSITION_ENUM/UNCONTROLLABLE"/>
+      <genEnumLiterals ecoreEnumLiteral="dependencyModel.ecore#//PARAGON_COMPOSITION_ENUM/TEMP"/>
     </genEnums>
     <genClasses ecoreClass="dependencyModel.ecore#//Paragon">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dependencyModel.ecore#//Paragon/description"/>
@@ -20,6 +21,7 @@
           get=""/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dependencyModel.ecore#//Paragon/paragon"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dependencyModel.ecore#//Paragon/Type"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dependencyModel.ecore#//Paragon/dependency"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

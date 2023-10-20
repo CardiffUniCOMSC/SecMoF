@@ -59,6 +59,7 @@ public class ParagonItemProvider extends ItemProviderAdapter implements IEditing
 			addDescriptionPropertyDescriptor(object);
 			addProbabilityPropertyDescriptor(object);
 			addTypePropertyDescriptor(object);
+			addDependencyPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -108,6 +109,21 @@ public class ParagonItemProvider extends ItemProviderAdapter implements IEditing
 						getString("_UI_PropertyDescriptor_description", "_UI_Paragon_Type_feature", "_UI_Paragon_type"),
 						DependencyModelPackage.Literals.PARAGON__TYPE, true, false, false,
 						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Dependency feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addDependencyPropertyDescriptor(Object object) {
+		itemPropertyDescriptors
+				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
+						getResourceLocator(), getString("_UI_Paragon_dependency_feature"),
+						getString("_UI_PropertyDescriptor_description", "_UI_Paragon_dependency_feature",
+								"_UI_Paragon_type"),
+						DependencyModelPackage.Literals.PARAGON__DEPENDENCY, true, false, true, null, null, null));
 	}
 
 	/**

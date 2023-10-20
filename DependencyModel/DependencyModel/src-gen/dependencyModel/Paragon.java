@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link dependencyModel.Paragon#getProbability <em>Probability</em>}</li>
  *   <li>{@link dependencyModel.Paragon#getParagon <em>Paragon</em>}</li>
  *   <li>{@link dependencyModel.Paragon#getType <em>Type</em>}</li>
+ *   <li>{@link dependencyModel.Paragon#getDependency <em>Dependency</em>}</li>
  * </ul>
  *
  * @see dependencyModel.DependencyModelPackage#getParagon()
@@ -108,5 +109,17 @@ public interface Paragon extends EObject {
 	 * @generated
 	 */
 	void setType(PARAGON_COMPOSITION_ENUM value);
+
+	/**
+	 * Returns the value of the '<em><b>Dependency</b></em>' reference list.
+	 * The list contents are of type {@link dependencyModel.Paragon}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Dependency</em>' reference list.
+	 * @see dependencyModel.DependencyModelPackage#getParagon_Dependency()
+	 * @model
+	 * @generated
+	 */
+	EList<Paragon> getDependency();
 
 } // Paragon

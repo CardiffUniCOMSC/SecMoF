@@ -17,6 +17,7 @@ import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
@@ -31,6 +32,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link dependencyModel.impl.ParagonImpl#getProbability <em>Probability</em>}</li>
  *   <li>{@link dependencyModel.impl.ParagonImpl#getParagon <em>Paragon</em>}</li>
  *   <li>{@link dependencyModel.impl.ParagonImpl#getType <em>Type</em>}</li>
+ *   <li>{@link dependencyModel.impl.ParagonImpl#getDependency <em>Dependency</em>}</li>
  * </ul>
  *
  * @generated
@@ -107,6 +109,16 @@ public class ParagonImpl extends MinimalEObjectImpl.Container implements Paragon
 	protected PARAGON_COMPOSITION_ENUM type = TYPE_EDEFAULT;
 
 	/**
+	 * The cached value of the '{@link #getDependency() <em>Dependency</em>}' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDependency()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Paragon> dependency;
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -157,10 +169,12 @@ public class ParagonImpl extends MinimalEObjectImpl.Container implements Paragon
 		if (getType().equals(PARAGON_COMPOSITION_ENUM.UNCONTROLLABLE)) {
 			probability = probability;
 		} else if (getType().equals(PARAGON_COMPOSITION_ENUM.AND)) {
-			EList<Paragon> paragons = getParagon();
+			EList<Paragon> paragons = getDependency();
+			paragons.addAll(getParagon());
 			probability = computeANDprobability(paragons);
 		} else if (getType().equals(PARAGON_COMPOSITION_ENUM.OR)) {
-			EList<Paragon> paragons = getParagon();
+			EList<Paragon> paragons = getDependency();
+			paragons.addAll(getParagon());
 			probability = computeORprobability(paragons);
 		}
 
@@ -241,6 +255,19 @@ public class ParagonImpl extends MinimalEObjectImpl.Container implements Paragon
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EList<Paragon> getDependency() {
+		if (dependency == null) {
+			dependency = new EObjectResolvingEList<Paragon>(Paragon.class, this,
+					DependencyModelPackage.PARAGON__DEPENDENCY);
+		}
+		return dependency;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -266,6 +293,8 @@ public class ParagonImpl extends MinimalEObjectImpl.Container implements Paragon
 			return getParagon();
 		case DependencyModelPackage.PARAGON__TYPE:
 			return getType();
+		case DependencyModelPackage.PARAGON__DEPENDENCY:
+			return getDependency();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -292,6 +321,10 @@ public class ParagonImpl extends MinimalEObjectImpl.Container implements Paragon
 		case DependencyModelPackage.PARAGON__TYPE:
 			setType((PARAGON_COMPOSITION_ENUM) newValue);
 			return;
+		case DependencyModelPackage.PARAGON__DEPENDENCY:
+			getDependency().clear();
+			getDependency().addAll((Collection<? extends Paragon>) newValue);
+			return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -316,6 +349,9 @@ public class ParagonImpl extends MinimalEObjectImpl.Container implements Paragon
 		case DependencyModelPackage.PARAGON__TYPE:
 			setType(TYPE_EDEFAULT);
 			return;
+		case DependencyModelPackage.PARAGON__DEPENDENCY:
+			getDependency().clear();
+			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -336,6 +372,8 @@ public class ParagonImpl extends MinimalEObjectImpl.Container implements Paragon
 			return paragon != null && !paragon.isEmpty();
 		case DependencyModelPackage.PARAGON__TYPE:
 			return type != TYPE_EDEFAULT;
+		case DependencyModelPackage.PARAGON__DEPENDENCY:
+			return dependency != null && !dependency.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

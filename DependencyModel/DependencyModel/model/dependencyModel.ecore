@@ -19,10 +19,13 @@
         eType="#//Paragon" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Type" eType="#//PARAGON_COMPOSITION_ENUM"
         defaultValueLiteral="UNCONTROLLABLE"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dependency" upperBound="-1"
+        eType="#//Paragon"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="PARAGON_COMPOSITION_ENUM">
     <eLiterals name="AND"/>
     <eLiterals name="OR" value="1"/>
     <eLiterals name="UNCONTROLLABLE" value="2"/>
+    <eLiterals name="TEMP" value="3"/>
   </eClassifiers>
 </ecore:EPackage>

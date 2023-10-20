@@ -45,7 +45,16 @@ public enum PARAGON_COMPOSITION_ENUM implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	UNCONTROLLABLE(2, "UNCONTROLLABLE", "UNCONTROLLABLE");
+	UNCONTROLLABLE(2, "UNCONTROLLABLE", "UNCONTROLLABLE"),
+	/**
+	 * The '<em><b>TEMP</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	 * @see #TEMP_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	TEMP(3, "TEMP", "TEMP");
 
 	/**
 	 * The '<em><b>AND</b></em>' literal value.
@@ -81,13 +90,24 @@ public enum PARAGON_COMPOSITION_ENUM implements Enumerator {
 	public static final int UNCONTROLLABLE_VALUE = 2;
 
 	/**
+	 * The '<em><b>TEMP</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #TEMP
+	 * @model
+	 * @generated
+	 * @ordered
+	 */
+	public static final int TEMP_VALUE = 3;
+
+	/**
 	 * An array of all the '<em><b>PARAGON COMPOSITION ENUM</b></em>' enumerators.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	private static final PARAGON_COMPOSITION_ENUM[] VALUES_ARRAY = new PARAGON_COMPOSITION_ENUM[] { AND, OR,
-			UNCONTROLLABLE, };
+			UNCONTROLLABLE, TEMP, };
 
 	/**
 	 * A public read-only list of all the '<em><b>PARAGON COMPOSITION ENUM</b></em>' enumerators.
@@ -150,6 +170,8 @@ public enum PARAGON_COMPOSITION_ENUM implements Enumerator {
 			return OR;
 		case UNCONTROLLABLE_VALUE:
 			return UNCONTROLLABLE;
+		case TEMP_VALUE:
+			return TEMP;
 		}
 		return null;
 	}
