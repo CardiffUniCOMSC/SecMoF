@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated dependencyModel -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="dependencyModel.presentation.DependencyModelModelWizardID"
+            name="%_UI_DependencyModelModelWizard_label"
+            class="dependencyModel.presentation.DependencyModelModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/DependencyModelModelFile.gif">
+         <description>%_UI_DependencyModelModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated dependencyModel -->
+      <editor
+            id="dependencyModel.presentation.DependencyModelEditorID"
+            name="%_UI_DependencyModelEditor_label"
+            icon="icons/full/obj16/DependencyModelModelFile.gif"
+            extensions="dependencymodel"
+            class="dependencyModel.presentation.DependencyModelEditor"
+            contributorClass="dependencyModel.presentation.DependencyModelActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

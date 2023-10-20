@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:properties="http://www.eclipse.org/sirius/properties/1.0.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="DependencyModel" version="12.0.0.2017041100">
+  <ownedViewpoints name="DependencyModelViewpoint">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="DependencyModelingDiagram" initialisation="true" domainClass="dependencyModel::Paragon" enablePopupBars="true">
+      <layout xsi:type="description_1:CustomLayoutConfiguration" id="org.eclipse.elk.layered" label="ELK Layered" description="Layer-based algorithm provided by the Eclipse Layout Kernel. Arranges as many edges as possible into one direction by placing nodes into subsequent layers. This implementation supports different routing styles (straight, orthogonal, splines); if orthogonal routing is selected, arbitrary port constraints are respected, thus enabling the layout of block diagrams such as actor-oriented models or circuit schematics. Furthermore, full layout of compound graphs with cross-hierarchy edges is supported when the respective option is activated on the top level.">
+        <layoutOptions xsi:type="description_1:EnumLayoutOption" id="org.eclipse.elk.layered.nodePlacement.bk.edgeStraightening">
+          <targets>PARENT</targets>
+          <value name="NONE"/>
+        </layoutOptions>
+        <layoutOptions xsi:type="description_1:EnumLayoutOption" id="org.eclipse.elk.direction">
+          <targets>PARENT</targets>
+          <value name="DOWN"/>
+        </layoutOptions>
+        <layoutOptions xsi:type="description_1:EnumLayoutOption" id="org.eclipse.elk.edgeRouting">
+          <targets>PARENT</targets>
+          <value name="POLYLINE"/>
+        </layoutOptions>
+        <layoutOptions xsi:type="description_1:BooleanLayoutOption" id="org.eclipse.elk.layered.nodePlacement.favorStraightEdges" value="true">
+          <targets>PARENT</targets>
+        </layoutOptions>
+        <layoutOptions xsi:type="description_1:EnumSetLayoutOption" id="org.eclipse.elk.nodeSize.constraints">
+          <targets>NODE</targets>
+          <values name="PORTS"/>
+          <values name="PORT_LABELS"/>
+          <values name="NODE_LABELS"/>
+        </layoutOptions>
+      </layout>
+      <defaultLayer name="Default">
+        <nodeMappings name="ParagonNode" semanticCandidatesExpression="aql: self->concat(self.eAllContents())" domainClass="dependencyModel::Paragon">
+          <borderedNodeMappings name="ParagonTypeBorderNode" semanticCandidatesExpression="aql: self" domainClass="dependencyModel::Paragon">
+            <style xsi:type="style:DotDescription" labelSize="5" showIcon="false" labelExpression="aql: self.Type" sizeComputationExpression="0" labelPosition="node" resizeKind="NSEW" strokeSizeComputationExpression="0">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <forbiddenSides>WEST</forbiddenSides>
+              <forbiddenSides>SOUTH</forbiddenSides>
+              <forbiddenSides>NORTH</forbiddenSides>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+            <conditionnalStyles predicateExpression="aql: self.Type == dependencyModel::PARAGON_COMPOSITION_ENUM::OR">
+              <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="aql: 'OR'" sizeComputationExpression="2" labelPosition="node" resizeKind="NSEW" workspacePath="/DependencyModel.design/icons/orGate16.png">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="aql: self.Type == dependencyModel::PARAGON_COMPOSITION_ENUM::AND">
+              <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="aql: 'AND'" sizeComputationExpression="2" labelPosition="node" resizeKind="NSEW" workspacePath="/DependencyModel.design/icons/andGate16.png">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </conditionnalStyles>
+          </borderedNodeMappings>
+          <borderedNodeMappings name="ParagonProbabilityBorderNode" semanticCandidatesExpression="aql: self" domainClass="dependencyModel::Paragon">
+            <style xsi:type="style:SquareDescription" labelSize="5" showIcon="false" labelExpression="aql: self.probability" tooltipExpression="aql: self.probability" sizeComputationExpression="0" labelPosition="node" resizeKind="NSEW" width="2" height="1">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <forbiddenSides>WEST</forbiddenSides>
+              <forbiddenSides>SOUTH</forbiddenSides>
+              <forbiddenSides>EAST</forbiddenSides>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+          </borderedNodeMappings>
+          <style xsi:type="style:GaugeCompositeStyleDescription" labelSize="12" showIcon="false" labelExpression="feature:description" tooltipExpression="aql: self.description" sizeComputationExpression="5" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <sections maxValueExpression="100" valueExpression="aql: self.calcProbScale()" label="'">
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
+            </sections>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="ParagonCompositionEdge" sourceMapping="//@ownedViewpoints[name='DependencyModelViewpoint']/@ownedRepresentations[name='DependencyModelingDiagram']/@defaultLayer/@nodeMappings[name='ParagonNode']" targetMapping="//@ownedViewpoints[name='DependencyModelViewpoint']/@ownedRepresentations[name='DependencyModelingDiagram']/@defaultLayer/@nodeMappings[name='ParagonNode']" targetFinderExpression="aql: self.paragon">
+          <style sourceArrow="FillDiamond" targetArrow="InputFillClosedArrow" sizeComputationExpression="2" foldingStyle="SOURCE">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+          <conditionnalStyles predicateExpression="aql: self.Type == dependencyModel::PARAGON_COMPOSITION_ENUM::OR">
+            <style sourceArrow="Diamond" targetArrow="InputClosedArrow" foldingStyle="SOURCE">
+              <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+              <centerLabelStyleDescription labelSize="12">
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </centerLabelStyleDescription>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="aql: self.Type == dependencyModel::PARAGON_COMPOSITION_ENUM::UNCONTROLLABLE">
+            <style lineStyle="dash" targetArrow="InputClosedArrow" foldingStyle="SOURCE">
+              <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+              <centerLabelStyleDescription labelSize="12">
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </centerLabelStyleDescription>
+            </style>
+          </conditionnalStyles>
+        </edgeMappings>
+        <toolSections name="DependencyModeling">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="CreateOrDependency" nodeMappings="//@ownedViewpoints[name='DependencyModelViewpoint']/@ownedRepresentations[name='DependencyModelingDiagram']/@defaultLayer/@nodeMappings[name='ParagonNode'] //@ownedViewpoints[name='DependencyModelViewpoint']/@ownedRepresentations[name='DependencyModelingDiagram']/@defaultLayer/@nodeMappings[name='ParagonNode']/@borderedNodeMappings[name='ParagonProbabilityBorderNode'] //@ownedViewpoints[name='DependencyModelViewpoint']/@ownedRepresentations[name='DependencyModelingDiagram']/@defaultLayer/@nodeMappings[name='ParagonNode']/@borderedNodeMappings[name='ParagonTypeBorderNode']" iconPath="/DependencyModel.design/icons/orGate16.png">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql: container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="dependencyModel::Paragon" referenceName="paragon"/>
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="Type" valueExpression="aql: dependencyModel::PARAGON_COMPOSITION_ENUM::OR"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="CreateAndDependency" nodeMappings="//@ownedViewpoints[name='DependencyModelViewpoint']/@ownedRepresentations[name='DependencyModelingDiagram']/@defaultLayer/@nodeMappings[name='ParagonNode'] //@ownedViewpoints[name='DependencyModelViewpoint']/@ownedRepresentations[name='DependencyModelingDiagram']/@defaultLayer/@nodeMappings[name='ParagonNode']/@borderedNodeMappings[name='ParagonProbabilityBorderNode'] //@ownedViewpoints[name='DependencyModelViewpoint']/@ownedRepresentations[name='DependencyModelingDiagram']/@defaultLayer/@nodeMappings[name='ParagonNode']/@borderedNodeMappings[name='ParagonTypeBorderNode']" iconPath="/DependencyModel.design/icons/andGate16.png">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql: container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="dependencyModel::Paragon" referenceName="paragon"/>
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="Type" valueExpression="aql: dependencyModel::PARAGON_COMPOSITION_ENUM::AND"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="DependencyModel.design.Services"/>
+  </ownedViewpoints>
+  <extensions xsi:type="properties:ViewExtensionDescription" name="Properties">
+    <categories name="Default Category">
+      <pages name="ParagonProperties" labelExpression="Paragon (DM)" domainClass="dependencyModel::Paragon1" semanticCandidateExpression="var:self" groups="//@extensions.0/@categories.0/@groups.0"/>
+      <groups name="ParagonGroup" labelExpression="Dependency Modelling" semanticCandidateExpression="var:self">
+        <controls xsi:type="properties:TextDescription" name="ParagonText" labelExpression="Description: " valueExpression="aql: self.description">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+              <subModelOperations xsi:type="tool_1:SetValue" featureName="description" valueExpression="aql: newValue"/>
+            </firstModelOperations>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties:TextDescription" name="ParagonProbability" labelExpression="Probability:" valueExpression="aql: self.probability">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+              <subModelOperations xsi:type="tool_1:SetValue" featureName="probability" valueExpression="aql: newValue"/>
+            </firstModelOperations>
+          </initialOperation>
+        </controls>
+        <controls xsi:type="properties:SelectDescription" labelExpression="Type" valueExpression="aql: self.type" candidatesExpression="aql: dependencyModel::PARAGON_COMPOSITION_ENUM::AND" candidateDisplayExpression="aql: dependencyModel::PARAGON_COMPOSITION_ENUM::AND.toString()">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self"/>
+          </initialOperation>
+          <style>
+            <labelFontFormat>italic</labelFontFormat>
+          </style>
+        </controls>
+        <controls xsi:type="properties:ContainerDescription">
+          <layout xsi:type="properties:FillLayoutDescription"/>
+        </controls>
+      </groups>
+    </categories>
+  </extensions>
+</description:Group>
