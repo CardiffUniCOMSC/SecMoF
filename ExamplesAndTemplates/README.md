@@ -17,7 +17,7 @@
 
 *This work is licensed under [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0).* 
 
-[^ 1 ]: Shaked, Avi, et al. “Model-Based Incident Response Playbooks.” *Proceedings of the 17th International Conference on Availability, Reliability and Security*, ACM, 2022, pp. 1–7, https://doi.org/10.1145/3538969.3538976.
+[^1]: Shaked, Avi, et al. “Model-Based Incident Response Playbooks.” *Proceedings of the 17th International Conference on Availability, Reliability and Security*, ACM, 2022, pp. 1–7, https://doi.org/10.1145/3538969.3538976.
 
 [^2]: Cherdantseva Y, Burnap P, Nadjm-Tehrani S, Jones K. A Configurable Dependency Model of a SCADA System for Goal-Oriented Risk Assessment. *Applied Sciences*. 2022; 12(10):4880. https://doi.org/10.3390/app12104880
 
