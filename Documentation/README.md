@@ -36,8 +36,16 @@ Click on the icons below for a video recording showing how to use the tool.
 # Installation and Quick Start Guide
 
 ## 1. Download SecMof
-
+**Windows**  
 https://github.com/CardiffUniCOMSC/SecMoF/releases/download/v0.1.0/Security.Modelling.Framework_1.0.0.202301201418-win32.win32.x86_64.zip
+
+<details>
+<summary>Not on Windows?</summary>
+  
+[Linux](https://github.com/CardiffUniCOMSC/SecMoF/releases/download/v0.1.0/Security.Modelling.Framework_1.0.0.202301201418-linux.gtk.x86_64.zip)  
+  
+[Mac](https://github.com/CardiffUniCOMSC/SecMoF/releases/download/v0.1.0/Security.Modelling.Framework_1.0.0.202301201418-macosx.cocoa.x86_64.zip)  
+</details>
 
 ## 2. Extract to Desktop
 
