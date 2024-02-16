@@ -6,7 +6,9 @@
     * [workshop-example-sqli-injection.zip](Projects/workshop-example-sql-injection.zip): Contains an expanded use case for small translation company. There is a small dependency model and playbook process linked. The scenario is malware has been detected on one of their file servers.
   
   * **IR Playbook Projects**
-    * [CACAOex.zip](Projects/CACAOex.zip) and [IACDex.zip](Projects/IACDex.zip): Two FRIPP projects from the paper "Model-Based Incident Response Playbooks"[^1]. CACAO's example details a preventative playbook for the malware FuzzyPanda. The IACD example details mitigateion of a high risk device. 
+    * [CACAOex.zip](Projects/CACAOex.zip) and [IACDex.zip](Projects/IACDex.zip): Two FRIPP projects from the paper "Model-Based Incident Response Playbooks"[^1]. CACAO's example details a preventative playbook for the malware FuzzyPanda. The IACD example details mitigation of a high risk device. 
+  * **Intrusion Modelling**
+    * [Intrusion-modelling.zip](Projects/intrusion-modelling.zip) contains nine ICS intrusions modelled using FRIPP as part of an forthcoming paper[^3].
   
 * Dependency Model Examples
 
@@ -21,3 +23,4 @@
 
 [^2]: Cherdantseva Y, Burnap P, Nadjm-Tehrani S, Jones K. A Configurable Dependency Model of a SCADA System for Goal-Oriented Risk Assessment. *Applied Sciences*. 2022; 12(10):4880. https://doi.org/10.3390/app12104880
 
+[^3]: Currently under review.
