@@ -24,6 +24,10 @@
 
   Explains the steps to export the project and models as a zipped archive. 
 
+* [Converting Models](#Converting-Models)
+
+  Introduces a helpful conversion tool.
+
 For additional example models and project files see the Examples and Templates directory.
 
 ## Videos
@@ -39,13 +43,11 @@ Click on the icons below for a video recording showing how to use the tool.
 **Windows**  
 https://github.com/CardiffUniCOMSC/SecMoF/releases/download/v0.1.0/Security.Modelling.Framework_1.0.0.202301201418-win32.win32.x86_64.zip
 
-<details>
-<summary>Not on Windows?</summary>
-  
-[Linux](https://github.com/CardiffUniCOMSC/SecMoF/releases/download/v0.1.0/Security.Modelling.Framework_1.0.0.202301201418-linux.gtk.x86_64.zip)  
-  
-[Mac](https://github.com/CardiffUniCOMSC/SecMoF/releases/download/v0.1.0/Security.Modelling.Framework_1.0.0.202301201418-macosx.cocoa.x86_64.zip)  
-</details>
+**Linux**
+https://github.com/CardiffUniCOMSC/SecMoF/releases/download/v0.1.0/Security.Modelling.Framework_1.0.0.202301201418-linux.gtk.x86_64.zip
+
+**Mac OS**
+Not supported.
 
 ## 2. Extract to Desktop
 
@@ -155,5 +157,13 @@ If you wish to export the models for use on another computer or to send to someo
 File > Export > General > Archive File > Check ‘example’ > Save to Desktop as a zip.
 
 ![Image showing steps to export project](img/export-project.png)
+
+# Converting Models
+
+A supporting tool called the Security Model Converter (SMC) was created to support SecMoF. This is an Open-Source command-line application written in GoLang that converts security model data to different formats. 
+
+Supported formats are: Attack Trees (tab-indented text files), GraphML, FRIPP, and DM models. 
+
+For more information see the [SMC repository](https://github.com/PMaynard/smc).
 
 *This work is licensed under [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0).* 
