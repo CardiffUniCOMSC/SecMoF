@@ -2,6 +2,8 @@
  */
 package dsm.FRIPP;
 
+import dsm.PROVE.Resource;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Actuator</b></em>'.
@@ -18,7 +20,7 @@ package dsm.FRIPP;
  * @model
  * @generated
  */
-public interface Actuator extends dsm.PROVE.Resource {
+public interface Actuator extends Resource {
 	/**
 	 * Returns the value of the '<em><b>Type</b></em>' attribute.
 	 * The default value is <code>"HUMAN"</code>.

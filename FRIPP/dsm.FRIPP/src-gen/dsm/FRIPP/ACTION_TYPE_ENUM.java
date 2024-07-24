@@ -36,7 +36,25 @@ public enum ACTION_TYPE_ENUM implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	AUTOMATIC(1, "AUTOMATIC", "AUTOMATIC");
+	AUTOMATIC(1, "AUTOMATIC", "AUTOMATIC"),
+	/**
+	* The '<em><b>DUAL</b></em>' literal object.
+	* <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	* @see #DUAL_VALUE
+	* @generated
+	* @ordered
+	*/
+	DUAL(2, "DUAL", "DUAL"),
+	/**
+	* The '<em><b>UNKNOWN</b></em>' literal object.
+	* <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	* @see #UNKNOWN_VALUE
+	* @generated
+	* @ordered
+	*/
+	UNKNOWN(3, "UNKNOWN", "UNKNOWN");
 
 	/**
 	 * The '<em><b>MANUAL</b></em>' literal value.
@@ -61,12 +79,34 @@ public enum ACTION_TYPE_ENUM implements Enumerator {
 	public static final int AUTOMATIC_VALUE = 1;
 
 	/**
+	 * The '<em><b>DUAL</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #DUAL
+	 * @model
+	 * @generated
+	 * @ordered
+	 */
+	public static final int DUAL_VALUE = 2;
+
+	/**
+	 * The '<em><b>UNKNOWN</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #UNKNOWN
+	 * @model
+	 * @generated
+	 * @ordered
+	 */
+	public static final int UNKNOWN_VALUE = 3;
+
+	/**
 	 * An array of all the '<em><b>ACTION TYPE ENUM</b></em>' enumerators.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final ACTION_TYPE_ENUM[] VALUES_ARRAY = new ACTION_TYPE_ENUM[] { MANUAL, AUTOMATIC, };
+	private static final ACTION_TYPE_ENUM[] VALUES_ARRAY = new ACTION_TYPE_ENUM[] { MANUAL, AUTOMATIC, DUAL, UNKNOWN, };
 
 	/**
 	 * A public read-only list of all the '<em><b>ACTION TYPE ENUM</b></em>' enumerators.
@@ -126,6 +166,10 @@ public enum ACTION_TYPE_ENUM implements Enumerator {
 			return MANUAL;
 		case AUTOMATIC_VALUE:
 			return AUTOMATIC;
+		case DUAL_VALUE:
+			return DUAL;
+		case UNKNOWN_VALUE:
+			return UNKNOWN;
 		}
 		return null;
 	}

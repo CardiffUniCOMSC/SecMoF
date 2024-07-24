@@ -184,10 +184,38 @@
               </style>
             </borderedNodeMappings>
             <subContainerMappings name="ProcessHierarchy_PD" preconditionExpression="aql: self->notEmpty()=true and self.oclIsKindOf(PROVE::Process)" deletionDescription="//@ownedViewpoints[name='FRIPPviewpoint']/@ownedRepresentations[name='FRIPP%20Representation']/@defaultLayer/@toolSections.0/@ownedTools[name='DeleteActivity']" labelDirectEdit="//@ownedViewpoints[name='FRIPPviewpoint']/@ownedRepresentations[name='FRIPP%20Representation']/@defaultLayer/@toolSections.0/@ownedTools[name='ChangeName']" semanticCandidatesExpression="aql: self.process" doubleClickDescription="//@ownedViewpoints[name='FRIPPviewpoint']/@ownedRepresentations[name='FRIPP%20Representation']/@defaultLayer/@toolSections.0/@ownedTools[name='dblclkActivityProcess']" domainClass="PROVE::Process" reusedBorderedNodeMappings="//@ownedViewpoints[name='FRIPPviewpoint']/@ownedRepresentations[name='FRIPP%20Representation']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@borderedNodeMappings[name='ArtifactDestinationPort'] //@ownedViewpoints[name='FRIPPviewpoint']/@ownedRepresentations[name='FRIPP%20Representation']/@defaultLayer/@containerMappings[name='ProcessTopHierarchy_PD']/@subContainerMappings[name='ProcessContainer_PD']/@borderedNodeMappings[name='ArtifactSourcePort']" dropDescriptions="//@ownedViewpoints[name='FRIPPviewpoint']/@ownedRepresentations[name='FRIPP%20Representation']/@defaultLayer/@toolSections.0/@ownedTools[name='ReconnectFlowDestination'] //@ownedViewpoints[name='FRIPPviewpoint']/@ownedRepresentations[name='FRIPP%20Representation']/@defaultLayer/@toolSections.0/@ownedTools[name='ReconnectFlowSource'] //@ownedViewpoints[name='FRIPPviewpoint']/@ownedRepresentations[name='FRIPP%20Representation']/@defaultLayer/@toolSections.0/@ownedTools[name='MoveActivity']">
-              <style xsi:type="style:WorkspaceImageDescription" borderSizeComputationExpression="2" labelSize="12" showIcon="false" labelExpression="aql: self.name + '[' + self.resourceUsed->filter(FRIPP::Actuator).name->sep('+') + '] '" tooltipExpression="aql: 'Start: ' + self.startDate + '\n' + 'End: ' + self.endDate + '\n' + 'Resources: ' + self.resourceUsed.name->sep(' + ')">
-                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-              </style>
+              <conditionnalStyles predicateExpression="aql: self.actionType == FRIPP::ACTION_TYPE_ENUM::MANUAL">
+                <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="aql: self.name + '[' + self.resourceUsed->filter(FRIPP::Actuator).name->sep('+') + '] '" tooltipExpression="aql: 'Start: ' + self.startDate + '\n' + 'End: ' + self.endDate + '\n' + 'Resources: ' + self.resourceUsed.name->sep(' + ')">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_yellow']"/>
+                  <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_yellow']"/>
+                </style>
+              </conditionnalStyles>
+              <conditionnalStyles predicateExpression="aql: self.actionType == FRIPP::ACTION_TYPE_ENUM::AUTOMATIC">
+                <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="aql: self.name + '[' + self.resourceUsed->filter(FRIPP::Actuator).name->sep('+') + '] '" tooltipExpression="aql: 'Start: ' + self.startDate + '\n' + 'End: ' + self.endDate + '\n' + 'Resources: ' + self.resourceUsed.name->sep(' + ')">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+                  <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+                </style>
+              </conditionnalStyles>
+              <conditionnalStyles predicateExpression="aql: self.actionType == FRIPP::ACTION_TYPE_ENUM::DUAL">
+                <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="aql: self.name + '[' + self.resourceUsed->filter(FRIPP::Actuator).name->sep('+') + '] '" tooltipExpression="aql: 'Start: ' + self.startDate + '\n' + 'End: ' + self.endDate + '\n' + 'Resources: ' + self.resourceUsed.name->sep(' + ')">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_yellow']"/>
+                  <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+                </style>
+              </conditionnalStyles>
+              <conditionnalStyles predicateExpression="aql: self.actionType == FRIPP::ACTION_TYPE_ENUM::UNKNOWN">
+                <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" labelExpression="aql: self.name + '[' + self.resourceUsed->filter(FRIPP::Actuator).name->sep('+') + '] '" tooltipExpression="aql: 'Start: ' + self.startDate + '\n' + 'End: ' + self.endDate + '\n' + 'Resources: ' + self.resourceUsed.name->sep(' + ')">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                  <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                </style>
+              </conditionnalStyles>
             </subContainerMappings>
             <style xsi:type="style:WorkspaceImageDescription" borderSizeComputationExpression="2" labelSize="12" showIcon="false" labelExpression="aql: self.name + '[' + self.resourceUsed->filter(FRIPP::Actuator).name->sep('+') + '] '" tooltipExpression="aql: 'Start: ' + self.startDate + '\n' + 'End: ' + self.endDate + '\n' + 'Resources: ' + self.resourceUsed.name->sep(' + ')">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>

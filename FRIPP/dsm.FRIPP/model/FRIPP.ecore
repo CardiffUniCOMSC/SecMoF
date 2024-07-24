@@ -25,6 +25,8 @@
   <eClassifiers xsi:type="ecore:EEnum" name="ACTION_TYPE_ENUM">
     <eLiterals name="MANUAL"/>
     <eLiterals name="AUTOMATIC" value="1"/>
+    <eLiterals name="DUAL" value="2"/>
+    <eLiterals name="UNKNOWN" value="3"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Actuator" eSuperTypes="../../dsm.PROVE/model/PROVE.ecore#//Resource">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//ACTUATOR_TYPE_ENUM"

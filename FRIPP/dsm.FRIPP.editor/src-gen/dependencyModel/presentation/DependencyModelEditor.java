@@ -158,6 +158,7 @@ import dsm.FRIPP.presentation.FRIPPEditorPlugin;
 
 import dsm.FRIPP.provider.FRIPPItemProviderAdapterFactory;
 
+import dsm.PROVE.provider.PROVEItemProviderAdapterFactory;
 import org.eclipse.ui.actions.WorkspaceModifyOperation;
 
 /**
@@ -690,7 +691,7 @@ public class DependencyModelEditor extends MultiPageEditorPart
 		adapterFactory.addAdapterFactory(new ResourceItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new FRIPPItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new DependencyModelItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new dsm.PROVE.provider.PROVEItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new PROVEItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new ReflectiveItemProviderAdapterFactory());
 
 		// Create the command stack that will notify this editor as commands are executed.

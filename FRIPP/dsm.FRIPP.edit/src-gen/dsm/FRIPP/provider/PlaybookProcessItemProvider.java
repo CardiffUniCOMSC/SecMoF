@@ -7,6 +7,7 @@ import dsm.FRIPP.FRIPPPackage;
 import dsm.FRIPP.PlaybookProcess;
 
 import dsm.PROVE.PROVEPackage;
+import dsm.PROVE.provider.ProcessItemProvider;
 import java.util.Collection;
 import java.util.List;
 
@@ -28,7 +29,7 @@ import org.eclipse.emf.edit.provider.ViewerNotification;
  * <!-- end-user-doc -->
  * @generated
  */
-public class PlaybookProcessItemProvider extends dsm.PROVE.provider.ProcessItemProvider {
+public class PlaybookProcessItemProvider extends ProcessItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->

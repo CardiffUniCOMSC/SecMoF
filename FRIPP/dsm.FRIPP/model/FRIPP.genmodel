@@ -20,6 +20,8 @@
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="FRIPP.ecore#//ACTION_TYPE_ENUM">
       <genEnumLiterals ecoreEnumLiteral="FRIPP.ecore#//ACTION_TYPE_ENUM/MANUAL"/>
       <genEnumLiterals ecoreEnumLiteral="FRIPP.ecore#//ACTION_TYPE_ENUM/AUTOMATIC"/>
+      <genEnumLiterals ecoreEnumLiteral="FRIPP.ecore#//ACTION_TYPE_ENUM/DUAL"/>
+      <genEnumLiterals ecoreEnumLiteral="FRIPP.ecore#//ACTION_TYPE_ENUM/UNKNOWN"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="FRIPP.ecore#//ACTUATOR_TYPE_ENUM">
       <genEnumLiterals ecoreEnumLiteral="FRIPP.ecore#//ACTUATOR_TYPE_ENUM/HUMAN"/>

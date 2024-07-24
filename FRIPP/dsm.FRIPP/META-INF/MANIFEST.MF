@@ -7,7 +7,7 @@ Bundle-Version: 1.0.0.qualifier
 Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Bundle-RequiredExecutionEnvironment: JavaSE-17
+Bundle-RequiredExecutionEnvironment: JavaSE-15
 Export-Package: PROVE;
   uses:="org.eclipse.emf.ecore,
    org.eclipse.emf.common.util",

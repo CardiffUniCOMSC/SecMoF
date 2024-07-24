@@ -8,7 +8,7 @@ Bundle-ClassPath: .
 Bundle-Activator: dsm.FRIPP.presentation.FRIPPEditorPlugin$Implementation
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Bundle-RequiredExecutionEnvironment: JavaSE-17
+Bundle-RequiredExecutionEnvironment: JavaSE-15
 Export-Package: PROVE.presentation,
  dependencyModel.presentation,
  dsm.FRIPP.presentation
