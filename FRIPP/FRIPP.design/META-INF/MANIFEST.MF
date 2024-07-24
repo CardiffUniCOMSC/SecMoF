@@ -22,6 +22,6 @@ Require-Bundle: org.eclipse.ui,
  dsm.FRIPP.edit;bundle-version="1.0.0",
  dsm.FRIPP.editor;bundle-version="1.0.0"
 Bundle-ActivationPolicy: lazy
-Bundle-RequiredExecutionEnvironment: JavaSE-11
+Bundle-RequiredExecutionEnvironment: JavaSE-17
 Bundle-Vendor: %providerName
 Automatic-Module-Name: FRIPP.design
