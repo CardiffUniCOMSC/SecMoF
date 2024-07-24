@@ -102,7 +102,40 @@
           <audits auditExpression="aql: self.target.eContainer(PROVE::ArtifactState).achievedStatus==false or self.target.originatingActivity.artifactInStateUsed->isEmpty() or self.target.originatingActivity.artifactInStateUsed->select(flow|flow.eContainer(PROVE::ArtifactState).achievedStatus==true)->notEmpty()"/>
         </ownedRules>
       </validationSet>
-      <layout xsi:type="description_1:CustomLayoutConfiguration" id="org.eclipse.elk.layered" label="ELK Layered" description="Layer-based algorithm provided by the Eclipse Layout Kernel. Arranges as many edges as possible into one direction by placing nodes into subsequent layers. This implementation supports different routing styles (straight, orthogonal, splines); if orthogonal routing is selected, arbitrary port constraints are respected, thus enabling the layout of block diagrams such as actor-oriented models or circuit schematics. Furthermore, full layout of compound graphs with cross-hierarchy edges is supported when the respective option is activated on the top level."/>
+      <layout xsi:type="description_1:CustomLayoutConfiguration" id="org.eclipse.elk.layered" label="ELK Layered" description="Layer-based algorithm provided by the Eclipse Layout Kernel. Arranges as many edges as possible into one direction by placing nodes into subsequent layers. This implementation supports different routing styles (straight, orthogonal, splines); if orthogonal routing is selected, arbitrary port constraints are respected, thus enabling the layout of block diagrams such as actor-oriented models or circuit schematics. Furthermore, full layout of compound graphs with cross-hierarchy edges is supported when the respective option is activated on the top level.">
+        <layoutOptions xsi:type="description_1:EnumLayoutOption" id="org.eclipse.elk.layered.crossingMinimization.strategy">
+          <targets>PARENT</targets>
+          <value name="INTERACTIVE"/>
+        </layoutOptions>
+        <layoutOptions xsi:type="description_1:EnumLayoutOption" id="org.eclipse.elk.layered.wrapping.cutting.strategy">
+          <targets>PARENT</targets>
+          <value name="MSD"/>
+        </layoutOptions>
+        <layoutOptions xsi:type="description_1:EnumLayoutOption" id="org.eclipse.elk.direction">
+          <targets>PARENT</targets>
+          <value name="DOWN"/>
+        </layoutOptions>
+        <layoutOptions xsi:type="description_1:EnumLayoutOption" id="org.eclipse.elk.layered.directionCongruency">
+          <targets>PARENT</targets>
+          <value name="ROTATION"/>
+        </layoutOptions>
+        <layoutOptions xsi:type="description_1:IntegerLayoutOption" id="org.eclipse.elk.layered.priority.direction">
+          <targets>EDGE</targets>
+        </layoutOptions>
+        <layoutOptions xsi:type="description_1:EnumLayoutOption" id="org.eclipse.elk.layered.wrapping.strategy">
+          <targets>PARENT</targets>
+          <value name="OFF"/>
+        </layoutOptions>
+        <layoutOptions xsi:type="description_1:IntegerLayoutOption" id="org.eclipse.elk.layered.highDegreeNodes.treeHeight" value="1000">
+          <targets>PARENT</targets>
+        </layoutOptions>
+        <layoutOptions xsi:type="description_1:BooleanLayoutOption" id="org.eclipse.elk.layered.mergeEdges" value="true">
+          <targets>PARENT</targets>
+        </layoutOptions>
+        <layoutOptions xsi:type="description_1:BooleanLayoutOption" id="org.eclipse.elk.interactiveLayout">
+          <targets>PARENT</targets>
+        </layoutOptions>
+      </layout>
       <defaultLayer name="Default">
         <nodeMappings name="Process_PD" preconditionExpression="aql: self->notEmpty()=false" semanticCandidatesExpression="aql: self" synchronizationLock="true" domainClass="PROVE::Process" dropDescriptions="//@ownedViewpoints[name='FRIPPviewpoint']/@ownedRepresentations[name='FRIPP%20Representation']/@defaultLayer/@toolSections.0/@ownedTools[name='ReconnectFlowDestination'] //@ownedViewpoints[name='FRIPPviewpoint']/@ownedRepresentations[name='FRIPP%20Representation']/@defaultLayer/@toolSections.0/@ownedTools[name='ReconnectFlowSource'] //@ownedViewpoints[name='FRIPPviewpoint']/@ownedRepresentations[name='FRIPP%20Representation']/@defaultLayer/@toolSections.0/@ownedTools[name='MoveActivity']">
           <style xsi:type="style:SquareDescription" labelSize="14" tooltipExpression="PROVE Activity" sizeComputationExpression="10" labelPosition="node" resizeKind="NSEW" width="20" height="20">

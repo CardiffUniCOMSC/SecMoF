@@ -109,10 +109,10 @@
 
 	<groupId>sirius.clean</groupId>
 	<modules>
-		<module>../../../DEPMODEL-SecMOF/DependencyModel</module>
-		<module>../../../DEPMODEL-SecMOF/DependencyModel.design</module>
-		<module>../../../DEPMODEL-SecMOF/DependencyModel.edit</module>
-		<module>../../../DEPMODEL-SecMOF/DependencyModel.editor</module>
+		
+		
+		
+		
 		<module>../../FRIPP/FRIPP.design</module>
 		<module>../SecMoF</module>
 		<module>../../SYMBIOSIS/SymbiosisDM</module>
@@ -129,5 +129,9 @@
 		<module>../../SYMBIOSIS/symbiosis.design</module>
 		<module>../../../PROVE/PROVE.design</module>
 		<module>../../../PROVE/PROVE.feature</module>
+		<module>../../DependencyModel/DependencyModel</module>
+		<module>../../DependencyModel/DependencyModel.design</module>
+		<module>../../DependencyModel/DependencyModel.edit</module>
+		<module>../../DependencyModel/DependencyModel.editor</module>
 	</modules>
 </project>
