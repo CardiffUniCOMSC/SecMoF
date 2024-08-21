@@ -38,22 +38,22 @@ public enum ACTION_TYPE_ENUM implements Enumerator {
 	 */
 	AUTOMATIC(1, "AUTOMATIC", "AUTOMATIC"),
 	/**
-	* The '<em><b>DUAL</b></em>' literal object.
-	* <!-- begin-user-doc -->
+	 * The '<em><b>DUAL</b></em>' literal object.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @see #DUAL_VALUE
-	* @generated
-	* @ordered
-	*/
+	 * @see #DUAL_VALUE
+	 * @generated
+	 * @ordered
+	 */
 	DUAL(2, "DUAL", "DUAL"),
 	/**
-	* The '<em><b>UNKNOWN</b></em>' literal object.
-	* <!-- begin-user-doc -->
+	 * The '<em><b>UNKNOWN</b></em>' literal object.
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @see #UNKNOWN_VALUE
-	* @generated
-	* @ordered
-	*/
+	 * @see #UNKNOWN_VALUE
+	 * @generated
+	 * @ordered
+	 */
 	UNKNOWN(3, "UNKNOWN", "UNKNOWN");
 
 	/**

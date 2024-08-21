@@ -186,6 +186,15 @@ public interface FRIPPPackage extends EPackage {
 	int PLAYBOOK_PROCESS__STATUS = PROVEPackage.PROCESS__STATUS;
 
 	/**
+	 * The feature id for the '<em><b>Seq Num</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLAYBOOK_PROCESS__SEQ_NUM = PROVEPackage.PROCESS__SEQ_NUM;
+
+	/**
 	 * The feature id for the '<em><b>Objectives</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
