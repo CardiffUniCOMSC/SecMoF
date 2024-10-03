@@ -40,6 +40,15 @@ Click on the icons below for a video recording showing how to use the tool.
 # Installation and Quick Start Guide
 
 ## 1. Download SecMof
+
+Latest SecMof version only supports windows. (August 2024)
+
+**Windows**  
+https://github.com/CardiffUniCOMSC/SecMoF/releases/download/v1.2.2-alpha/Security.Modelling.Framework_1.0.0.202408211610-win32.win32.x86_64.zip
+
+
+Older Version
+
 **Windows**  
 https://github.com/CardiffUniCOMSC/SecMoF/releases/download/v0.1.0/Security.Modelling.Framework_1.0.0.202301201418-win32.win32.x86_64.zip
 
