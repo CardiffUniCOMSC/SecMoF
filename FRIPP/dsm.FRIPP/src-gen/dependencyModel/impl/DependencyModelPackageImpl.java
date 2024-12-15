@@ -10,6 +10,7 @@ import dsm.FRIPP.FRIPPPackage;
 
 import dsm.FRIPP.impl.FRIPPPackageImpl;
 
+import dsm.PROVE.PROVEPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EEnum;
@@ -90,7 +91,7 @@ public class DependencyModelPackageImpl extends EPackageImpl implements Dependen
 		isInited = true;
 
 		// Initialize simple dependencies
-		dsm.PROVE.PROVEPackage.eINSTANCE.eClass();
+		PROVEPackage.eINSTANCE.eClass();
 
 		// Obtain or create and register interdependencies
 		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(FRIPPPackage.eNS_URI);

@@ -12,6 +12,7 @@ import dsm.FRIPP.OBJECTIVES_ENUM;
 import dsm.FRIPP.PlaybookProcess;
 import dsm.FRIPP.Role;
 
+import dsm.PROVE.impl.ProcessImpl;
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -48,7 +49,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class PlaybookProcessImpl extends dsm.PROVE.impl.ProcessImpl implements PlaybookProcess {
+public class PlaybookProcessImpl extends ProcessImpl implements PlaybookProcess {
 	/**
 	 * The cached value of the '{@link #getObjectives() <em>Objectives</em>}' attribute list.
 	 * <!-- begin-user-doc -->

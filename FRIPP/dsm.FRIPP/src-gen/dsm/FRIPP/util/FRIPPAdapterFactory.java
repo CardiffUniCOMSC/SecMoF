@@ -4,6 +4,7 @@ package dsm.FRIPP.util;
 
 import dsm.FRIPP.*;
 
+import dsm.PROVE.Resource;
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
 
@@ -102,7 +103,7 @@ public class FRIPPAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseResource(dsm.PROVE.Resource object) {
+		public Adapter caseResource(Resource object) {
 			return createResourceAdapter();
 		}
 

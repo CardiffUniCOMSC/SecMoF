@@ -7,8 +7,9 @@
   
   
 	<properties>
-		<tycho.version>2.3.0</tycho.version>
+		<tycho.version>4.0.4</tycho.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<xtend.version>2.30.0</xtend.version>
 		 <maven.compiler.source>1.8</maven.compiler.source> <!-- Avi -->
 		 <maven.compiler.target>1.8</maven.compiler.target> <!-- Avi -->
 	</properties>
@@ -93,7 +94,7 @@
 								<classifier>tp/target</classifier>
 							</artifact>
 						</target>
-						<executionEnvironment>org.eclipse.justj.openjdk.hotspot.jre.full-11</executionEnvironment>
+						<executionEnvironment>org.eclipse.justj.openjdk.hotspot.jre.full-17</executionEnvironment>
 					</configuration>
 				</plugin>
 				<plugin>
@@ -109,10 +110,6 @@
 
 	<groupId>sirius.clean</groupId>
 	<modules>
-		
-		
-		
-		
 		<module>../../FRIPP/FRIPP.design</module>
 		<module>../SecMoF</module>
 		<module>../../SYMBIOSIS/SymbiosisDM</module>

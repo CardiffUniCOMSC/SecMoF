@@ -15,6 +15,7 @@ import dsm.FRIPP.Organisation;
 import dsm.FRIPP.PlaybookProcess;
 import dsm.FRIPP.Role;
 
+import dsm.PROVE.PROVEPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EEnum;
@@ -165,7 +166,7 @@ public class FRIPPPackageImpl extends EPackageImpl implements FRIPPPackage {
 		isInited = true;
 
 		// Initialize simple dependencies
-		dsm.PROVE.PROVEPackage.eINSTANCE.eClass();
+		PROVEPackage.eINSTANCE.eClass();
 
 		// Obtain or create and register interdependencies
 		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(DependencyModelPackage.eNS_URI);
@@ -561,8 +562,7 @@ public class FRIPPPackageImpl extends EPackageImpl implements FRIPPPackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		dsm.PROVE.PROVEPackage thePROVEPackage = (dsm.PROVE.PROVEPackage) EPackage.Registry.INSTANCE
-				.getEPackage(dsm.PROVE.PROVEPackage.eNS_URI);
+		PROVEPackage thePROVEPackage = (PROVEPackage) EPackage.Registry.INSTANCE.getEPackage(PROVEPackage.eNS_URI);
 		DependencyModelPackage theDependencyModelPackage = (DependencyModelPackage) EPackage.Registry.INSTANCE
 				.getEPackage(DependencyModelPackage.eNS_URI);
 
@@ -649,6 +649,8 @@ public class FRIPPPackageImpl extends EPackageImpl implements FRIPPPackage {
 		initEEnum(actioN_TYPE_ENUMEEnum, dsm.FRIPP.ACTION_TYPE_ENUM.class, "ACTION_TYPE_ENUM");
 		addEEnumLiteral(actioN_TYPE_ENUMEEnum, dsm.FRIPP.ACTION_TYPE_ENUM.MANUAL);
 		addEEnumLiteral(actioN_TYPE_ENUMEEnum, dsm.FRIPP.ACTION_TYPE_ENUM.AUTOMATIC);
+		addEEnumLiteral(actioN_TYPE_ENUMEEnum, dsm.FRIPP.ACTION_TYPE_ENUM.DUAL);
+		addEEnumLiteral(actioN_TYPE_ENUMEEnum, dsm.FRIPP.ACTION_TYPE_ENUM.UNKNOWN);
 
 		initEEnum(actuatoR_TYPE_ENUMEEnum, dsm.FRIPP.ACTUATOR_TYPE_ENUM.class, "ACTUATOR_TYPE_ENUM");
 		addEEnumLiteral(actuatoR_TYPE_ENUMEEnum, dsm.FRIPP.ACTUATOR_TYPE_ENUM.HUMAN);

@@ -7,6 +7,7 @@ import dsm.FRIPP.FRIPPFactory;
 import dsm.FRIPP.FRIPPPackage;
 
 import dsm.PROVE.PROVEPackage;
+import dsm.PROVE.provider.ResourceItemProvider;
 import java.util.Collection;
 import java.util.List;
 
@@ -26,7 +27,7 @@ import org.eclipse.emf.edit.provider.ViewerNotification;
  * <!-- end-user-doc -->
  * @generated
  */
-public class ActuatorItemProvider extends dsm.PROVE.provider.ResourceItemProvider {
+public class ActuatorItemProvider extends ResourceItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->

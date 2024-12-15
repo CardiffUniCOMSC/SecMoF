@@ -4,6 +4,7 @@ package dsm.FRIPP.util;
 
 import dsm.FRIPP.*;
 
+import dsm.PROVE.Resource;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 
@@ -233,7 +234,7 @@ public class FRIPPSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseResource(dsm.PROVE.Resource object) {
+	public T caseResource(Resource object) {
 		return null;
 	}
 
