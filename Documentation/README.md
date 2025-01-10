@@ -7,8 +7,7 @@
 | 25.10.2023 | Peter Maynard | Converted Install guide from word to markdown. | 0.1.0   |
 | 13.06.2023 | Peter Maynard | Initial Setup Guide.                           | 0.1.0   |
 
-![CU Cyber Logo](img/Logo-CU-Cyber.jpg)
-![CU Logo](img/CU-logo.jpg)
+![CU Cyber Logo](img/Logo-CU-Cyber.jpg)![CU Logo](img/CU-logo.jpg)
 
 **Reference to Publications**
 *Shaked, A., Cherdantseva, Y. and Burnap, P. 2022. Model-based incident response playbooks. Presented at: 17th International Conference on Availability, Reliability and Security, Vienna, Austia, 23-26 August 2022. ARES '22: Proceedings of the 17th International Conference on Availability, Reliability and Security. ACM pp. 1-7., (10.1145/3538969.3538976)
