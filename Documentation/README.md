@@ -1,13 +1,14 @@
 **This work was supported by the Engineering and Physical Sciences Research Council (EPSRC) (Grant number EP/V038710/1 https://www.sciencedirect.com/science/article/pii/S0167404823003644#gs0001).**
 
+![CU Cyber Logo](img/Logo-CU-Cyber.jpg) ![CU Logo](img/CU-logo.jpg)
+
 # SecMof Documentation
 
 | Date       | Author        | Comments                                       | Version |
 | ---------- | ------------- | ---------------------------------------------- | ------- |
+| 10.01.2025 | Arif Mehmood  | Added publications and grant reference.        | 0.1.1   |
 | 25.10.2023 | Peter Maynard | Converted Install guide from word to markdown. | 0.1.0   |
 | 13.06.2023 | Peter Maynard | Initial Setup Guide.                           | 0.1.0   |
-
-![CU Cyber Logo](img/Logo-CU-Cyber.jpg) ![CU Logo](img/CU-logo.jpg)
 
 **Reference to Publications**
 
