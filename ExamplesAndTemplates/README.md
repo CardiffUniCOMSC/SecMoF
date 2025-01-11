@@ -1,3 +1,7 @@
+**This work was supported by the Engineering and Physical Sciences Research Council (EPSRC) (Grant number EP/V038710/1 https://www.sciencedirect.com/science/article/pii/S0167404823003644#gs0001).**
+
+![CU Cyber Logo](Logo-CU-Cyber.jpg) ![CU Logo](CU-logo.jpg)
+
 # Examples and Templates
 
 * Projects
